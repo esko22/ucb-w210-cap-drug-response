@@ -103,6 +103,11 @@ def apply_mappers(df, main_mapper, alt_mapper, verbose = True,handle_duplicates 
     \taverage - group by index and keep average\n
     \tdrop - drop duplicates\n
     \tkeep - do nothing.'''
+    
+    
+    print('test')
+
+    
     ID_list = list(df.index.values)
     
     # main mapper, e.g. NCBI symbol -> Entrez Gene ID
@@ -119,10 +124,22 @@ def apply_mappers(df, main_mapper, alt_mapper, verbose = True,handle_duplicates 
     not_found_at_all =[]
     loc = {}
     loc_not_found =[]
+    print('test')
+
     # store all valid target IDs
-    valid_target_ids = main_mapper["one-to-one"].values()+ main_mapper["many-to-one"].values() + alt_mapper["one-to-one"].values() + alt_mapper["many-to-one"].values()
-    for l in main_mapper["one-to-many"].values() +alt_mapper["one-to-many"].values():
-        valid_target_ids += l
+    
+    #valid_target_ids = []
+    #valid_target_ids.append(list(main_mapper["one-to-one"]))
+    #valid_target_ids.append(list(main_mapper["many-to-one"]))
+    #valid_target_ids.append(list(alt_mapper["one-to-one"]))
+    #valid_target_ids.append(list(alt_mapper["many-to-one"]))
+    
+    #valid_target_ids = set() + set(main_mapper["many-to-one"].values()) + set(alt_mapper["one-to-one"].values()) + set(alt_mapper["many-to-one"].values())
+    #one_to_many_targets = list(main_mapper["one-to-many"].values())
+    #one_to_many_targets.append(list(alt_mapper["one-to-many"].values()))
+    
+    #for l in one_to_many_targets:
+    #    valid_target_ids += l
         
        
     for symbol in ID_list:
