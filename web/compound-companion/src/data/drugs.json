@@ -1,0 +1,1871 @@
+[
+    {
+        "DRUG_ID": 1,
+        "DRUG_NAME": "Erlotinib",
+        "SYNONYMS": "Tarceva, RG-1415, CP-358774, OSI-774, Ro-508231, R-1415",
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 3,
+        "DRUG_NAME": "Rapamycin",
+        "SYNONYMS": "AY-22989, Sirolimus, WY-090217, Torisel, Rapamune",
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 5,
+        "DRUG_NAME": "Sunitinib",
+        "SYNONYMS": "Sutent, Sunitinib Malate, SU-11248",
+        "TARGET": "PDGFR, KIT, VEGFR, FLT3, RET, CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 6,
+        "DRUG_NAME": "PHA-665752",
+        "SYNONYMS": "PHA665752, PHA 665752",
+        "TARGET": "MET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 9,
+        "DRUG_NAME": "MG-132",
+        "SYNONYMS": "LLL cpd, MG 132, MG132",
+        "TARGET": "Proteasome, CAPN1",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 11,
+        "DRUG_NAME": "Paclitaxel",
+        "SYNONYMS": "BMS-181339-01, Taxol, Onxol, Paxene, Praxel, Abraxane",
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 17,
+        "DRUG_NAME": "Cyclopamine",
+        "SYNONYMS": null,
+        "TARGET": "SMO",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 29,
+        "DRUG_NAME": "AZ628",
+        "SYNONYMS": "AZ-628, AZ 628",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 30,
+        "DRUG_NAME": "Sorafenib",
+        "SYNONYMS": "Nexavar, 284461-73-0, BAY 43-9006",
+        "TARGET": "PDGFR, KIT, VEGFR, RAF",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 32,
+        "DRUG_NAME": "Tozasertib",
+        "SYNONYMS": "MK 0457,MK-0457,MK-045, VX-680 VX 680 VX-68",
+        "TARGET": "AURKA, AURKB, AURKC, others",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 34,
+        "DRUG_NAME": "Imatinib",
+        "SYNONYMS": "Gleevec, STI-571",
+        "TARGET": "ABL, KIT, PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 35,
+        "DRUG_NAME": "NVP-TAE684",
+        "SYNONYMS": "NVP-TAE 684, TAE684, TAE-684",
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 37,
+        "DRUG_NAME": "Crizotinib",
+        "SYNONYMS": "Xalkori, PF2341066, PF-2341066, PF 2341066",
+        "TARGET": "MET, ALK, ROS1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 38,
+        "DRUG_NAME": "Saracatinib",
+        "SYNONYMS": "AZD0530, AZD-0530, AZ-10353926",
+        "TARGET": "ABL, SRC",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 41,
+        "DRUG_NAME": "S-Trityl-L-cysteine",
+        "SYNONYMS": "NSC 83265, Tritylcysteine",
+        "TARGET": "KIF11",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 45,
+        "DRUG_NAME": "Z-LLNle-CHO",
+        "SYNONYMS": "Z-L-Norleucine-CHO, Gamma-Secretase Inhibitor 1",
+        "TARGET": "gamma-secretase",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 51,
+        "DRUG_NAME": "Dasatinib",
+        "SYNONYMS": "BMS-354825-03, BMS-354825, Sprycel",
+        "TARGET": "ABL, SRC, Ephrins, PDGFR, KIT",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 52,
+        "DRUG_NAME": "GNF-2",
+        "SYNONYMS": "KIN001-013",
+        "TARGET": "BCR-ABL",
+        "TARGET_PATHWAY": "ABL signaling"
+    },
+    {
+        "DRUG_ID": 53,
+        "DRUG_NAME": "CGP-60474",
+        "SYNONYMS": "KIN001-019, CGP60474, CGP 60474",
+        "TARGET": "CDK1,CDK2,CDK5,CDK7,CDK9, PKC",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 54,
+        "DRUG_NAME": "CGP-082996",
+        "SYNONYMS": "CINK4, KIN001-021",
+        "TARGET": "CDK4",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 55,
+        "DRUG_NAME": "A-770041",
+        "SYNONYMS": "KIN001-111",
+        "TARGET": "LCK, FYN",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 56,
+        "DRUG_NAME": "WH-4-023",
+        "SYNONYMS": "KIN001-112",
+        "TARGET": "SRC, LCK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 59,
+        "DRUG_NAME": "WZ-1-84",
+        "SYNONYMS": "KIN001-123",
+        "TARGET": "BMX",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 60,
+        "DRUG_NAME": "BI-2536",
+        "SYNONYMS": null,
+        "TARGET": "PLK1, PLK2, PLK3",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 62,
+        "DRUG_NAME": "BMS-536924",
+        "SYNONYMS": "BMS 536924",
+        "TARGET": "IGF1R, IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "DRUG_ID": 63,
+        "DRUG_NAME": "BMS-509744",
+        "SYNONYMS": "KIN001-127, ITK inhibitor",
+        "TARGET": "ITK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 64,
+        "DRUG_NAME": "CMK",
+        "SYNONYMS": "KIN001-128",
+        "TARGET": "RSK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 71,
+        "DRUG_NAME": "Pyrimethamine",
+        "SYNONYMS": "Daraprim, Chloridine",
+        "TARGET": "Dihydrofolate reductase (DHFR)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 83,
+        "DRUG_NAME": "JW-7-52-1",
+        "SYNONYMS": null,
+        "TARGET": "MTOR",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 86,
+        "DRUG_NAME": "A-443654",
+        "SYNONYMS": "KIN001-139",
+        "TARGET": "AKT1, AKT2, AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 87,
+        "DRUG_NAME": "GW843682X",
+        "SYNONYMS": "GW843682X (AN-13)",
+        "TARGET": "PLK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 88,
+        "DRUG_NAME": "Entinostat",
+        "SYNONYMS": "MS-275",
+        "TARGET": "HDAC1, HDAC3",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 89,
+        "DRUG_NAME": "Parthenolide",
+        "SYNONYMS": null,
+        "TARGET": "HDAC1 ",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 91,
+        "DRUG_NAME": "GSK319347A",
+        "SYNONYMS": "KIN001-135, IKK-3 inhibitor",
+        "TARGET": "IKK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 94,
+        "DRUG_NAME": "TGX221",
+        "SYNONYMS": "TGX-221, Tgx 221",
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 104,
+        "DRUG_NAME": "Bortezomib",
+        "SYNONYMS": "PS-341, LDP-341, Velcade",
+        "TARGET": "Proteasome",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 106,
+        "DRUG_NAME": "XMD8-85",
+        "SYNONYMS": "ERK5-IN-1",
+        "TARGET": "ERK5, BET",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 110,
+        "DRUG_NAME": "Seliciclib",
+        "SYNONYMS": "Roscovitine, CYC-202, AL-39256",
+        "TARGET": "CDK2, CDK7, CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 111,
+        "DRUG_NAME": "Salubrinal",
+        "SYNONYMS": "EIF-2alpha Inhibitor",
+        "TARGET": "EIF2A",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 119,
+        "DRUG_NAME": "Lapatinib",
+        "SYNONYMS": "Tykerb, Tyverb",
+        "TARGET": "ERBB2, EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 127,
+        "DRUG_NAME": "GSK269962A",
+        "SYNONYMS": "GSK 269962A",
+        "TARGET": "ROCK1, ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 133,
+        "DRUG_NAME": "Doxorubicin",
+        "SYNONYMS": "Doxil, Rubex, Adriamycin, Adriablastin, Doxorubicine",
+        "TARGET": "Anthracycline",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 134,
+        "DRUG_NAME": "Etoposide",
+        "SYNONYMS": "Etopophos, Vepesid, Eposin, VP-16",
+        "TARGET": "TOP2",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 135,
+        "DRUG_NAME": "Gemcitabine",
+        "SYNONYMS": "Gemzar, LY-188011",
+        "TARGET": "Pyrimidine antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 136,
+        "DRUG_NAME": "Mitomycin-C",
+        "SYNONYMS": "Mytozytrex, NSC-26980, MMC, Mitosol, Mitozytrex",
+        "TARGET": "DNA crosslinker",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 140,
+        "DRUG_NAME": "Vinorelbine",
+        "SYNONYMS": "vinorelbine tartrate, Navelbine, Exelbine",
+        "TARGET": "Microtubule destabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 147,
+        "DRUG_NAME": "NSC-87877",
+        "SYNONYMS": "NSC 87877",
+        "TARGET": "SHP-1 (PTPN6), SHP-2 (PTPN11)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 150,
+        "DRUG_NAME": "Bicalutamide",
+        "SYNONYMS": "ICI-176334, Casodex, Cosudex, ICI 176334",
+        "TARGET": "AR",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "DRUG_ID": 151,
+        "DRUG_NAME": "QS11",
+        "SYNONYMS": "944328-88-5",
+        "TARGET": "ARFGAP1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 152,
+        "DRUG_NAME": "CP466722",
+        "SYNONYMS": "CP-466722, CP 466722, 1080622-86-1",
+        "TARGET": "ATM",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 153,
+        "DRUG_NAME": "Midostaurin",
+        "SYNONYMS": "PKC412, benzoylstaurosporine, CGP-41251",
+        "TARGET": "PKC, PPK, FLT1, c-FGR, others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 154,
+        "DRUG_NAME": "CHIR-99021",
+        "SYNONYMS": "CT 99021, CHIR99021, CHIR 99021",
+        "TARGET": "GSK3A, GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "DRUG_ID": 155,
+        "DRUG_NAME": "Ponatinib",
+        "SYNONYMS": "AP24534, AP-24534, KIN001-192, Iclusig",
+        "TARGET": "ABL, PDGFRA, VEGFR2, FGFR1, SRC, TIE2, FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 156,
+        "DRUG_NAME": "AZD6482",
+        "SYNONYMS": "AZD 6482, AZD-6482, AK-55409",
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 157,
+        "DRUG_NAME": "JNK-9L",
+        "SYNONYMS": "KIN001-204, JNK inhibitor 9l",
+        "TARGET": "JNK2, JNK3",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 158,
+        "DRUG_NAME": "PF-562271",
+        "SYNONYMS": "PF-00562271",
+        "TARGET": "FAK, FAK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 159,
+        "DRUG_NAME": "HG6-64-1",
+        "SYNONYMS": "KIN001-206",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 163,
+        "DRUG_NAME": "JQ1",
+        "SYNONYMS": "JQ-1, (+)-JQ-1",
+        "TARGET": "BRD2, BRD3, BRD4, BRDT",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "DRUG_ID": 164,
+        "DRUG_NAME": "JQ12",
+        "SYNONYMS": null,
+        "TARGET": "HDAC1, HDAC2",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 165,
+        "DRUG_NAME": "DMOG",
+        "SYNONYMS": "Dimethyloxalylglcine",
+        "TARGET": "HIF-PH",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "DRUG_ID": 166,
+        "DRUG_NAME": "FTI-277",
+        "SYNONYMS": null,
+        "TARGET": "Farnesyl-transferase (FNTA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 167,
+        "DRUG_NAME": "OSU-03012",
+        "SYNONYMS": "AR-12, OSU 03012, OSU03012, PDK1 inhibitor AR-12",
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 170,
+        "DRUG_NAME": "Shikonin",
+        "SYNONYMS": "Anchusin",
+        "TARGET": "not defined",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 171,
+        "DRUG_NAME": "AKT inhibitor VIII",
+        "SYNONYMS": "Akti-1\/2",
+        "TARGET": "AKT1, AKT2, AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 172,
+        "DRUG_NAME": "Embelin",
+        "SYNONYMS": "Emberine, Embelic acid",
+        "TARGET": "XIAP",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 173,
+        "DRUG_NAME": "FH535",
+        "SYNONYMS": null,
+        "TARGET": "PPARgamma, PPARdelta",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "DRUG_ID": 175,
+        "DRUG_NAME": "PAC-1",
+        "SYNONYMS": "GTPL5238",
+        "TARGET": "Procaspase-3, Procaspase-7",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 176,
+        "DRUG_NAME": "IPA-3",
+        "SYNONYMS": "IPA 3",
+        "TARGET": "PAK1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 177,
+        "DRUG_NAME": "GSK650394",
+        "SYNONYMS": "GSK-650394, GSK 650394",
+        "TARGET": "SGK2, SGK3",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 178,
+        "DRUG_NAME": "BAY-61-3606",
+        "SYNONYMS": "Syk Inhibitor, BAY-613606",
+        "TARGET": "SYK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 179,
+        "DRUG_NAME": "5-Fluorouracil",
+        "SYNONYMS": "5-FU",
+        "TARGET": "Antimetabolite (DNA & RNA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 180,
+        "DRUG_NAME": "Thapsigargin",
+        "SYNONYMS": "Octanoic acid",
+        "TARGET": "SERCA",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 182,
+        "DRUG_NAME": "Obatoclax Mesylate",
+        "SYNONYMS": "GX15-070MS, Obatoclax, GX15-070",
+        "TARGET": "BCL2, BCL-XL, BCL-W, MCL1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 184,
+        "DRUG_NAME": "BMS-754807",
+        "SYNONYMS": "BMS754807, BMS 754807",
+        "TARGET": "IGF1R, IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "DRUG_ID": 185,
+        "DRUG_NAME": "Linsitinib",
+        "SYNONYMS": "OSI-906, ASP-7487",
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "DRUG_ID": 186,
+        "DRUG_NAME": "Bexarotene",
+        "SYNONYMS": "LG-100069, Targretin, Targret, Targrexin, Targretyn, Bexarotenum",
+        "TARGET": "Retinioic X receptor (RXR) agonist",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 190,
+        "DRUG_NAME": "Bleomycin",
+        "SYNONYMS": null,
+        "TARGET": "dsDNA break induction",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 192,
+        "DRUG_NAME": "LFM-A13",
+        "SYNONYMS": "DDE-28",
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 193,
+        "DRUG_NAME": "GW-2580",
+        "SYNONYMS": "GX2580, CFMS receptor tyrosine kinase inhibitor",
+        "TARGET": "CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 194,
+        "DRUG_NAME": "Luminespib",
+        "SYNONYMS": "AUY922, VER-52296,NVP-AUY922,  AUY",
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 196,
+        "DRUG_NAME": "Phenformin",
+        "SYNONYMS": "DBI",
+        "TARGET": "Biguanide agent",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 197,
+        "DRUG_NAME": "Bryostatin 1",
+        "SYNONYMS": "Bryostatin",
+        "TARGET": "PKC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 199,
+        "DRUG_NAME": "Pazopanib",
+        "SYNONYMS": "Votrient",
+        "TARGET": "CSF1R, KIT,  PDGFRA, PDGFRB",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 200,
+        "DRUG_NAME": "Dacinostat",
+        "SYNONYMS": "NVP-LAQ824, LAQ824",
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 201,
+        "DRUG_NAME": "Epothilone B",
+        "SYNONYMS": "Patupilone, EpoB, EPO906, GNF-PF-193",
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 202,
+        "DRUG_NAME": "GSK1904529A",
+        "SYNONYMS": "GSK-1904529A, GSK 1904529A",
+        "TARGET": "IGF1R, IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "DRUG_ID": 203,
+        "DRUG_NAME": "BMS-345541",
+        "SYNONYMS": "BMS345541, IKK Inhibitor 3",
+        "TARGET": "IKK1, IKK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 204,
+        "DRUG_NAME": "Tipifarnib",
+        "SYNONYMS": "Zarnestra",
+        "TARGET": "Farnesyl-transferase (FNTA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 205,
+        "DRUG_NAME": "Avagacestat",
+        "SYNONYMS": "BMS-708163, BMS 708163",
+        "TARGET": "Amyloid beta20, Amyloid beta40",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 206,
+        "DRUG_NAME": "Ruxolitinib",
+        "SYNONYMS": "INCB-18424, Ruxolitinib Phosphate, Jakafi",
+        "TARGET": "JAK1, JAK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 207,
+        "DRUG_NAME": "AS601245",
+        "SYNONYMS": null,
+        "TARGET": "JNK1, JNK2, JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 208,
+        "DRUG_NAME": "Ispinesib Mesylate",
+        "SYNONYMS": "SB-715992",
+        "TARGET": "KSP",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 211,
+        "DRUG_NAME": "TL-2-105",
+        "SYNONYMS": null,
+        "TARGET": "not defined",
+        "TARGET_PATHWAY": "Unclassified"
+    },
+    {
+        "DRUG_ID": 219,
+        "DRUG_NAME": "AT-7519",
+        "SYNONYMS": "AT7519",
+        "TARGET": "CDK1, CDK2, CDK4, CDK6, CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 221,
+        "DRUG_NAME": "TAK-715",
+        "SYNONYMS": "KIN001-201, TAK 715",
+        "TARGET": "p38alpha, p38beta",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 222,
+        "DRUG_NAME": "BX-912",
+        "SYNONYMS": null,
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 223,
+        "DRUG_NAME": "ZSTK474",
+        "SYNONYMS": "KIN001-167, ZSTK-474, ZSTK 474",
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 224,
+        "DRUG_NAME": "AS605240",
+        "SYNONYMS": "KIN001-173, AS-605240",
+        "TARGET": "PI3Kgamma",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 225,
+        "DRUG_NAME": "Genentech Cpd 10",
+        "SYNONYMS": null,
+        "TARGET": "AURKA, AURKB",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 226,
+        "DRUG_NAME": "GSK1070916",
+        "SYNONYMS": "GSK-1070916",
+        "TARGET": "AURKA, AURKC",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 228,
+        "DRUG_NAME": "AKT inhibitor VIII",
+        "SYNONYMS": "Akti-1\/2, KIN001-102",
+        "TARGET": "AKT1, AKT2, AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 229,
+        "DRUG_NAME": "Enzastaurin",
+        "SYNONYMS": "LY317615",
+        "TARGET": "PKCB",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 230,
+        "DRUG_NAME": "GSK429286A",
+        "SYNONYMS": null,
+        "TARGET": "ROCK1, ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 231,
+        "DRUG_NAME": "FMK",
+        "SYNONYMS": "KIN001-242",
+        "TARGET": "RSK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 235,
+        "DRUG_NAME": "QL-XII-47",
+        "SYNONYMS": null,
+        "TARGET": "BTK, BMX",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 238,
+        "DRUG_NAME": "Idelalisib",
+        "SYNONYMS": "CAL-101, Zydelig",
+        "TARGET": "PI3Kdelta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 245,
+        "DRUG_NAME": "UNC0638",
+        "SYNONYMS": "UNC-0638, UNC 0683",
+        "TARGET": "G9a and GLP methyltransferases",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "DRUG_ID": 249,
+        "DRUG_NAME": "Cabozantinib",
+        "SYNONYMS": "BMS-907351, XL-184, Cometriq",
+        "TARGET": "VEGFR, MET, RET, KIT, FLT1, FLT3, FLT4, TIE2,AXL",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 252,
+        "DRUG_NAME": "WZ3105",
+        "SYNONYMS": null,
+        "TARGET": "SRC, ROCK2, NTRK2, FLT3, IRAK1, others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 253,
+        "DRUG_NAME": "XMD14-99",
+        "SYNONYMS": null,
+        "TARGET": "ALK, CDK7, LTK, others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 254,
+        "DRUG_NAME": "Quizartinib",
+        "SYNONYMS": "AC220, AC 220, AC-220, Asp-2689",
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 255,
+        "DRUG_NAME": "CP724714",
+        "SYNONYMS": "CP-724714",
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 256,
+        "DRUG_NAME": "JW-7-24-1",
+        "SYNONYMS": null,
+        "TARGET": "LCK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 257,
+        "DRUG_NAME": "NPK76-II-72-1",
+        "SYNONYMS": null,
+        "TARGET": "PLK3",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 258,
+        "DRUG_NAME": "STF-62247",
+        "SYNONYMS": "STF62247",
+        "TARGET": "Autophagy inducer",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 260,
+        "DRUG_NAME": "NG-25",
+        "SYNONYMS": "NG25",
+        "TARGET": "TAK1, MAP4K2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 261,
+        "DRUG_NAME": "TL-1-85",
+        "SYNONYMS": null,
+        "TARGET": "TAK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 262,
+        "DRUG_NAME": "VX-11e",
+        "SYNONYMS": "VX11e, VX11e",
+        "TARGET": "ERK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 263,
+        "DRUG_NAME": "FR-180204",
+        "SYNONYMS": "FR 180204, FR180204, ERK Inhibitor II",
+        "TARGET": "ERK1, ERK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 265,
+        "DRUG_NAME": "Tubastatin A",
+        "SYNONYMS": null,
+        "TARGET": "HDAC1, HDAC6, HDAC8",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 266,
+        "DRUG_NAME": "Zibotentan",
+        "SYNONYMS": "ZD4054, ZD-4054",
+        "TARGET": "Endothelin-1 receptor (EDNRA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 268,
+        "DRUG_NAME": "Sepantronium bromide",
+        "SYNONYMS": "YM155, YM-155, YM 155",
+        "TARGET": "BIRC5",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 269,
+        "DRUG_NAME": "NSC-207895",
+        "SYNONYMS": "XI-006, NSC207895",
+        "TARGET": "MDM4",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "DRUG_ID": 271,
+        "DRUG_NAME": "VNLG\/124",
+        "SYNONYMS": "HDAC inhibitor XV",
+        "TARGET": "HDAC,RAR",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 272,
+        "DRUG_NAME": "AR-42",
+        "SYNONYMS": "HDAC-42, AR 42, AR42",
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 273,
+        "DRUG_NAME": "CUDC-101",
+        "SYNONYMS": "CUDC 101",
+        "TARGET": "HDAC1-10, EGFR, ERBB2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 274,
+        "DRUG_NAME": "Belinostat",
+        "SYNONYMS": "PXD101, PXD-101",
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 275,
+        "DRUG_NAME": "I-BET-762",
+        "SYNONYMS": "GSK525762A",
+        "TARGET": "BRD2, BRD3, BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "DRUG_ID": 276,
+        "DRUG_NAME": "CAY10603",
+        "SYNONYMS": null,
+        "TARGET": "HDAC1, HDAC6",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 277,
+        "DRUG_NAME": "Linifanib",
+        "SYNONYMS": "ABT-869, ABT 869",
+        "TARGET": "VEGFR1, VEGFR2, VEGFR3, CSF1R, FLT3, KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 279,
+        "DRUG_NAME": "BIX02189",
+        "SYNONYMS": "BIX 02189",
+        "TARGET": "MEK5, ERK5",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 281,
+        "DRUG_NAME": "Alectinib",
+        "SYNONYMS": "CH5424802, CH 542802, Alecensa",
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 282,
+        "DRUG_NAME": "Pelitinib",
+        "SYNONYMS": "EKB-569, EKB 569",
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 283,
+        "DRUG_NAME": "Omipalisib",
+        "SYNONYMS": "GSK2126458, GSK-2126458, EX-8678, GSK458",
+        "TARGET": "PI3K (class 1), MTORC1, MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 286,
+        "DRUG_NAME": "KIN001-236",
+        "SYNONYMS": null,
+        "TARGET": "Angiopoietin-1 receptor",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 287,
+        "DRUG_NAME": "KIN001-244",
+        "SYNONYMS": "PDK1 inhibitor 7",
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 288,
+        "DRUG_NAME": "WHI-P97",
+        "SYNONYMS": "AC1L1GQE, KIN001-055",
+        "TARGET": "JAK3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 290,
+        "DRUG_NAME": "KIN001-260",
+        "SYNONYMS": "Bayer IKKb inhibitor, ACHP",
+        "TARGET": "IKKB",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 291,
+        "DRUG_NAME": "KIN001-266",
+        "SYNONYMS": null,
+        "TARGET": "MAP3K8",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 292,
+        "DRUG_NAME": "Masitinib",
+        "SYNONYMS": "AB1010, Masivet",
+        "TARGET": "KIT, PDGFRA, PDGFRB",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 293,
+        "DRUG_NAME": "Amuvatinib",
+        "SYNONYMS": "MP470, MP 470, MP-470",
+        "TARGET": "KIT, PDGFRA, FLT3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 294,
+        "DRUG_NAME": "MPS-1-IN-1",
+        "SYNONYMS": null,
+        "TARGET": "MPS1",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 295,
+        "DRUG_NAME": "NVP-BHG712",
+        "SYNONYMS": "BHG712",
+        "TARGET": "EPHB4",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 298,
+        "DRUG_NAME": "OSI-930",
+        "SYNONYMS": "OSI 930 OSI930",
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 299,
+        "DRUG_NAME": "OSI-027",
+        "SYNONYMS": "A-1065-5",
+        "TARGET": "MTORC1, MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 300,
+        "DRUG_NAME": "CX-5461",
+        "SYNONYMS": "CX5461, CX 5461",
+        "TARGET": "RNA Polymerase 1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 301,
+        "DRUG_NAME": "PHA-793887",
+        "SYNONYMS": "PHA793887, PHA 793887",
+        "TARGET": "CDK2, CDK7, CDK5",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 302,
+        "DRUG_NAME": "PI-103",
+        "SYNONYMS": "PI-103, PI103, PI 103",
+        "TARGET": "PI3Kalpha, DAPK3, CLK4, PIM3, HIPK2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 303,
+        "DRUG_NAME": "PIK-93",
+        "SYNONYMS": "PIK 93, PIK93",
+        "TARGET": "PI3Kgamma",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 304,
+        "DRUG_NAME": "SB52334",
+        "SYNONYMS": "SB-52334, SB 52334",
+        "TARGET": "ALK5",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 305,
+        "DRUG_NAME": "TPCA-1",
+        "SYNONYMS": null,
+        "TARGET": "IKK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 306,
+        "DRUG_NAME": "Fedratinib",
+        "SYNONYMS": "TG101348, TG-101348, SAR302503, SAR-302503",
+        "TARGET": "JAK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 308,
+        "DRUG_NAME": "Foretinib",
+        "SYNONYMS": "GSK1363089, XL-880, EXEL-2880, GSK089",
+        "TARGET": "MET, KDR, TIE2, VEGFR3\/FLT4, RON, PDGFR, FGFR1, EGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 309,
+        "DRUG_NAME": "Y-39983",
+        "SYNONYMS": null,
+        "TARGET": "ROCK",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 310,
+        "DRUG_NAME": "YM201636",
+        "SYNONYMS": "YM-201636, YM 201636",
+        "TARGET": "PYKFYVE",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 312,
+        "DRUG_NAME": "Tivozanib",
+        "SYNONYMS": "AV-951, AV 951, KRN-951, KIL8951, ASP-4130",
+        "TARGET": "VEGFR1, VEGFR2, VEGFR3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 326,
+        "DRUG_NAME": "GSK690693",
+        "SYNONYMS": "GSK 690693, GSK-690693",
+        "TARGET": "AKT1, AKT2, AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 328,
+        "DRUG_NAME": "SNX-2112",
+        "SYNONYMS": "SNX 2112",
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 329,
+        "DRUG_NAME": "QL-XI-92",
+        "SYNONYMS": null,
+        "TARGET": "DDR1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 330,
+        "DRUG_NAME": "XMD13-2",
+        "SYNONYMS": null,
+        "TARGET": "RIPK1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 331,
+        "DRUG_NAME": "QL-X-138",
+        "SYNONYMS": null,
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 332,
+        "DRUG_NAME": "XMD15-27",
+        "SYNONYMS": null,
+        "TARGET": "CAMK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 333,
+        "DRUG_NAME": "T0901317",
+        "SYNONYMS": "TO-901317, TO901317",
+        "TARGET": "LXR, FXR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 341,
+        "DRUG_NAME": "Selisistat",
+        "SYNONYMS": "EX-527, EX 527",
+        "TARGET": "SIRT1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 344,
+        "DRUG_NAME": "THZ-2-49",
+        "SYNONYMS": null,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 345,
+        "DRUG_NAME": "KIN001-270",
+        "SYNONYMS": "CDK9 inhibitor, CDK9-IN-1",
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 346,
+        "DRUG_NAME": "THZ-2-102-1",
+        "SYNONYMS": null,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 1001,
+        "DRUG_NAME": "AICA Ribonucleotide",
+        "SYNONYMS": "AICAR, N1-(b-D-Ribofuranosyl)-5-aminoimidazole-4-carboxamide",
+        "TARGET": "AMPK agonist",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "DRUG_ID": 1003,
+        "DRUG_NAME": "Camptothecin",
+        "SYNONYMS": "Camptothecine, (+)-Camptothecin",
+        "TARGET": "TOP1",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1004,
+        "DRUG_NAME": "Vinblastine",
+        "SYNONYMS": "Velban",
+        "TARGET": "Microtubule destabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 1005,
+        "DRUG_NAME": "Cisplatin",
+        "SYNONYMS": "cis-Diammineplatinum(II) dichloride, Platinol, CIS-DDP",
+        "TARGET": "DNA crosslinker",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1006,
+        "DRUG_NAME": "Cytarabine",
+        "SYNONYMS": "Ara-Cytidine, Arabinosyl Cytosine, U-19920",
+        "TARGET": "Antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1007,
+        "DRUG_NAME": "Docetaxel",
+        "SYNONYMS": "RP-56976, Taxotere",
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 1008,
+        "DRUG_NAME": "Methotrexate",
+        "SYNONYMS": "Abitrexate, Amethopterin, Rheumatrex, Trexall, Folex",
+        "TARGET": "Antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1009,
+        "DRUG_NAME": "Tretinoin",
+        "SYNONYMS": "ATRA, Vesanoid, Renova, Atralin, Tretin-X, Avita",
+        "TARGET": "Retinoic acid ",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1010,
+        "DRUG_NAME": "Gefitinib",
+        "SYNONYMS": "ZD-1839, Iressa",
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 1011,
+        "DRUG_NAME": "Navitoclax",
+        "SYNONYMS": "ABT-263, ABT263, ABT 263",
+        "TARGET": "BCL2, BCL-XL, BCL-W",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 1012,
+        "DRUG_NAME": "Vorinostat",
+        "SYNONYMS": "Zolinza, SAHA, suberanilohydroxamic acid, suberoylanilide hydroxamic acid, MK-0683",
+        "TARGET": "HDAC inhibitor Class I, IIa, IIb, IV",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "DRUG_ID": 1013,
+        "DRUG_NAME": "Nilotinib",
+        "SYNONYMS": "Tasigna, AMN 107",
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "ABL signaling"
+    },
+    {
+        "DRUG_ID": 1014,
+        "DRUG_NAME": "Refametinib",
+        "SYNONYMS": "RDEA119, BAY-86-9766, BAY 869766",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1015,
+        "DRUG_NAME": "CI-1040",
+        "SYNONYMS": "CI 1040, PD-18435, PD-184352, 212631-79-3",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1016,
+        "DRUG_NAME": "Temsirolimus",
+        "SYNONYMS": "CCI-779, Torisel",
+        "TARGET": "MTOR",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1017,
+        "DRUG_NAME": "Olaparib",
+        "SYNONYMS": "AZD2281, KU0059436,  Lynparza",
+        "TARGET": "PARP1, PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1018,
+        "DRUG_NAME": "Veliparib",
+        "SYNONYMS": "ABT-888, ABT888, ABT 888",
+        "TARGET": "PARP1, PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1019,
+        "DRUG_NAME": "Bosutinib",
+        "SYNONYMS": "SKI-606, Bosulif",
+        "TARGET": "SRC, ABL, TEC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1020,
+        "DRUG_NAME": "Lenalidomide",
+        "SYNONYMS": "CDC-501, CC-5013, Revlimid",
+        "TARGET": "CRBN",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 1021,
+        "DRUG_NAME": "Axitinib",
+        "SYNONYMS": "AG-13736, Inlyta",
+        "TARGET": "PDGFR, KIT, VEGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 1022,
+        "DRUG_NAME": "AZD7762",
+        "SYNONYMS": "AZD-7762, AZD 7762",
+        "TARGET": "CHEK1, CHEK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 1023,
+        "DRUG_NAME": "GW441756",
+        "SYNONYMS": "GW 441756",
+        "TARGET": "NTRK1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 1024,
+        "DRUG_NAME": "Lestaurtinib",
+        "SYNONYMS": "CEP-701, SP-924, SPM-924, A-154475, KT-555",
+        "TARGET": "FLT3, JAK2, NTRK1, NTRK2, NTRK3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1025,
+        "DRUG_NAME": "SB216763",
+        "SYNONYMS": "SB-216763, SB 216763",
+        "TARGET": "GSK3A, GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "DRUG_ID": 1026,
+        "DRUG_NAME": "Tanespimycin",
+        "SYNONYMS": "17-AAG, BMS-722782",
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 1028,
+        "DRUG_NAME": "VX-702",
+        "SYNONYMS": "VX702, VX 702",
+        "TARGET": "p38",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 1029,
+        "DRUG_NAME": "Motesanib",
+        "SYNONYMS": "AMG-706, AMG 706, AMG706",
+        "TARGET": "VEGFR, RET, KIT, PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 1030,
+        "DRUG_NAME": "KU-55933",
+        "SYNONYMS": "KU55933",
+        "TARGET": "ATM",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1031,
+        "DRUG_NAME": "Elesclomol",
+        "SYNONYMS": "STA-4783",
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 1032,
+        "DRUG_NAME": "Afatinib",
+        "SYNONYMS": "BIBW2992, Tovok, Gilotrif",
+        "TARGET": "ERBB2, EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 1033,
+        "DRUG_NAME": "Vismodegib",
+        "SYNONYMS": "GDC0449, Erivedge",
+        "TARGET": "SMO",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1036,
+        "DRUG_NAME": "PLX-4720",
+        "SYNONYMS": "PLX4720, PLX 4720",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1037,
+        "DRUG_NAME": "BX795",
+        "SYNONYMS": "BX-795",
+        "TARGET": "TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1038,
+        "DRUG_NAME": "NU7441",
+        "SYNONYMS": "KU-57788, NU-7432, NU-7741",
+        "TARGET": "DNAPK",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1039,
+        "DRUG_NAME": "SL0101",
+        "SYNONYMS": "SL-0101, SL 0101-1",
+        "TARGET": "RSK, AURKB, PIM1, PIM3",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1042,
+        "DRUG_NAME": "Doramapimod",
+        "SYNONYMS": "BIRB-796, BIRB 796",
+        "TARGET": "p38, JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 1043,
+        "DRUG_NAME": "JNK Inhibitor VIII",
+        "SYNONYMS": null,
+        "TARGET": "JNK",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 1046,
+        "DRUG_NAME": "Wee1 Inhibitor",
+        "SYNONYMS": "681640, Wee1 Inhibitor",
+        "TARGET": "WEE1, CHEK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 1047,
+        "DRUG_NAME": "Nutlin-3a (-)",
+        "SYNONYMS": null,
+        "TARGET": "MDM2",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "DRUG_ID": 1049,
+        "DRUG_NAME": "PD173074",
+        "SYNONYMS": "PD-173074, PD 173074",
+        "TARGET": "FGFR1, FGFR3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 1050,
+        "DRUG_NAME": "ZM447439",
+        "SYNONYMS": "ZM-447439, ZM 447439",
+        "TARGET": "AURKA, AURKB",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "DRUG_ID": 1052,
+        "DRUG_NAME": "RO-3306",
+        "SYNONYMS": null,
+        "TARGET": "CDK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 1053,
+        "DRUG_NAME": "MK-2206",
+        "SYNONYMS": "MK 2206, MK2206",
+        "TARGET": "AKT1, AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1054,
+        "DRUG_NAME": "Palbociclib",
+        "SYNONYMS": "PD0332991, PD-0332991, PF-00080665-73",
+        "TARGET": "CDK4, CDK6",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "DRUG_ID": 1057,
+        "DRUG_NAME": "Dactolisib",
+        "SYNONYMS": "NVP-BEZ235, BEZ235",
+        "TARGET": "PI3K (Class 1), MTORC1, MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1058,
+        "DRUG_NAME": "Pictilisib",
+        "SYNONYMS": "GDC-0941, GDC0941, RG-7621",
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1059,
+        "DRUG_NAME": "AZD8055",
+        "SYNONYMS": "AZD-8055",
+        "TARGET": "MTORC1, MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1060,
+        "DRUG_NAME": "PD0325901",
+        "SYNONYMS": "PD-0325901, PD 0325901",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1061,
+        "DRUG_NAME": "SB590885",
+        "SYNONYMS": "SB-590885",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1062,
+        "DRUG_NAME": "AZD6244",
+        "SYNONYMS": "AZD6244, AZD-6244, ARRY-886",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1066,
+        "DRUG_NAME": "AZD6482",
+        "SYNONYMS": "AZD 6482, AZD-6482, AK-55409",
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1067,
+        "DRUG_NAME": "CCT007093",
+        "SYNONYMS": null,
+        "TARGET": "PPM1D",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1069,
+        "DRUG_NAME": "EHT-1864",
+        "SYNONYMS": "EHT 1864",
+        "TARGET": "RAC1, RAC2, RAC3",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 1072,
+        "DRUG_NAME": "BMS-708163.1",
+        "SYNONYMS": "BMS-708163, BMS 708163",
+        "TARGET": "Amyloid beta20, Amyloid beta40",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1091,
+        "DRUG_NAME": "BMS-536924",
+        "SYNONYMS": "BMS 536924",
+        "TARGET": "IGF1R, IR",
+        "TARGET_PATHWAY": "Unclassified"
+    },
+    {
+        "DRUG_ID": 1114,
+        "DRUG_NAME": "Cetuximab",
+        "SYNONYMS": "Erbitux, IMC-C225, C225, IMC-225, L01XC06",
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 1129,
+        "DRUG_NAME": "PF-4708671",
+        "SYNONYMS": "PF 4708671, PF4708671",
+        "TARGET": "S6K1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1133,
+        "DRUG_NAME": "Serdemetan",
+        "SYNONYMS": "JNJ-26854165",
+        "TARGET": "MDM2",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "DRUG_ID": 1142,
+        "DRUG_NAME": "HG-5-113-01",
+        "SYNONYMS": null,
+        "TARGET": "LOK, LTK, TRCB, ABL(T315I)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1143,
+        "DRUG_NAME": "HG-5-88-01",
+        "SYNONYMS": null,
+        "TARGET": "EGFR, ADCK4",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1149,
+        "DRUG_NAME": "TW 37",
+        "SYNONYMS": "TW37, TW-37",
+        "TARGET": "BCL2, BCL-XL, MCL1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 1158,
+        "DRUG_NAME": "XMD11-85h",
+        "SYNONYMS": null,
+        "TARGET": "BRSK2, FLT4, MARK4, PRKCD, RET, SPRK1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1161,
+        "DRUG_NAME": "ZG-10",
+        "SYNONYMS": null,
+        "TARGET": "JNK1",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "DRUG_ID": 1164,
+        "DRUG_NAME": "XMD8-92",
+        "SYNONYMS": "XMD 8-92",
+        "TARGET": "MAPK7",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1166,
+        "DRUG_NAME": "QL-VIII-58",
+        "SYNONYMS": null,
+        "TARGET": "MTOR, ATR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1170,
+        "DRUG_NAME": "CCT-018159",
+        "SYNONYMS": "CCT018159, CCT 018159",
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "DRUG_ID": 1175,
+        "DRUG_NAME": "Rucaparib",
+        "SYNONYMS": "PF-01367338, AG-014699, AG-14447, AG-14699",
+        "TARGET": "PARP1, PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1192,
+        "DRUG_NAME": "GSK269962A",
+        "SYNONYMS": "GSK 269962A",
+        "TARGET": "ROCK1, ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "DRUG_ID": 1194,
+        "DRUG_NAME": "SB505124",
+        "SYNONYMS": "SB 505124, SB505124",
+        "TARGET": "ALK4, ALK5",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "DRUG_ID": 1199,
+        "DRUG_NAME": "Tamoxifen",
+        "SYNONYMS": "Nolvadex, Soltamox, Zynoplex, ICI-46474, Kessar",
+        "TARGET": "ESR1",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "DRUG_ID": 1203,
+        "DRUG_NAME": "QL-XII-61",
+        "SYNONYMS": null,
+        "TARGET": "BMX, BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1218,
+        "DRUG_NAME": "JQ1",
+        "SYNONYMS": "JQ-1, (+)-JQ-1",
+        "TARGET": "BRD2, BRD3, BRD4, BRDT",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "DRUG_ID": 1219,
+        "DRUG_NAME": "PFI-1",
+        "SYNONYMS": null,
+        "TARGET": "BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "DRUG_ID": 1230,
+        "DRUG_NAME": "IOX2",
+        "SYNONYMS": "IOX-2, IOX 2, AK176060",
+        "TARGET": "EGLN1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1236,
+        "DRUG_NAME": "UNC0638",
+        "SYNONYMS": "UNC-0638, UNC 0683",
+        "TARGET": "G9a and GLP methyltransferases",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "DRUG_ID": 1239,
+        "DRUG_NAME": "YK-4-279",
+        "SYNONYMS": "YK 4-279",
+        "TARGET": "RNA helicase A",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1241,
+        "DRUG_NAME": "CHIR-99021",
+        "SYNONYMS": "CT 99021, CHIR99021, CHIR 99021",
+        "TARGET": "GSK3A, GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "DRUG_ID": 1242,
+        "DRUG_NAME": "(5Z)-7-Oxozeaenol",
+        "SYNONYMS": "5Z-7-Oxozeaenol, LL-Z1640-2",
+        "TARGET": "TAK1 ",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "DRUG_ID": 1243,
+        "DRUG_NAME": "Piperlongumine",
+        "SYNONYMS": "Piplartine",
+        "TARGET": "Induces reactive oxygen species",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1248,
+        "DRUG_NAME": "Daporinad",
+        "SYNONYMS": "APO866,  FK866, FK866",
+        "TARGET": "NAMPT ",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "DRUG_ID": 1259,
+        "DRUG_NAME": "Talazoparib",
+        "SYNONYMS": "BMN-673, BMN 973",
+        "TARGET": "PARP1, PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1261,
+        "DRUG_NAME": "rTRAIL",
+        "SYNONYMS": null,
+        "TARGET": "TRAIL receptor agonist",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "DRUG_ID": 1262,
+        "DRUG_NAME": "UNC1215",
+        "SYNONYMS": "UNC-1215",
+        "TARGET": "L3MBTL3",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "DRUG_ID": 1264,
+        "DRUG_NAME": "SGC0946",
+        "SYNONYMS": null,
+        "TARGET": "DOT1L",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "DRUG_ID": 1266,
+        "DRUG_NAME": "ICL1100013",
+        "SYNONYMS": null,
+        "TARGET": "N-myristoyltransferase 1\/2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1268,
+        "DRUG_NAME": "XAV939",
+        "SYNONYMS": "NVP-XAV939, XAV-939, XAV 939",
+        "TARGET": "TNKS1, TNKS2",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "DRUG_ID": 1371,
+        "DRUG_NAME": "PLX-4720 (rescreen)",
+        "SYNONYMS": "PLX4720, PLX 4720",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1372,
+        "DRUG_NAME": "Trametinib",
+        "SYNONYMS": "GSK1120212, Mekinist",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1373,
+        "DRUG_NAME": "Dabrafenib",
+        "SYNONYMS": "GSK2118436, Tafinlar",
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1375,
+        "DRUG_NAME": "Temozolomide",
+        "SYNONYMS": "Temodar, Temodal, M-39831, SCH 52365",
+        "TARGET": "DNA alkylating agent",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1377,
+        "DRUG_NAME": "Afatinib",
+        "SYNONYMS": "BIBW2992, Tovok, Gilotrif",
+        "TARGET": "ERBB2, EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "DRUG_ID": 1378,
+        "DRUG_NAME": "Bleomycin (50 uM)",
+        "SYNONYMS": null,
+        "TARGET": "dsDNA break induction",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1494,
+        "DRUG_NAME": "SN-38",
+        "SYNONYMS": "7-Ethyl-10-Hydroxy-Camptothecin, SN 38",
+        "TARGET": "TOP1",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "DRUG_ID": 1495,
+        "DRUG_NAME": "Olaparib",
+        "SYNONYMS": "AZD2281, KU0059436,  Lynparza",
+        "TARGET": "PARP1, PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "DRUG_ID": 1498,
+        "DRUG_NAME": "AZD6244.1",
+        "SYNONYMS": "AZD6244, AZD-6244, ARRY-886",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1502,
+        "DRUG_NAME": "Bicalutamide",
+        "SYNONYMS": "ICI-176334, Casodex, Cosudex, ICI 176334",
+        "TARGET": "AR",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "DRUG_ID": 1526,
+        "DRUG_NAME": "Refametinib (rescreen)",
+        "SYNONYMS": "RDEA119, BAY-86-9766, BAY 869766",
+        "TARGET": "MEK1, MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "DRUG_ID": 1527,
+        "DRUG_NAME": "Pictilisib (rescreen)",
+        "SYNONYMS": "GDC-0941, GDC0941, RG-7621",
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "DRUG_ID": 1529,
+        "DRUG_NAME": "Pevonedistat",
+        "SYNONYMS": "MLN4924, MLN 4924, MLN-4924",
+        "TARGET": "NAE",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "DRUG_ID": 1530,
+        "DRUG_NAME": "PFI-3",
+        "SYNONYMS": "BDF00016096",
+        "TARGET": "SMARCA2, SMARCA4, PB1",
+        "TARGET_PATHWAY": "Other"
+    }
+]

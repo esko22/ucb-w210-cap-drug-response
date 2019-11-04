@@ -5,7 +5,7 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
-function IndexHeader() {
+function PredictPageHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -32,20 +32,9 @@ function IndexHeader() {
           }}
           ref={pageHeader}
         ></div>
-        <Container>
-          <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/pharmacogenomics.png")}
-            ></img>
-            <h1>Compound Companion</h1>
-            <h3 className="h3-seo">Helping align medication through multi-omic profiles</h3>
-          </div>
-        </Container>
       </div>
     </>
   );
 }
 
-export default IndexHeader;
+export default PredictPageHeader;

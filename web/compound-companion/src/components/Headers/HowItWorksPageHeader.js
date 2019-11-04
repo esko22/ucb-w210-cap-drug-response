@@ -1,11 +1,11 @@
-/*eslint-disable*/
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Button, Container } from "reactstrap";
+
 // core components
 
-function IndexHeader() {
+function HowItWorksPageHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -21,31 +21,25 @@ function IndexHeader() {
       };
     }
   });
-
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header page-header-small">
         <div
           className="page-header-image"
           style={{
-            // backgroundImage: "url(" + require("assets/img/dna-water.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/hpm-pill.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
-        <Container>
-          <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/pharmacogenomics.png")}
-            ></img>
-            <h1>Compound Companion</h1>
-            <h3 className="h3-seo">Helping align medication through multi-omic profiles</h3>
-          </div>
-        </Container>
+        <div className="content-center">
+          <Container>
+            <h1 className="title">How do we help compounds find their companions?</h1>
+            
+          </Container>
+        </div>
       </div>
     </>
   );
 }
 
-export default IndexHeader;
+export default HowItWorksPageHeader;
