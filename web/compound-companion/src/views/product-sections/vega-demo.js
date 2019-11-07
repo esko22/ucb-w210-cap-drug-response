@@ -1,7 +1,5 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
-import action from '@storybook/addon-actions';
-import addons, { mockChannel } from '@storybook/addons';
 import { Vega, createClassFromSpec } from 'react-vega';
 import data1 from '../../data/data1.json';
 import spec1 from '../../vega-specs/spec1';
@@ -13,7 +11,6 @@ const code1 = `<Vega data={this.state.data} spec={this.state.spec} onSignalHover
 
 const code2 = `const BarChart = ReactVega.createClassFromSpec(barSpec);
 <BarChart data={this.state.data} onSignalHover={this.handleHover} />`;
-addons.setChannel(mockChannel());
 
 export default class Demo extends React.Component {
   constructor(props) {
@@ -31,9 +28,6 @@ export default class Demo extends React.Component {
   }
 
   handleHover(...args) {
-    action('hover', {
-      limit: 5,
-    })(args);
     this.setState({
       info: JSON.stringify(args),
     });

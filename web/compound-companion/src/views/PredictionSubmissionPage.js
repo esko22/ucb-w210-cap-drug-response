@@ -18,6 +18,7 @@ import target_drug_matrix from "../data/target_drug_matrix.json";
 import Targets from "../data/targets.js";
 
 import Demo from "./product-sections/vega-demo.js";
+import LiteDemo from "./product-sections/vega-lite-demo.js";
 
 
 function PredictionSubmissionPage() {
@@ -95,6 +96,7 @@ function PredictionSubmissionPage() {
                     </Col>
                 </Row>
                 <Demo></Demo>
+                <LiteDemo></LiteDemo>
             </Container>
         </div>
       </div>
