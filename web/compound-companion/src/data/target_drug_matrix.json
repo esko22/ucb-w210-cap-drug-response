@@ -1,0 +1,2906 @@
+[
+    {
+        "TD_MATRIX_ID": 0,
+        "DRUG_ID": 1,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 1,
+        "DRUG_ID": 3,
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 2,
+        "DRUG_ID": 5,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 3,
+        "DRUG_ID": 5,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 4,
+        "DRUG_ID": 5,
+        "TARGET": "VEGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 5,
+        "DRUG_ID": 5,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 6,
+        "DRUG_ID": 5,
+        "TARGET": "RET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 7,
+        "DRUG_ID": 5,
+        "TARGET": "CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 8,
+        "DRUG_ID": 6,
+        "TARGET": "MET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 9,
+        "DRUG_ID": 9,
+        "TARGET": "Proteasome",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 10,
+        "DRUG_ID": 9,
+        "TARGET": "CAPN1",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 11,
+        "DRUG_ID": 11,
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 12,
+        "DRUG_ID": 17,
+        "TARGET": "SMO",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 13,
+        "DRUG_ID": 29,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 14,
+        "DRUG_ID": 30,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 15,
+        "DRUG_ID": 30,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 16,
+        "DRUG_ID": 30,
+        "TARGET": "VEGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 17,
+        "DRUG_ID": 30,
+        "TARGET": "RAF",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 18,
+        "DRUG_ID": 32,
+        "TARGET": "AURKA",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 19,
+        "DRUG_ID": 32,
+        "TARGET": "AURKB",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 20,
+        "DRUG_ID": 32,
+        "TARGET": "AURKC",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 21,
+        "DRUG_ID": 32,
+        "TARGET": "others",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 22,
+        "DRUG_ID": 34,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 23,
+        "DRUG_ID": 34,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 24,
+        "DRUG_ID": 34,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 25,
+        "DRUG_ID": 35,
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 26,
+        "DRUG_ID": 37,
+        "TARGET": "MET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 27,
+        "DRUG_ID": 37,
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 28,
+        "DRUG_ID": 37,
+        "TARGET": "ROS1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 29,
+        "DRUG_ID": 38,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 30,
+        "DRUG_ID": 38,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 31,
+        "DRUG_ID": 41,
+        "TARGET": "KIF11",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 32,
+        "DRUG_ID": 45,
+        "TARGET": "gamma-secretase",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 33,
+        "DRUG_ID": 51,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 34,
+        "DRUG_ID": 51,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 35,
+        "DRUG_ID": 51,
+        "TARGET": "Ephrins",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 36,
+        "DRUG_ID": 51,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 37,
+        "DRUG_ID": 51,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 38,
+        "DRUG_ID": 52,
+        "TARGET": "BCR-ABL",
+        "TARGET_PATHWAY": "ABL signaling"
+    },
+    {
+        "TD_MATRIX_ID": 39,
+        "DRUG_ID": 53,
+        "TARGET": "CDK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 40,
+        "DRUG_ID": 53,
+        "TARGET": "CDK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 41,
+        "DRUG_ID": 53,
+        "TARGET": "CDK5",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 42,
+        "DRUG_ID": 53,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 43,
+        "DRUG_ID": 53,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 44,
+        "DRUG_ID": 53,
+        "TARGET": "PKC",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 45,
+        "DRUG_ID": 54,
+        "TARGET": "CDK4",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 46,
+        "DRUG_ID": 55,
+        "TARGET": "LCK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 47,
+        "DRUG_ID": 55,
+        "TARGET": "FYN",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 48,
+        "DRUG_ID": 56,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 49,
+        "DRUG_ID": 56,
+        "TARGET": "LCK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 50,
+        "DRUG_ID": 59,
+        "TARGET": "BMX",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 51,
+        "DRUG_ID": 60,
+        "TARGET": "PLK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 52,
+        "DRUG_ID": 60,
+        "TARGET": "PLK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 53,
+        "DRUG_ID": 60,
+        "TARGET": "PLK3",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 54,
+        "DRUG_ID": 62,
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 55,
+        "DRUG_ID": 62,
+        "TARGET": "IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 56,
+        "DRUG_ID": 63,
+        "TARGET": "ITK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 57,
+        "DRUG_ID": 64,
+        "TARGET": "RSK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 58,
+        "DRUG_ID": 71,
+        "TARGET": "Dihydrofolate reductase (DHFR)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 59,
+        "DRUG_ID": 83,
+        "TARGET": "MTOR",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 60,
+        "DRUG_ID": 86,
+        "TARGET": "AKT1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 61,
+        "DRUG_ID": 86,
+        "TARGET": "AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 62,
+        "DRUG_ID": 86,
+        "TARGET": "AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 63,
+        "DRUG_ID": 87,
+        "TARGET": "PLK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 64,
+        "DRUG_ID": 88,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 65,
+        "DRUG_ID": 88,
+        "TARGET": "HDAC3",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 66,
+        "DRUG_ID": 89,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 67,
+        "DRUG_ID": 91,
+        "TARGET": "IKK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 68,
+        "DRUG_ID": 94,
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 69,
+        "DRUG_ID": 104,
+        "TARGET": "Proteasome",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 70,
+        "DRUG_ID": 106,
+        "TARGET": "ERK5",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 71,
+        "DRUG_ID": 106,
+        "TARGET": "BET",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 72,
+        "DRUG_ID": 110,
+        "TARGET": "CDK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 73,
+        "DRUG_ID": 110,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 74,
+        "DRUG_ID": 110,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 75,
+        "DRUG_ID": 111,
+        "TARGET": "EIF2A",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 76,
+        "DRUG_ID": 119,
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 77,
+        "DRUG_ID": 119,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 78,
+        "DRUG_ID": 127,
+        "TARGET": "ROCK1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 79,
+        "DRUG_ID": 127,
+        "TARGET": "ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 80,
+        "DRUG_ID": 133,
+        "TARGET": "Anthracycline",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 81,
+        "DRUG_ID": 134,
+        "TARGET": "TOP2",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 82,
+        "DRUG_ID": 135,
+        "TARGET": "Pyrimidine antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 83,
+        "DRUG_ID": 136,
+        "TARGET": "DNA crosslinker",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 84,
+        "DRUG_ID": 140,
+        "TARGET": "Microtubule destabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 85,
+        "DRUG_ID": 147,
+        "TARGET": "SHP-1 (PTPN6)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 86,
+        "DRUG_ID": 147,
+        "TARGET": "SHP-2 (PTPN11)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 87,
+        "DRUG_ID": 150,
+        "TARGET": "AR",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "TD_MATRIX_ID": 88,
+        "DRUG_ID": 151,
+        "TARGET": "ARFGAP1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 89,
+        "DRUG_ID": 152,
+        "TARGET": "ATM",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 90,
+        "DRUG_ID": 153,
+        "TARGET": "PKC",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 91,
+        "DRUG_ID": 153,
+        "TARGET": "PPK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 92,
+        "DRUG_ID": 153,
+        "TARGET": "FLT1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 93,
+        "DRUG_ID": 153,
+        "TARGET": "c-FGR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 94,
+        "DRUG_ID": 153,
+        "TARGET": "others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 95,
+        "DRUG_ID": 154,
+        "TARGET": "GSK3A",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 96,
+        "DRUG_ID": 154,
+        "TARGET": "GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 97,
+        "DRUG_ID": 155,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 98,
+        "DRUG_ID": 155,
+        "TARGET": "PDGFRA",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 99,
+        "DRUG_ID": 155,
+        "TARGET": "VEGFR2",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 100,
+        "DRUG_ID": 155,
+        "TARGET": "FGFR1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 101,
+        "DRUG_ID": 155,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 102,
+        "DRUG_ID": 155,
+        "TARGET": "TIE2",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 103,
+        "DRUG_ID": 155,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 104,
+        "DRUG_ID": 156,
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 105,
+        "DRUG_ID": 157,
+        "TARGET": "JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 106,
+        "DRUG_ID": 157,
+        "TARGET": "JNK3",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 107,
+        "DRUG_ID": 158,
+        "TARGET": "FAK",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 108,
+        "DRUG_ID": 158,
+        "TARGET": "FAK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 109,
+        "DRUG_ID": 159,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 110,
+        "DRUG_ID": 163,
+        "TARGET": "BRD2",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 111,
+        "DRUG_ID": 163,
+        "TARGET": "BRD3",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 112,
+        "DRUG_ID": 163,
+        "TARGET": "BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 113,
+        "DRUG_ID": 163,
+        "TARGET": "BRDT",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 114,
+        "DRUG_ID": 164,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 115,
+        "DRUG_ID": 164,
+        "TARGET": "HDAC2",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 116,
+        "DRUG_ID": 165,
+        "TARGET": "HIF-PH",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "TD_MATRIX_ID": 117,
+        "DRUG_ID": 166,
+        "TARGET": "Farnesyl-transferase (FNTA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 118,
+        "DRUG_ID": 167,
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 119,
+        "DRUG_ID": 170,
+        "TARGET": "not defined",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 120,
+        "DRUG_ID": 171,
+        "TARGET": "AKT1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 121,
+        "DRUG_ID": 171,
+        "TARGET": "AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 122,
+        "DRUG_ID": 171,
+        "TARGET": "AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 123,
+        "DRUG_ID": 172,
+        "TARGET": "XIAP",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 124,
+        "DRUG_ID": 173,
+        "TARGET": "PPARgamma",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 125,
+        "DRUG_ID": 173,
+        "TARGET": "PPARdelta",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 126,
+        "DRUG_ID": 175,
+        "TARGET": "Procaspase-3",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 127,
+        "DRUG_ID": 175,
+        "TARGET": "Procaspase-7",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 128,
+        "DRUG_ID": 176,
+        "TARGET": "PAK1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 129,
+        "DRUG_ID": 177,
+        "TARGET": "SGK2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 130,
+        "DRUG_ID": 177,
+        "TARGET": "SGK3",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 131,
+        "DRUG_ID": 178,
+        "TARGET": "SYK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 132,
+        "DRUG_ID": 179,
+        "TARGET": "Antimetabolite (DNA & RNA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 133,
+        "DRUG_ID": 180,
+        "TARGET": "SERCA",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 134,
+        "DRUG_ID": 182,
+        "TARGET": "BCL2",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 135,
+        "DRUG_ID": 182,
+        "TARGET": "BCL-XL",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 136,
+        "DRUG_ID": 182,
+        "TARGET": "BCL-W",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 137,
+        "DRUG_ID": 182,
+        "TARGET": "MCL1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 138,
+        "DRUG_ID": 184,
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 139,
+        "DRUG_ID": 184,
+        "TARGET": "IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 140,
+        "DRUG_ID": 185,
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 141,
+        "DRUG_ID": 186,
+        "TARGET": "Retinioic X receptor (RXR) agonist",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 142,
+        "DRUG_ID": 190,
+        "TARGET": "dsDNA break induction",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 143,
+        "DRUG_ID": 192,
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 144,
+        "DRUG_ID": 193,
+        "TARGET": "CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 145,
+        "DRUG_ID": 194,
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 146,
+        "DRUG_ID": 196,
+        "TARGET": "Biguanide agent",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 147,
+        "DRUG_ID": 197,
+        "TARGET": "PKC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 148,
+        "DRUG_ID": 199,
+        "TARGET": "CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 149,
+        "DRUG_ID": 199,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 150,
+        "DRUG_ID": 199,
+        "TARGET": "PDGFRA",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 151,
+        "DRUG_ID": 199,
+        "TARGET": "PDGFRB",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 152,
+        "DRUG_ID": 200,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 153,
+        "DRUG_ID": 201,
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 154,
+        "DRUG_ID": 202,
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 155,
+        "DRUG_ID": 202,
+        "TARGET": "IR",
+        "TARGET_PATHWAY": "IGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 156,
+        "DRUG_ID": 203,
+        "TARGET": "IKK1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 157,
+        "DRUG_ID": 203,
+        "TARGET": "IKK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 158,
+        "DRUG_ID": 204,
+        "TARGET": "Farnesyl-transferase (FNTA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 159,
+        "DRUG_ID": 205,
+        "TARGET": "Amyloid beta20",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 160,
+        "DRUG_ID": 205,
+        "TARGET": "Amyloid beta40",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 161,
+        "DRUG_ID": 206,
+        "TARGET": "JAK1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 162,
+        "DRUG_ID": 206,
+        "TARGET": "JAK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 163,
+        "DRUG_ID": 207,
+        "TARGET": "JNK1",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 164,
+        "DRUG_ID": 207,
+        "TARGET": "JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 165,
+        "DRUG_ID": 207,
+        "TARGET": "JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 166,
+        "DRUG_ID": 208,
+        "TARGET": "KSP",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 167,
+        "DRUG_ID": 211,
+        "TARGET": "not defined",
+        "TARGET_PATHWAY": "Unclassified"
+    },
+    {
+        "TD_MATRIX_ID": 168,
+        "DRUG_ID": 219,
+        "TARGET": "CDK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 169,
+        "DRUG_ID": 219,
+        "TARGET": "CDK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 170,
+        "DRUG_ID": 219,
+        "TARGET": "CDK4",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 171,
+        "DRUG_ID": 219,
+        "TARGET": "CDK6",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 172,
+        "DRUG_ID": 219,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 173,
+        "DRUG_ID": 221,
+        "TARGET": "p38alpha",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 174,
+        "DRUG_ID": 221,
+        "TARGET": "p38beta",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 175,
+        "DRUG_ID": 222,
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 176,
+        "DRUG_ID": 223,
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 177,
+        "DRUG_ID": 224,
+        "TARGET": "PI3Kgamma",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 178,
+        "DRUG_ID": 225,
+        "TARGET": "AURKA",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 179,
+        "DRUG_ID": 225,
+        "TARGET": "AURKB",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 180,
+        "DRUG_ID": 226,
+        "TARGET": "AURKA",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 181,
+        "DRUG_ID": 226,
+        "TARGET": "AURKC",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 182,
+        "DRUG_ID": 228,
+        "TARGET": "AKT1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 183,
+        "DRUG_ID": 228,
+        "TARGET": "AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 184,
+        "DRUG_ID": 228,
+        "TARGET": "AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 185,
+        "DRUG_ID": 229,
+        "TARGET": "PKCB",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 186,
+        "DRUG_ID": 230,
+        "TARGET": "ROCK1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 187,
+        "DRUG_ID": 230,
+        "TARGET": "ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 188,
+        "DRUG_ID": 231,
+        "TARGET": "RSK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 189,
+        "DRUG_ID": 235,
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 190,
+        "DRUG_ID": 235,
+        "TARGET": "BMX",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 191,
+        "DRUG_ID": 238,
+        "TARGET": "PI3Kdelta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 192,
+        "DRUG_ID": 245,
+        "TARGET": "G9a and GLP methyltransferases",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "TD_MATRIX_ID": 193,
+        "DRUG_ID": 249,
+        "TARGET": "VEGFR",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 194,
+        "DRUG_ID": 249,
+        "TARGET": "MET",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 195,
+        "DRUG_ID": 249,
+        "TARGET": "RET",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 196,
+        "DRUG_ID": 249,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 197,
+        "DRUG_ID": 249,
+        "TARGET": "FLT1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 198,
+        "DRUG_ID": 249,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 199,
+        "DRUG_ID": 249,
+        "TARGET": "FLT4",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 200,
+        "DRUG_ID": 249,
+        "TARGET": "TIE2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 201,
+        "DRUG_ID": 249,
+        "TARGET": "AXL",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 202,
+        "DRUG_ID": 252,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 203,
+        "DRUG_ID": 252,
+        "TARGET": "ROCK2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 204,
+        "DRUG_ID": 252,
+        "TARGET": "NTRK2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 205,
+        "DRUG_ID": 252,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 206,
+        "DRUG_ID": 252,
+        "TARGET": "IRAK1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 207,
+        "DRUG_ID": 252,
+        "TARGET": "others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 208,
+        "DRUG_ID": 253,
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 209,
+        "DRUG_ID": 253,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 210,
+        "DRUG_ID": 253,
+        "TARGET": "LTK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 211,
+        "DRUG_ID": 253,
+        "TARGET": "others",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 212,
+        "DRUG_ID": 254,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 213,
+        "DRUG_ID": 255,
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 214,
+        "DRUG_ID": 256,
+        "TARGET": "LCK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 215,
+        "DRUG_ID": 257,
+        "TARGET": "PLK3",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 216,
+        "DRUG_ID": 258,
+        "TARGET": "Autophagy inducer",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 217,
+        "DRUG_ID": 260,
+        "TARGET": "TAK1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 218,
+        "DRUG_ID": 260,
+        "TARGET": "MAP4K2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 219,
+        "DRUG_ID": 261,
+        "TARGET": "TAK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 220,
+        "DRUG_ID": 262,
+        "TARGET": "ERK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 221,
+        "DRUG_ID": 263,
+        "TARGET": "ERK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 222,
+        "DRUG_ID": 263,
+        "TARGET": "ERK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 223,
+        "DRUG_ID": 265,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 224,
+        "DRUG_ID": 265,
+        "TARGET": "HDAC6",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 225,
+        "DRUG_ID": 265,
+        "TARGET": "HDAC8",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 226,
+        "DRUG_ID": 266,
+        "TARGET": "Endothelin-1 receptor (EDNRA)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 227,
+        "DRUG_ID": 268,
+        "TARGET": "BIRC5",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 228,
+        "DRUG_ID": 269,
+        "TARGET": "MDM4",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "TD_MATRIX_ID": 229,
+        "DRUG_ID": 271,
+        "TARGET": "HDAC",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 230,
+        "DRUG_ID": 271,
+        "TARGET": "RAR",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 231,
+        "DRUG_ID": 272,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 232,
+        "DRUG_ID": 273,
+        "TARGET": "HDAC1-10",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 233,
+        "DRUG_ID": 273,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 234,
+        "DRUG_ID": 273,
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 235,
+        "DRUG_ID": 274,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 236,
+        "DRUG_ID": 275,
+        "TARGET": "BRD2",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 237,
+        "DRUG_ID": 275,
+        "TARGET": "BRD3",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 238,
+        "DRUG_ID": 275,
+        "TARGET": "BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 239,
+        "DRUG_ID": 276,
+        "TARGET": "HDAC1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 240,
+        "DRUG_ID": 276,
+        "TARGET": "HDAC6",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 241,
+        "DRUG_ID": 277,
+        "TARGET": "VEGFR1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 242,
+        "DRUG_ID": 277,
+        "TARGET": "VEGFR2",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 243,
+        "DRUG_ID": 277,
+        "TARGET": "VEGFR3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 244,
+        "DRUG_ID": 277,
+        "TARGET": "CSF1R",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 245,
+        "DRUG_ID": 277,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 246,
+        "DRUG_ID": 277,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 247,
+        "DRUG_ID": 279,
+        "TARGET": "MEK5",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 248,
+        "DRUG_ID": 279,
+        "TARGET": "ERK5",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 249,
+        "DRUG_ID": 281,
+        "TARGET": "ALK",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 250,
+        "DRUG_ID": 282,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 251,
+        "DRUG_ID": 283,
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 252,
+        "DRUG_ID": 283,
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 253,
+        "DRUG_ID": 283,
+        "TARGET": "MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 254,
+        "DRUG_ID": 286,
+        "TARGET": "Angiopoietin-1 receptor",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 255,
+        "DRUG_ID": 287,
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 256,
+        "DRUG_ID": 288,
+        "TARGET": "JAK3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 257,
+        "DRUG_ID": 290,
+        "TARGET": "IKKB",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 258,
+        "DRUG_ID": 291,
+        "TARGET": "MAP3K8",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 259,
+        "DRUG_ID": 292,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 260,
+        "DRUG_ID": 292,
+        "TARGET": "PDGFRA",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 261,
+        "DRUG_ID": 292,
+        "TARGET": "PDGFRB",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 262,
+        "DRUG_ID": 293,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 263,
+        "DRUG_ID": 293,
+        "TARGET": "PDGFRA",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 264,
+        "DRUG_ID": 293,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 265,
+        "DRUG_ID": 294,
+        "TARGET": "MPS1",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 266,
+        "DRUG_ID": 295,
+        "TARGET": "EPHB4",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 267,
+        "DRUG_ID": 298,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 268,
+        "DRUG_ID": 299,
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 269,
+        "DRUG_ID": 299,
+        "TARGET": "MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 270,
+        "DRUG_ID": 300,
+        "TARGET": "RNA Polymerase 1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 271,
+        "DRUG_ID": 301,
+        "TARGET": "CDK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 272,
+        "DRUG_ID": 301,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 273,
+        "DRUG_ID": 301,
+        "TARGET": "CDK5",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 274,
+        "DRUG_ID": 302,
+        "TARGET": "PI3Kalpha",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 275,
+        "DRUG_ID": 302,
+        "TARGET": "DAPK3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 276,
+        "DRUG_ID": 302,
+        "TARGET": "CLK4",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 277,
+        "DRUG_ID": 302,
+        "TARGET": "PIM3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 278,
+        "DRUG_ID": 302,
+        "TARGET": "HIPK2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 279,
+        "DRUG_ID": 303,
+        "TARGET": "PI3Kgamma",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 280,
+        "DRUG_ID": 304,
+        "TARGET": "ALK5",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 281,
+        "DRUG_ID": 305,
+        "TARGET": "IKK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 282,
+        "DRUG_ID": 306,
+        "TARGET": "JAK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 283,
+        "DRUG_ID": 308,
+        "TARGET": "MET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 284,
+        "DRUG_ID": 308,
+        "TARGET": "KDR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 285,
+        "DRUG_ID": 308,
+        "TARGET": "TIE2",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 286,
+        "DRUG_ID": 308,
+        "TARGET": "VEGFR3\/FLT4",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 287,
+        "DRUG_ID": 308,
+        "TARGET": "RON",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 288,
+        "DRUG_ID": 308,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 289,
+        "DRUG_ID": 308,
+        "TARGET": "FGFR1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 290,
+        "DRUG_ID": 308,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 291,
+        "DRUG_ID": 309,
+        "TARGET": "ROCK",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 292,
+        "DRUG_ID": 310,
+        "TARGET": "PYKFYVE",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 293,
+        "DRUG_ID": 312,
+        "TARGET": "VEGFR1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 294,
+        "DRUG_ID": 312,
+        "TARGET": "VEGFR2",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 295,
+        "DRUG_ID": 312,
+        "TARGET": "VEGFR3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 296,
+        "DRUG_ID": 326,
+        "TARGET": "AKT1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 297,
+        "DRUG_ID": 326,
+        "TARGET": "AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 298,
+        "DRUG_ID": 326,
+        "TARGET": "AKT3",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 299,
+        "DRUG_ID": 328,
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 300,
+        "DRUG_ID": 329,
+        "TARGET": "DDR1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 301,
+        "DRUG_ID": 330,
+        "TARGET": "RIPK1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 302,
+        "DRUG_ID": 331,
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 303,
+        "DRUG_ID": 332,
+        "TARGET": "CAMK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 304,
+        "DRUG_ID": 333,
+        "TARGET": "LXR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 305,
+        "DRUG_ID": 333,
+        "TARGET": "FXR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 306,
+        "DRUG_ID": 341,
+        "TARGET": "SIRT1",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 307,
+        "DRUG_ID": 344,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 308,
+        "DRUG_ID": 345,
+        "TARGET": "CDK9",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 309,
+        "DRUG_ID": 346,
+        "TARGET": "CDK7",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 310,
+        "DRUG_ID": 1001,
+        "TARGET": "AMPK agonist",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "TD_MATRIX_ID": 311,
+        "DRUG_ID": 1003,
+        "TARGET": "TOP1",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 312,
+        "DRUG_ID": 1004,
+        "TARGET": "Microtubule destabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 313,
+        "DRUG_ID": 1005,
+        "TARGET": "DNA crosslinker",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 314,
+        "DRUG_ID": 1006,
+        "TARGET": "Antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 315,
+        "DRUG_ID": 1007,
+        "TARGET": "Microtubule stabiliser",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 316,
+        "DRUG_ID": 1008,
+        "TARGET": "Antimetabolite",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 317,
+        "DRUG_ID": 1009,
+        "TARGET": "Retinoic acid",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 318,
+        "DRUG_ID": 1010,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 319,
+        "DRUG_ID": 1011,
+        "TARGET": "BCL2",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 320,
+        "DRUG_ID": 1011,
+        "TARGET": "BCL-XL",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 321,
+        "DRUG_ID": 1011,
+        "TARGET": "BCL-W",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 322,
+        "DRUG_ID": 1012,
+        "TARGET": "HDAC inhibitor Class I",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 323,
+        "DRUG_ID": 1012,
+        "TARGET": "IIa",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 324,
+        "DRUG_ID": 1012,
+        "TARGET": "IIb",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 325,
+        "DRUG_ID": 1012,
+        "TARGET": "IV",
+        "TARGET_PATHWAY": "Chromatin histone acetylation"
+    },
+    {
+        "TD_MATRIX_ID": 326,
+        "DRUG_ID": 1013,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "ABL signaling"
+    },
+    {
+        "TD_MATRIX_ID": 327,
+        "DRUG_ID": 1014,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 328,
+        "DRUG_ID": 1014,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 329,
+        "DRUG_ID": 1015,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 330,
+        "DRUG_ID": 1015,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 331,
+        "DRUG_ID": 1016,
+        "TARGET": "MTOR",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 332,
+        "DRUG_ID": 1017,
+        "TARGET": "PARP1",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 333,
+        "DRUG_ID": 1017,
+        "TARGET": "PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 334,
+        "DRUG_ID": 1018,
+        "TARGET": "PARP1",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 335,
+        "DRUG_ID": 1018,
+        "TARGET": "PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 336,
+        "DRUG_ID": 1019,
+        "TARGET": "SRC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 337,
+        "DRUG_ID": 1019,
+        "TARGET": "ABL",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 338,
+        "DRUG_ID": 1019,
+        "TARGET": "TEC",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 339,
+        "DRUG_ID": 1020,
+        "TARGET": "CRBN",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 340,
+        "DRUG_ID": 1021,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 341,
+        "DRUG_ID": 1021,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 342,
+        "DRUG_ID": 1021,
+        "TARGET": "VEGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 343,
+        "DRUG_ID": 1022,
+        "TARGET": "CHEK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 344,
+        "DRUG_ID": 1022,
+        "TARGET": "CHEK2",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 345,
+        "DRUG_ID": 1023,
+        "TARGET": "NTRK1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 346,
+        "DRUG_ID": 1024,
+        "TARGET": "FLT3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 347,
+        "DRUG_ID": 1024,
+        "TARGET": "JAK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 348,
+        "DRUG_ID": 1024,
+        "TARGET": "NTRK1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 349,
+        "DRUG_ID": 1024,
+        "TARGET": "NTRK2",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 350,
+        "DRUG_ID": 1024,
+        "TARGET": "NTRK3",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 351,
+        "DRUG_ID": 1025,
+        "TARGET": "GSK3A",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 352,
+        "DRUG_ID": 1025,
+        "TARGET": "GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 353,
+        "DRUG_ID": 1026,
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 354,
+        "DRUG_ID": 1028,
+        "TARGET": "p38",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 355,
+        "DRUG_ID": 1029,
+        "TARGET": "VEGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 356,
+        "DRUG_ID": 1029,
+        "TARGET": "RET",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 357,
+        "DRUG_ID": 1029,
+        "TARGET": "KIT",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 358,
+        "DRUG_ID": 1029,
+        "TARGET": "PDGFR",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 359,
+        "DRUG_ID": 1030,
+        "TARGET": "ATM",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 360,
+        "DRUG_ID": 1031,
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 361,
+        "DRUG_ID": 1032,
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 362,
+        "DRUG_ID": 1032,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 363,
+        "DRUG_ID": 1033,
+        "TARGET": "SMO",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 364,
+        "DRUG_ID": 1036,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 365,
+        "DRUG_ID": 1037,
+        "TARGET": "TBK1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 366,
+        "DRUG_ID": 1037,
+        "TARGET": "PDK1 (PDPK1)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 367,
+        "DRUG_ID": 1037,
+        "TARGET": "IKK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 368,
+        "DRUG_ID": 1037,
+        "TARGET": "AURKB",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 369,
+        "DRUG_ID": 1037,
+        "TARGET": "AURKC",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 370,
+        "DRUG_ID": 1038,
+        "TARGET": "DNAPK",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 371,
+        "DRUG_ID": 1039,
+        "TARGET": "RSK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 372,
+        "DRUG_ID": 1039,
+        "TARGET": "AURKB",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 373,
+        "DRUG_ID": 1039,
+        "TARGET": "PIM1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 374,
+        "DRUG_ID": 1039,
+        "TARGET": "PIM3",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 375,
+        "DRUG_ID": 1042,
+        "TARGET": "p38",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 376,
+        "DRUG_ID": 1042,
+        "TARGET": "JNK2",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 377,
+        "DRUG_ID": 1043,
+        "TARGET": "JNK",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 378,
+        "DRUG_ID": 1046,
+        "TARGET": "WEE1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 379,
+        "DRUG_ID": 1046,
+        "TARGET": "CHEK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 380,
+        "DRUG_ID": 1047,
+        "TARGET": "MDM2",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "TD_MATRIX_ID": 381,
+        "DRUG_ID": 1049,
+        "TARGET": "FGFR1",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 382,
+        "DRUG_ID": 1049,
+        "TARGET": "FGFR3",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 383,
+        "DRUG_ID": 1050,
+        "TARGET": "AURKA",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 384,
+        "DRUG_ID": 1050,
+        "TARGET": "AURKB",
+        "TARGET_PATHWAY": "Mitosis"
+    },
+    {
+        "TD_MATRIX_ID": 385,
+        "DRUG_ID": 1052,
+        "TARGET": "CDK1",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 386,
+        "DRUG_ID": 1053,
+        "TARGET": "AKT1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 387,
+        "DRUG_ID": 1053,
+        "TARGET": "AKT2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 388,
+        "DRUG_ID": 1054,
+        "TARGET": "CDK4",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 389,
+        "DRUG_ID": 1054,
+        "TARGET": "CDK6",
+        "TARGET_PATHWAY": "Cell cycle"
+    },
+    {
+        "TD_MATRIX_ID": 390,
+        "DRUG_ID": 1057,
+        "TARGET": "PI3K (Class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 391,
+        "DRUG_ID": 1057,
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 392,
+        "DRUG_ID": 1057,
+        "TARGET": "MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 393,
+        "DRUG_ID": 1058,
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 394,
+        "DRUG_ID": 1059,
+        "TARGET": "MTORC1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 395,
+        "DRUG_ID": 1059,
+        "TARGET": "MTORC2",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 396,
+        "DRUG_ID": 1060,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 397,
+        "DRUG_ID": 1060,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 398,
+        "DRUG_ID": 1061,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 399,
+        "DRUG_ID": 1062,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 400,
+        "DRUG_ID": 1062,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 401,
+        "DRUG_ID": 1066,
+        "TARGET": "PI3Kbeta",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 402,
+        "DRUG_ID": 1067,
+        "TARGET": "PPM1D",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 403,
+        "DRUG_ID": 1069,
+        "TARGET": "RAC1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 404,
+        "DRUG_ID": 1069,
+        "TARGET": "RAC2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 405,
+        "DRUG_ID": 1069,
+        "TARGET": "RAC3",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 406,
+        "DRUG_ID": 1072,
+        "TARGET": "Amyloid beta20",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 407,
+        "DRUG_ID": 1072,
+        "TARGET": "Amyloid beta40",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 408,
+        "DRUG_ID": 1091,
+        "TARGET": "IGF1R",
+        "TARGET_PATHWAY": "Unclassified"
+    },
+    {
+        "TD_MATRIX_ID": 409,
+        "DRUG_ID": 1091,
+        "TARGET": "IR",
+        "TARGET_PATHWAY": "Unclassified"
+    },
+    {
+        "TD_MATRIX_ID": 410,
+        "DRUG_ID": 1114,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 411,
+        "DRUG_ID": 1129,
+        "TARGET": "S6K1",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 412,
+        "DRUG_ID": 1133,
+        "TARGET": "MDM2",
+        "TARGET_PATHWAY": "p53 pathway"
+    },
+    {
+        "TD_MATRIX_ID": 413,
+        "DRUG_ID": 1142,
+        "TARGET": "LOK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 414,
+        "DRUG_ID": 1142,
+        "TARGET": "LTK",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 415,
+        "DRUG_ID": 1142,
+        "TARGET": "TRCB",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 416,
+        "DRUG_ID": 1142,
+        "TARGET": "ABL(T315I)",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 417,
+        "DRUG_ID": 1143,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 418,
+        "DRUG_ID": 1143,
+        "TARGET": "ADCK4",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 419,
+        "DRUG_ID": 1149,
+        "TARGET": "BCL2",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 420,
+        "DRUG_ID": 1149,
+        "TARGET": "BCL-XL",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 421,
+        "DRUG_ID": 1149,
+        "TARGET": "MCL1",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 422,
+        "DRUG_ID": 1158,
+        "TARGET": "BRSK2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 423,
+        "DRUG_ID": 1158,
+        "TARGET": "FLT4",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 424,
+        "DRUG_ID": 1158,
+        "TARGET": "MARK4",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 425,
+        "DRUG_ID": 1158,
+        "TARGET": "PRKCD",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 426,
+        "DRUG_ID": 1158,
+        "TARGET": "RET",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 427,
+        "DRUG_ID": 1158,
+        "TARGET": "SPRK1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 428,
+        "DRUG_ID": 1161,
+        "TARGET": "JNK1",
+        "TARGET_PATHWAY": "JNK and p38 signaling"
+    },
+    {
+        "TD_MATRIX_ID": 429,
+        "DRUG_ID": 1164,
+        "TARGET": "MAPK7",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 430,
+        "DRUG_ID": 1166,
+        "TARGET": "MTOR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 431,
+        "DRUG_ID": 1166,
+        "TARGET": "ATR",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 432,
+        "DRUG_ID": 1170,
+        "TARGET": "HSP90",
+        "TARGET_PATHWAY": "Protein stability and degradation"
+    },
+    {
+        "TD_MATRIX_ID": 433,
+        "DRUG_ID": 1175,
+        "TARGET": "PARP1",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 434,
+        "DRUG_ID": 1175,
+        "TARGET": "PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 435,
+        "DRUG_ID": 1192,
+        "TARGET": "ROCK1",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 436,
+        "DRUG_ID": 1192,
+        "TARGET": "ROCK2",
+        "TARGET_PATHWAY": "Cytoskeleton"
+    },
+    {
+        "TD_MATRIX_ID": 437,
+        "DRUG_ID": 1194,
+        "TARGET": "ALK4",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 438,
+        "DRUG_ID": 1194,
+        "TARGET": "ALK5",
+        "TARGET_PATHWAY": "RTK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 439,
+        "DRUG_ID": 1199,
+        "TARGET": "ESR1",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "TD_MATRIX_ID": 440,
+        "DRUG_ID": 1203,
+        "TARGET": "BMX",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 441,
+        "DRUG_ID": 1203,
+        "TARGET": "BTK",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 442,
+        "DRUG_ID": 1218,
+        "TARGET": "BRD2",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 443,
+        "DRUG_ID": 1218,
+        "TARGET": "BRD3",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 444,
+        "DRUG_ID": 1218,
+        "TARGET": "BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 445,
+        "DRUG_ID": 1218,
+        "TARGET": "BRDT",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 446,
+        "DRUG_ID": 1219,
+        "TARGET": "BRD4",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 447,
+        "DRUG_ID": 1230,
+        "TARGET": "EGLN1",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 448,
+        "DRUG_ID": 1236,
+        "TARGET": "G9a and GLP methyltransferases",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "TD_MATRIX_ID": 449,
+        "DRUG_ID": 1239,
+        "TARGET": "RNA helicase A",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 450,
+        "DRUG_ID": 1241,
+        "TARGET": "GSK3A",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 451,
+        "DRUG_ID": 1241,
+        "TARGET": "GSK3B",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 452,
+        "DRUG_ID": 1242,
+        "TARGET": "TAK1",
+        "TARGET_PATHWAY": "Other, kinases"
+    },
+    {
+        "TD_MATRIX_ID": 453,
+        "DRUG_ID": 1243,
+        "TARGET": "Induces reactive oxygen species",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 454,
+        "DRUG_ID": 1248,
+        "TARGET": "NAMPT",
+        "TARGET_PATHWAY": "Metabolism"
+    },
+    {
+        "TD_MATRIX_ID": 455,
+        "DRUG_ID": 1259,
+        "TARGET": "PARP1",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 456,
+        "DRUG_ID": 1259,
+        "TARGET": "PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 457,
+        "DRUG_ID": 1261,
+        "TARGET": "TRAIL receptor agonist",
+        "TARGET_PATHWAY": "Apoptosis regulation"
+    },
+    {
+        "TD_MATRIX_ID": 458,
+        "DRUG_ID": 1262,
+        "TARGET": "L3MBTL3",
+        "TARGET_PATHWAY": "Chromatin other"
+    },
+    {
+        "TD_MATRIX_ID": 459,
+        "DRUG_ID": 1264,
+        "TARGET": "DOT1L",
+        "TARGET_PATHWAY": "Chromatin histone methylation"
+    },
+    {
+        "TD_MATRIX_ID": 460,
+        "DRUG_ID": 1266,
+        "TARGET": "N-myristoyltransferase 1\/2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 461,
+        "DRUG_ID": 1268,
+        "TARGET": "TNKS1",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 462,
+        "DRUG_ID": 1268,
+        "TARGET": "TNKS2",
+        "TARGET_PATHWAY": "WNT signaling"
+    },
+    {
+        "TD_MATRIX_ID": 463,
+        "DRUG_ID": 1371,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 464,
+        "DRUG_ID": 1372,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 465,
+        "DRUG_ID": 1372,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 466,
+        "DRUG_ID": 1373,
+        "TARGET": "BRAF",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 467,
+        "DRUG_ID": 1375,
+        "TARGET": "DNA alkylating agent",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 468,
+        "DRUG_ID": 1377,
+        "TARGET": "ERBB2",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 469,
+        "DRUG_ID": 1377,
+        "TARGET": "EGFR",
+        "TARGET_PATHWAY": "EGFR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 470,
+        "DRUG_ID": 1378,
+        "TARGET": "dsDNA break induction",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 471,
+        "DRUG_ID": 1494,
+        "TARGET": "TOP1",
+        "TARGET_PATHWAY": "DNA replication"
+    },
+    {
+        "TD_MATRIX_ID": 472,
+        "DRUG_ID": 1495,
+        "TARGET": "PARP1",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 473,
+        "DRUG_ID": 1495,
+        "TARGET": "PARP2",
+        "TARGET_PATHWAY": "Genome integrity"
+    },
+    {
+        "TD_MATRIX_ID": 474,
+        "DRUG_ID": 1498,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 475,
+        "DRUG_ID": 1498,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 476,
+        "DRUG_ID": 1502,
+        "TARGET": "AR",
+        "TARGET_PATHWAY": "Hormone-related"
+    },
+    {
+        "TD_MATRIX_ID": 477,
+        "DRUG_ID": 1526,
+        "TARGET": "MEK1",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 478,
+        "DRUG_ID": 1526,
+        "TARGET": "MEK2",
+        "TARGET_PATHWAY": "ERK MAPK signaling"
+    },
+    {
+        "TD_MATRIX_ID": 479,
+        "DRUG_ID": 1527,
+        "TARGET": "PI3K (class 1)",
+        "TARGET_PATHWAY": "PI3K\/MTOR signaling"
+    },
+    {
+        "TD_MATRIX_ID": 480,
+        "DRUG_ID": 1529,
+        "TARGET": "NAE",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 481,
+        "DRUG_ID": 1530,
+        "TARGET": "SMARCA2",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 482,
+        "DRUG_ID": 1530,
+        "TARGET": "SMARCA4",
+        "TARGET_PATHWAY": "Other"
+    },
+    {
+        "TD_MATRIX_ID": 483,
+        "DRUG_ID": 1530,
+        "TARGET": "PB1",
+        "TARGET_PATHWAY": "Other"
+    }
+]

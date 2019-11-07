@@ -22,9 +22,13 @@ function PredictPageHeader() {
     }
   });
 
+  let inlineStyle = {
+    'minHeight' : '70px'
+  };
+
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" style={inlineStyle} filter-color="blue">
         <div
           className="page-header-image"
           style={{
