@@ -31,6 +31,13 @@ export default {
           { events: 'rect:mouseout', update: '{}' },
         ],
       },
+      {
+        name: 'click',
+        value: {},
+        on: [
+          { events: 'rect:click', update: 'datum' }
+        ],
+      }
     ],
   
     scales: [

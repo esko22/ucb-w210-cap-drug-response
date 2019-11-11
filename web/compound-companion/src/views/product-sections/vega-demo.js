@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
-import { Vega, createClassFromSpec } from 'react-vega';
+import { Vega, VegaLite, createClassFromSpec } from 'react-vega';
 import data1 from '../../data/data1.json';
 import spec1 from '../../vega-specs/spec1';
 import spec2 from '../../vega-specs/spec2';
@@ -22,15 +22,20 @@ export default class Demo extends React.Component {
     };
 
     this.handleHover = this.handleHover.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.handleToggleSpec = this.handleToggleSpec.bind(this);
     this.handleUpdateData = this.handleUpdateData.bind(this);
-    this.handlers = { tooltip: this.handleHover };
+    this.handlers = { tooltip: this.handleHover, click: this.handleClick };
   }
 
   handleHover(...args) {
     this.setState({
       info: JSON.stringify(args),
     });
+  }
+
+  handleClick(...args) {
+      alert(args);
   }
 
   handleToggleSpec() {
@@ -69,7 +74,7 @@ export default class Demo extends React.Component {
         </h3>
         Will recompile when spec changes and update when data changes.
         <pre>{code1}</pre>
-        <Vega data={data} spec={spec} signalListeners={this.handlers} />
+        <VegaLite data={data} spec={spec} signalListeners={this.handlers} />
         <h3>
           <code>ReactVega.createClassFromSpec()</code>
         </h3>

@@ -37,6 +37,15 @@ const spec1 = {
     y: { field: 'b', type: 'quantitative' },
   },
   mark: 'bar',
+  signals: [
+    {
+      "name": "shover",
+      "value": {},
+      "on": [
+        {"events": "rect:mouseover", "update": "datum"},
+        {"events": "rect:mouseout",  "update": "{}"}
+      ]
+    }]
 };
 
 const spec2 = {
@@ -59,6 +68,7 @@ const code2 = `const BarChart = ReactVegaLite.createClassFromLiteSpec(spec1);
 export default class LiteDemo extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       data: data1,
       info: '',
@@ -111,7 +121,7 @@ export default class LiteDemo extends React.Component {
         </h3>
         Will recompile when spec changes and update when data changes.
         <pre>{code1}</pre>
-        <VegaLite data={data} spec={spec} signalListeners={this.handlers} />
+        <VegaLite data={data} spec={spec} signalListeners={this.handlers}  />
         <h3>
           <code>ReactVegaLite.createClassFromLiteSpec()</code>
         </h3>
