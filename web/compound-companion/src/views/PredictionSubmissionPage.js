@@ -2,7 +2,10 @@ import React, { useState}  from "react";
 import {
     Container,
     Row,
-    Col
+    Col,
+    Card,
+    CardBody,
+    CardHeader
   } from "reactstrap";
 
 // core components
@@ -11,6 +14,9 @@ import PredictPageHeader from "components/Headers/PredictPageHeader.js";
 
 import target_drug_matrix from "../data/target_drug_matrix.json";
 import drug_response_matrix from "../data/drug_response.json";
+import patients from "../data/patients.json";
+import patient_results from "../data/patient_results.json";
+
 import Targets from "../data/targets.js";
 import Pathways from "../data/pathways.js";
 
@@ -113,6 +119,16 @@ function PredictionSubmissionPage() {
         <PredictPageHeader />
         <div className="section">
             <Container>
+              <Row>
+              <Card>
+                <CardHeader>
+                  <h3>Patient Selection</h3>
+                </CardHeader>
+                <CardBody>
+                    brahhhh
+                </CardBody>
+              </Card>
+              </Row>
                 <Row>
                     <Col md="4">
                         <div>

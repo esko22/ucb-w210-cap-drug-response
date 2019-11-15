@@ -1,0 +1,601 @@
+[{
+    "PATIENT_ID": "TCGA-06-5411",
+    "TCGA_LABEL": "GBM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-A3-3358",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AA-3663",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AZ-4315",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CA-6717",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CM-6162",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CN-5356",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CN-5360",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CR-7365",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CV-7091",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-E9-A1NH",
+    "TCGA_LABEL": "BRCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-E9-A22B",
+    "TCGA_LABEL": "BRCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EJ-5499",
+    "TCGA_LABEL": "PRAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-ER-A19P",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-G2-A3IE",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-GC-A3I6",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-A6-5660",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CM-5860",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CM-6676",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-G4-6307",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-05-4405",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-05-4417",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-B0-5699",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BA-4078",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BH-A0HP",
+    "TCGA_LABEL": "BRCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CD-5800",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CW-5580",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-DA-A1I0",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EB-A1NK",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A182",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A29M",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2A2",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GD",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GI",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GO",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GP",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GR",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GU",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2MI",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2MJ",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A3AC",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A3JD",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-F1-6177",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-FS-A1ZA",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-GN-A26A",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-GN-A26C",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-HC-7210",
+    "TCGA_LABEL": "PRAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-HI-7171",
+    "TCGA_LABEL": "PRAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-39-5028",
+    "TCGA_LABEL": "LUSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AA-3492",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AA-3502",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BH-A1FN",
+    "TCGA_LABEL": "BRCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-C4-A0EZ",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D3-A2J7",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D3-A3C8",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D8-A1JK",
+    "TCGA_LABEL": "BRCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A181",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-F1-6874",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-05-4410",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-06-6695",
+    "TCGA_LABEL": "GBM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-33-6737",
+    "TCGA_LABEL": "LUSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-38-4632",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-39-5022",
+    "TCGA_LABEL": "LUSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-39-5030",
+    "TCGA_LABEL": "LUSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-64-5781",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-75-6211",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-91-6828",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-91-6836",
+    "TCGA_LABEL": "LUAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-A6-6141",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AA-3510",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AD-6889",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AX-A06H",
+    "TCGA_LABEL": "UCEC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AZ-4616",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-AZ-6605",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-B0-5099",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-B7-5816",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BA-5149",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BJ-A0ZB",
+    "TCGA_LABEL": "THCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BL-A3JM",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BR-6457",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BT-A20J",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-BT-A3PJ",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CF-A1HS",
+    "TCGA_LABEL": "BLCA",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CG-5718",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CJ-4902",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CJ-4920",
+    "TCGA_LABEL": "KIRC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-CV-7245",
+    "TCGA_LABEL": "HNSC",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D3-A1QA",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D3-A2J8",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D3-A3C7",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D5-5537",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D5-6927",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D5-6930",
+    "TCGA_LABEL": "COAD\/READ",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-D7-6522",
+    "TCGA_LABEL": "STAD",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-DA-A1HV",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-DA-A1HW",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EB-A24D",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GB",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2GC",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}, {
+    "PATIENT_ID": "TCGA-EE-A2MD",
+    "TCGA_LABEL": "SKCM",
+    "WES": "Y",
+    "CNA": "Y",
+    "METHYL": "Y"
+}]
