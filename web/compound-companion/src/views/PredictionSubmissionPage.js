@@ -12,6 +12,7 @@ import PredictPageHeader from "components/Headers/PredictPageHeader.js";
 import target_drug_matrix from "../data/target_drug_matrix.json";
 import drug_response_matrix from "../data/drug_response.json";
 import Targets from "../data/targets.js";
+import Pathways from "../data/pathways.js";
 
 import Demo from "./product-sections/vega-demo.js";
 import LiteDemo from "./product-sections/vega-lite-demo.js";
@@ -42,7 +43,8 @@ function PredictionSubmissionPage() {
   let temp_drug_set = [9,1526, 3, 5]
   const [targetedDrugs, setTargetedDrugs] = useState([]);
   const [target, setTarget] = useState('');
-  const [drugResponses, setDrugResponses] = useState(drug_response_matrix.filter(dr => temp_drug_set.includes(dr.DRUG_ID)));
+  const [selectedPathways, setSelectedPathways] = useState(Pathways);
+  const [drugResponses, setDrugResponses] = useState([]);
   const [selectedDrugs, setSelectedDrugs] = useState();
   const [vegaSpec, setVegaSpec] = useState(spec5);
 
@@ -62,24 +64,45 @@ function PredictionSubmissionPage() {
 
 
   function handleTargetSelection(e) {
-      setTargetedDrugs(target_drug_matrix.filter(tdm => tdm.TARGET == e.target.value));
-      setTarget(e.target.value);
 
-      handleDrugResponseSet();
+      var changedTargets = [].filter.call(e.target.options, o => o.selected).map(o => o.value);
+      var changedPathways = Array.from(new Set(target_drug_matrix.filter(f => changedTargets.includes(f.TARGET)).map(m => m.TARGET_PATHWAY)));
 
-      setData1(  {myData: drugResponses});
+      var td_matrix_items = target_drug_matrix.filter(tdm => changedTargets.includes(tdm.TARGET) && changedPathways.includes(tdm.TARGET_PATHWAY));
+
+      setSelectedPathways(changedPathways);
+      setTarget(changedTargets);
+      setTargetedDrugs(td_matrix_items);
+      //handleDrugResponseSet(td_matrix_items);
   }
 
-  function handleDrugResponseSet(){
-      let drug_ids = targetedDrugs.map(x => x.DRUG_ID);
-      setDrugResponses(drug_response_matrix.filter(dr => drug_ids.includes(dr.DRUG_ID)));
-      console.log(drugResponses);
+
+  function handleDrugResponseSet(filteredDrugs){
+      let filtered_drug_ids = filteredDrugs.map(x => x.DRUG_ID);
+
+      var response_matrix_items = drug_response_matrix.filter(dr => filtered_drug_ids.includes(dr.DRUG_ID));
+      setDrugResponses(response_matrix_items);
+      setData1(  {myData: response_matrix_items});
+
   }
 
   function handleDrugSelection(e) {
     setSelectedDrugs([].filter.call(e.target.options, o => o.selected).map(o => o.value));
     //console.log(drug_selection_matrix.filter(dsm => dsm.DRUG_ID == 1526));
   }
+
+  function handlePathwaySelection(e){
+
+    var changedPathways = [].filter.call(e.target.options, o => o.selected).map(o => o.value);
+
+    if (target.length > 0)
+      setTargetedDrugs(target_drug_matrix.filter(f => changedPathways.includes(f.TARGET_PATHWAY) && target.includes(f.TARGET)));
+    else
+      setTargetedDrugs(target_drug_matrix.filter(f => changedPathways.includes(f.TARGET_PATHWAY)));
+
+    console.log(changedPathways);
+  }
+
 
 
 
@@ -94,29 +117,33 @@ function PredictionSubmissionPage() {
                     <Col md="4">
                         <div>
                             <h2>Targets</h2>
-                            <select onChange={e => handleTargetSelection(e)}>
-                                {Targets.sort().map((drug) => <option key={drug} value={drug}>{drug}</option>)}
+                            <select onChange={e => handleTargetSelection(e)} multiple>
+                                {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
                             </select>
                         </div>            
                     </Col>
                     <Col md="4">
-                        <h1>{target}</h1>
+                        <div>
+                            <h2>Pathways</h2>
+                            <select onChange={e => handlePathwaySelection(e)} multiple>
+                                {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
+                            </select>
+                        </div>            
                     </Col>
                 </Row>
                 <Row>
                     <Col md="4">
-                        <div>
-                            <h2>Pathways</h2>
-                        </div>            
+                        <h1>{target}</h1>
                     </Col>
+
                     <Col md="4">
                     </Col>
                 </Row>
 
-                {/* <Row>
+                <Row>
                     <Col md="4">
                         <div>
-                            <h2>Drugs</h2>
+                            <h2>Available Compounds</h2>
                             <select onChange={e => handleDrugSelection(e)} multiple>
                                 {targetedDrugs.sort().map((drug) => <option key={drug.TD_MATRIX_ID} value={drug.DRUG_ID}>{drug.DRUG_ID}</option>)}
                             </select>
@@ -125,9 +152,9 @@ function PredictionSubmissionPage() {
                     <Col md="4">
                         <h1>{selectedDrugs}</h1>
                     </Col>
-                </Row> */}
+                </Row>
                 {/* <Vega spec={vegaSpec} signalListeners={handlers}/> */}
-                <TestChart data={data1} />
+                {/* <TestChart data={data1} /> */}
 
                 {/* <Demo ></Demo> */}
                 {/* <LiteDemo></LiteDemo> */}
