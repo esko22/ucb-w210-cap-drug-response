@@ -13,9 +13,9 @@
 }, {
     "PATIENT_ID": "TCGA-AA-3663",
     "TCGA_LABEL": "COAD\/READ",
-    "WES": "Y",
+    "WES": "N",
     "CNA": "Y",
-    "METHYL": "Y"
+    "METHYL": "N"
 }, {
     "PATIENT_ID": "TCGA-AZ-4315",
     "TCGA_LABEL": "COAD\/READ",
