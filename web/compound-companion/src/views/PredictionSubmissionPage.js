@@ -133,7 +133,10 @@ function PredictionSubmissionPage() {
 
       console.log(selected_drugs_stat);
       //setDrugResponses(response_matrix_items);
-      //setData1(  {myData: response_matrix_items});
+
+      var response_matrix_items = drug_response_matrix.filter(dr => filtered_drug_ids.includes(dr.DRUG_ID));
+
+      setData1(  {myData: response_matrix_items});
       setTargetedDrugs(filteredDrugs);
       setSelectedDrugStats(selected_drugs_stat);
   }
@@ -345,8 +348,7 @@ function PredictionSubmissionPage() {
                         </Button>
                     </Col>
                 </Row>
-                {/* <Vega spec={vegaSpec} signalListeners={handlers}/> */}
-                {/* <TestChart data={data1} /> */}
+                <TestChart data={data1} />
 
                 {/* <Demo ></Demo> */}
                 {/* <LiteDemo></LiteDemo> */}

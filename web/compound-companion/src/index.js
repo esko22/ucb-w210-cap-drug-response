@@ -30,6 +30,8 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import HowItWorksPage from "views/HowItWorksPage.js";
 import PredictionSubmissionPage from "views/PredictionSubmissionPage.js";
+import RecruitPage from "views/RecruitPage.js";
+import PortfolioPage from "views/PortfolioPage.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -49,8 +51,16 @@ ReactDOM.render(
           render={props => <ProfilePage {...props} />}
         />
         <Route
-          path="/predict-page"
+          path="/predict"
           render={props => <PredictionSubmissionPage {...props} />}
+        />
+        <Route
+          path="/recruit"
+          render={props => <RecruitPage {...props} />}
+        />
+        <Route
+          path="/portfolio"
+          render={props => <PortfolioPage {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

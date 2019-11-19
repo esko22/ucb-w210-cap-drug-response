@@ -117,17 +117,25 @@ function IndexNavbar() {
                   <p>Application</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/predict-page" tag={Link}>
+                  <DropdownItem to="/portfolio" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    Prediction
+                    Portfolio
                   </DropdownItem>
-                  <DropdownItem
+                  <DropdownItem to="/predict" tag={Link}>
+                    <i className="now-ui-icons users_single-02 mr-1"></i>
+                    Predict
+                  </DropdownItem>
+                  <DropdownItem to="/recruit" tag={Link}>
+                    <i className="now-ui-icons location_world mr-1"></i>
+                    Recruit
+                  </DropdownItem>
+                  {/* <DropdownItem
                     href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Documentation
-                  </DropdownItem>
+                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
