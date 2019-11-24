@@ -403,8 +403,24 @@
   pointer-events: none;
 }
 
+
 .section-tabs {
   background: #EEEEEE;
+}
+
+
+
+.section-why-we-do {
+  background: #0190b0;
+}
+
+.section-why-we-do-2 {
+  background: #00a5cb;
+}
+
+.section-why-we-do-3 {
+  background: #333333;
+  color: #FFFFFF;
 }
 
 .section-pagination {

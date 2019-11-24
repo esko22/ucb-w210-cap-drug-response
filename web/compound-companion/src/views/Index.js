@@ -8,8 +8,8 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import FirstSect from "./index-sects/first-sect.js";
-import DemoSnap from "./index-sects/demo-snap";
+import AppMockIntroSection from "./index-sects/app-mock-intro-sect";
+import WhyIntroSection from "./index-sects/why-intro-sect";
 
 
 function Index() {
@@ -30,8 +30,8 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <DemoSnap />
-          <FirstSect />
+          <WhyIntroSection />
+          <AppMockIntroSection />
         </div>
         <DarkFooter />
       </div>

@@ -28,6 +28,7 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import AboutUsPage from "views/AboutUsPage.js";
 import HowItWorksPage from "views/HowItWorksPage.js";
 import PredictionSubmissionPage from "views/PredictionSubmissionPage.js";
 import RecruitPage from "views/RecruitPage.js";
@@ -43,8 +44,8 @@ ReactDOM.render(
           render={props => <HowItWorksPage {...props} />}
         />
         <Route
-          path="/landing-page"
-          render={props => <LandingPage {...props} />}
+          path="/about"
+          render={props => <AboutUsPage {...props} />}
         />
         <Route
           path="/profile-page"

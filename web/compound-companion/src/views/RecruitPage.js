@@ -209,6 +209,11 @@ function RecruitPage() {
                             </select>
                         </div>            
                     </Col>
+                    <Col md="4">
+                        <div>
+                            <h2>Conditions</h2>
+                        </div>
+                    </Col>
                 </Row>
                         
                     </div>

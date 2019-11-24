@@ -24,12 +24,12 @@ function IndexNavbar() {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.body.scrollTop > 299
       ) {
         setNavbarColor("");
       } else if (
         document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
+        document.body.scrollTop < 300
       ) {
         setNavbarColor("navbar-transparent");
       }
@@ -55,14 +55,10 @@ function IndexNavbar() {
           <div className="navbar-translate">
             <NavbarBrand
               href="/index"
-              target="_blank"
               id="navbar-brand"
             >
               Compound Companion
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              UCB
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -93,13 +89,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  href="/about"
                 >
                   <i className="now-ui-icons business_badge"></i>
                   <p>About us</p>

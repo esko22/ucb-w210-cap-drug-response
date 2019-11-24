@@ -54,7 +54,7 @@ function PortfolioPage() {
   const [target, setTarget] = useState('');
   const [selectedPathways, setSelectedPathways] = useState(Pathways);
   const [drugResponses, setDrugResponses] = useState([]);
-  const [selectedDrugs, setSelectedDrugs] = useState([]);
+  const [drugs, setDrugs] = useState(target_drug_matrix);
   const [selectedPatient, setSelectedPatient] = useState(null);
   const [vegaSpec, setVegaSpec] = useState(spec5);
   const [patients, setPatients] = useState(patient_list);
@@ -199,6 +199,13 @@ function PortfolioPage() {
                     </div>
                 </CardBody>
               </Card>
+              </Row>
+              <Row>
+                  <Col>
+                    <ul>
+                      {drugs.sort().map((drug) => <li><span>{drug.DRUG_NAME}</span>--<span>{drug.TARGET_PATHWAY}</span>--<span>{drug.TARGET}</span></li>)}
+                    </ul>
+                  </Col>
               </Row>
 
             </Container>

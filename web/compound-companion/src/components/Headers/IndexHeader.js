@@ -22,9 +22,15 @@ function IndexHeader() {
     }
   });
 
+  let inlineStyle = {
+    'minHeight' : '500px',
+    'maxHeight' : '660px'
+  };
+
+
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" style={inlineStyle} filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -32,6 +38,7 @@ function IndexHeader() {
           }}
           ref={pageHeader}
         ></div>
+            <div className="space-100"></div>
         <Container>
           <div className="content-center brand">
             <img
@@ -40,7 +47,8 @@ function IndexHeader() {
               src={require("assets/img/pharmacogenomics.png")}
             ></img>
             <h1>Compound Companion</h1>
-            <h3 className="h3-seo">Helping align medication through multi-omic profiles</h3>
+            <div className="space-50"></div>
+            <h2 className="h3-seo">Helping teams deliver the <b>right treatment </b> to the <b>right patient </b>at the <b>right time.</b></h2>
           </div>
         </Container>
       </div>
