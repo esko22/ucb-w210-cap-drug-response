@@ -53,12 +53,13 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="/index"
+            <Link
+              className="navbar-brand"
+              to="/index"
               id="navbar-brand"
             >
               Compound Companion
-            </NavbarBrand>
+            </Link>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -80,26 +81,21 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink
-                  href="/how-it-works"
-                >
+                <Link className="nav-link" to="/how-it-works">
                   <i className="now-ui-icons business_bulb-63"></i>
                   <p>How it works</p>
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink
-                  href="/about"
-                >
+                <Link className="nav-link" to="/about">
                   <i className="now-ui-icons business_badge"></i>
                   <p>About us</p>
-                </NavLink>
+                </Link>
               </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
                   nav
                   onClick={e => e.preventDefault()}
                 >
@@ -119,13 +115,6 @@ function IndexNavbar() {
                     <i className="now-ui-icons location_world mr-1"></i>
                     Recruit
                   </DropdownItem>
-                  {/* <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
