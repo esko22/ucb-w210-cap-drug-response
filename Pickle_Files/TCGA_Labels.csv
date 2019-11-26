@@ -1,0 +1,97 @@
+Sigle,Program
+PAAC,Acinar Cell Carcinoma of the Pancreas
+LAML,Acute Myeloid Leukemia
+ACYC,Adenoid Cystic Carcinoma
+ACBC,Adenoid Cystic Carcinoma of the Breast
+ACC,Adrenocortical Carcinoma
+BLCA,Bladder Cancer
+BLCA,"Bladder Cancer, Plasmacytoid Variant"
+BLCA,Bladder Urothelial Carcinoma
+LGG,Brain Lower Grade Glioma
+BRCA,Breast Cancer
+BRCA,Breast Invasive Carcinoma
+BRCA,Breast cancer patient xenografts
+CELLLINE,Cancer Cell Line Encyclopedia
+CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma
+CHOL,Cholangiocarcinoma
+LCLL,Chronic Lymphocytic Leukemia
+CLL,Chronic Lymphocytic Leukemia
+CCRCC,Clear Cell Renal Cell Carcinoma
+COAD/READ,Colorectal Adenocarcinoma
+COAD/READ,Colorectal Adenocarcinoma Triplets
+CTCL,Cutaneous T Cell Lymphoma
+CSCC,Cutaneous squamous cell carcinoma
+DESM,Desmoplastic Melanoma
+DLBC,Diffuse Large B-Cell Lymphoma
+ESCA,Esophageal Adenocarcinoma
+ESCA,Esophageal Carcinoma
+ESCC,Esophageal Squamous Cell Carcinoma
+ES,Ewing Sarcoma
+GBC,Gallbladder Carcinoma
+EGC,Gastric Adenocarcinoma
+PRAD,Genomic Hallmarks of Prostate Adenocarcinoma
+GBM,Glioblastoma
+GBM,Glioblastoma Multiforme
+HNSC,Head and Neck Squamous Cell Carcinoma
+LIAD,Hepatocellular Adenoma
+ALL,Hypodiploid Acute Lymphoid Leukemia
+ALL,Infant MLL-Rearranged Acute Lymphoblastic Leukemia
+PANET,Insulinoma
+CHOL,Intrahepatic Cholangiocarcinoma
+KICH,Kidney Chromophobe
+KIRC,Kidney Renal Clear Cell Carcinoma
+KIRP,Kidney Renal Papillary Cell Carcinoma
+LIHC,Liver Hepatocellular Carcinoma
+LGG,Low-Grade Gliomas
+LUAD,Lung Adenocarcinoma
+LUSC,Lung Squamous Cell Carcinoma
+DLBC,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma
+MPNST,Malignant Peripheral Nerve Sheath Tumor
+PLMESO,Malignant Pleural Mesothelioma
+MCL,Mantle Cell Lymphoma
+MBL,Medulloblastoma
+SKCM,Melanoma
+LGGGBM,Merged Cohort of LGG and GBM
+MESO,Mesothelioma
+PRAD,"Metastatic Prostate Cancer, SU2C/PCF Dream Team"
+MM,Multiple Myeloma
+CCRCC,Multiregion Sequencing of Clear Cell Renal Cell Carcinoma
+BRCA,Mutational profiles of metastatic breast cancer
+MDS,Myelodysplasia
+CELLLINE,NCI-60 Cell Lines
+NPC,Nasopharyngeal Carcinoma
+NBL,Neuroblastoma
+NEPC,Neuroendocrine Prostate Cancer
+HNSC,Oral Squamous Cell Carcinoma
+OV,Ovarian Serous Cystadenocarcinoma
+NSCLC,Pan-Lung Cancer
+PAAD,Pancreatic Adenocarcinoma
+PAAD,Pancreatic Cancer
+PANET,Pancreatic Neuroendocrine Tumors
+THCA,Papillary Thyroid Carcinoma
+ES,Pediatric Ewing Sarcoma
+PCPG,Pheochromocytoma and Paraganglioma
+THYROID,Poorly-Differentiated and Anaplastic Thyroid Cancers
+PCNSL,Primary Central Nervous System Lymphoma
+PRAD,Prostate Adenocarcinoma
+PRAD,Prostate Adenocarcinoma CNA study
+PRAD,Prostate Adenocarcinoma Organoids
+PRAD,"Prostate Adenocarcinoma, Metastatic"
+HNC,Recurrent and Metastatic Head & Neck Cancer
+NCCRCC,Renal Non-Clear Cell Carcinoma
+RMS,Rhabdomyosarcoma
+SARC,Sarcoma
+SKCM,Skin Cutaneous Melanoma
+SCCO,Small Cell Carcinoma of the Ovary
+SCLC,Small Cell Lung Cancer
+STAD,Stomach Adenocarcinoma
+STES,TCGA data for Esophagus-Stomach Cancers
+TGCT,Testicular Germ Cell Cancer
+TET,Thymic Epithelial Tumors
+THYM,Thymoma
+THCA,Thyroid Carcinoma
+URCC,Unclassified Renal Cell Carcinoma
+UCS,Uterine Carcinosarcoma
+UCEC,Uterine Corpus Endometrial Carcinoma
+UVM,Uveal Melanoma
+LCML,Chronic Myelogenous Leukemia
