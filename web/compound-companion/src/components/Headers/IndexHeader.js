@@ -48,7 +48,7 @@ function IndexHeader() {
             ></img>
             <h1>Compound Companion</h1>
             <div className="space-50"></div>
-            <h2 className="h3-seo">Helping teams deliver the <b>right treatment </b> to the <b>right patient </b>at the <b>right time.</b></h2>
+            <h2 className="h3-seo">Helping to deliver the <b>right treatment </b> to the <b>right patient </b>at the <b>right time.</b></h2>
           </div>
         </Container>
       </div>

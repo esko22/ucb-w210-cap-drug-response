@@ -414,6 +414,19 @@
   background: #0190b0;
 }
 
+.section-why-hero {
+  /* background: #0190b0; */
+  color: #0190b0;
+}
+
+.why-hero-quote {
+  font-weight: 300;
+  padding-top: 100px;
+  font-size: 2em;
+  /* font-style: italic; */
+  color: #2c2c2c; 
+}
+
 .section-why-we-do-2 {
   background: #00a5cb;
 }
