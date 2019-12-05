@@ -20,3 +20,4 @@ def get_drug_responses(id):
     results = filter(lambda p: p['DRUG_ID'] == id,drug_response)
 
     return jsonify(list(results))
+

@@ -26,6 +26,9 @@ def index():
 @bp.route("/patients/<string:id>/results")
 def get_patient_results(id):
 
+    ## we should look into using this https://github.com/dropbox/PyHive
+    ## then do your query based on id that is passed in
+
     #we can change this to pull files or something when the pipeline is complete
     results = filter(lambda p: p['PATIENT_ID'] == id,patient_results)
 

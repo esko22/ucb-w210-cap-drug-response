@@ -216,7 +216,7 @@ function PatientDetailPage() {
                   <h3>Patients</h3>
                   <hr />
                   <Nav vertical>
-                      {patients.sort((a) => a.PATIENT_ID ).map((p) => <NavItem onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink> {p.PATIENT_ID} </NavLink> </NavItem>)}
+                      {patients.map((p) => <NavItem onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink> {p.PATIENT_ID} </NavLink> </NavItem>)}
                   </Nav>
                 </Col>
                 <Col className="section" md={{size:9}} >

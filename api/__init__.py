@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from flask_cors import CORS
-from api import patients, drugs
+from api import patients, drugs, predict
 
 def create_app(test_config=None):
     """Create and configure an instance of the Flask application."""
@@ -40,5 +40,6 @@ def create_app(test_config=None):
     # apply the blueprints to the app
     app.register_blueprint(patients.bp)
     app.register_blueprint(drugs.bp)
+    app.register_blueprint(predict.bp)
 
     return app
