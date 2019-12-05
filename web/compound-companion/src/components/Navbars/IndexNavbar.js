@@ -107,7 +107,7 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     Portfolio
                   </DropdownItem>
-                  <DropdownItem to="/predict" tag={Link}>
+                  <DropdownItem to="/patient" tag={Link}>
                     <i className="now-ui-icons users_single-02 mr-1"></i>
                     Predict
                   </DropdownItem>

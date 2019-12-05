@@ -24,38 +24,9 @@ function HowItWorksPage() {
   const [firstFocus, setFirstFocus] = useState(false);
   const [lastFocus, setLastFocus] = useState(false);
 
-  const [processWes, setWes] = useState();
-
-
-  async function fetchData() {
-    fetch("http://169.62.155.134:5000")
-    // .then(res => res.json())
-    .then(
-      (result) => {
-        console.log(result);
-
-        // setWes({
-        //   isLoaded: true,
-        //   items: result
-        // });
-      },
-      // Note: it's important to handle errors here
-      // instead of a catch() block so that we don't swallow
-      // exceptions from actual bugs in components.
-      (error) => {
-        // setWes({
-        //   isLoaded: true,
-        //   error
-        // });
-      }
-    )
-    
-  }
 
 
   useEffect(() => {
-
-    fetchData();
 
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");

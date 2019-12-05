@@ -14,7 +14,6 @@ with open(APP_ROOT + '/data/drug_response.json') as json_file:
 
 
 
-
 @bp.route("/drugs/<int:id>/responses")
 def get_drug_responses(id):
 

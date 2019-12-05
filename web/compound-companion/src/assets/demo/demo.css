@@ -97,6 +97,17 @@
   display: block;
 }
 
+.space-25 {
+  height: 25px;
+  display: block;
+}
+
+.scrolly-boy {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+
 .space-70 {
   height: 70px;
   display: block;
@@ -415,7 +426,6 @@
 }
 
 .section-why-hero {
-  /* background: #0190b0; */
   color: #0190b0;
 }
 

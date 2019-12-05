@@ -5,7 +5,8 @@
     "MODEL": "GBM",
     "MODEL_TYPE": "CONDITION",
     "LN_IC50": "0.246391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.07"
 }, {
     "PATIENT_ID": "TCGA-A3-3358",
     "DRUG_ID": "1377",
@@ -13,7 +14,8 @@
     "MODEL": "KIRC",
     "MODEL_TYPE": "CONDITION",
     "LN_IC50": "1.246391",
-    "BINARY_RESPONSE": "S"
+    "BINARY_RESPONSE": "S",
+    "THRESHOLD" : "1.957"
 }, {
     "PATIENT_ID": "TCGA-AA-3663",
     "DRUG_ID": "1378",
@@ -21,7 +23,8 @@
     "MODEL": "DNA replication",
     "MODEL_TYPE": "PATHWAY",
     "LN_IC50": "0.446391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.252"
 }, {
     "PATIENT_ID": "TCGA-AZ-4315",
     "DRUG_ID": "1494",
@@ -29,7 +32,8 @@
     "MODEL": "DNA replication",
     "MODEL_TYPE": "PATHWAY",
     "LN_IC50": "0.246391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.157"
 }, {
     "PATIENT_ID": "TCGA-CA-6717",
     "DRUG_ID": "1494",
@@ -37,7 +41,8 @@
     "MODEL": "Genome integrity",
     "MODEL_TYPE": "PATHWAY",
     "LN_IC50": "1.146391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.85"
 }, {
     "PATIENT_ID": "TCGA-CM-6162",
     "DRUG_ID": "1529",

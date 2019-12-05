@@ -13,11 +13,10 @@ import {
   } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import PredictPageHeader from "components/Headers/PredictPageHeader.js";
+import ApplicationNavbar from "components/Navbars/ApplicationNavbar.js";
 
 import target_drug_matrix from "../data/target_drug_matrix.json";
-import drug_response_matrix from "../data/drug_response.json";
+// import drug_response_matrix from "../data/drug_response.json";
 import patient_list from "../data/patients.json";
 import patient_results from "../data/patient_results.json";
 
@@ -105,23 +104,23 @@ function PortfolioPage() {
   }
 
 
-  function getDrugStats(drugId){
+  // function getDrugStats(drugId){
 
-    var response_matrix_items = drug_response_matrix.filter(dr => dr.DRUG_ID === drugId);
-    var total_drug_response_count = response_matrix_items.length;
-    var total_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R').length; 
-    var total_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S').length; 
+  //   var response_matrix_items = drug_response_matrix.filter(dr => dr.DRUG_ID === drugId);
+  //   var total_drug_response_count = response_matrix_items.length;
+  //   var total_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R').length; 
+  //   var total_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S').length; 
 
-    if (selectedPatient)
-    {
-      var cond_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
-      var cond_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
-    }
-    var drug_name = target_drug_matrix.find(f => f.DRUG_ID === drugId).DRUG_NAME;
+  //   if (selectedPatient)
+  //   {
+  //     var cond_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
+  //     var cond_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
+  //   }
+  //   var drug_name = target_drug_matrix.find(f => f.DRUG_ID === drugId).DRUG_NAME;
 
 
-    return { 'DRUG_ID': drugId,'DRUG_NAME': drug_name,'T_C': total_drug_response_count, 'T_R_C': total_resistant_count, 'T_S_C': total_sensitive_count, 'C_R_C': cond_resistant_count, 'C_S_C': cond_sensitive_count };
-  }
+  //   return { 'DRUG_ID': drugId,'DRUG_NAME': drug_name,'T_C': total_drug_response_count, 'T_R_C': total_resistant_count, 'T_S_C': total_sensitive_count, 'C_R_C': cond_resistant_count, 'C_S_C': cond_sensitive_count };
+  // }
 
 
 
@@ -129,7 +128,7 @@ function PortfolioPage() {
       let filtered_drug_ids = filteredDrugs.map(x => x.DRUG_ID);
       let selected_drugs_stat = [];
 
-      filtered_drug_ids.forEach(drug => selected_drugs_stat.push(getDrugStats(drug)));
+      // filtered_drug_ids.forEach(drug => selected_drugs_stat.push(getDrugStats(drug)));
 
       console.log(selected_drugs_stat);
       //setDrugResponses(response_matrix_items);
@@ -180,9 +179,8 @@ function PortfolioPage() {
 
   return (
     <>
-      <IndexNavbar />
+      <ApplicationNavbar />
       <div className="wrapper">
-        <PredictPageHeader />
         <div className="section">
             <Container>
               <Row>
