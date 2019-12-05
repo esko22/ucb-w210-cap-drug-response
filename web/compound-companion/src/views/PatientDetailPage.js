@@ -10,6 +10,11 @@ import {
     Label,
     Button,
     Table,
+    Card,
+    CardHeader,
+    CardBody,
+    TabPane,
+    TabContent
   } from "reactstrap";
 
 // core components
@@ -31,6 +36,7 @@ import spec3 from '../vega-specs/spec3';
 import spec4 from '../vega-specs/spec4';
 import spec5 from '../vega-specs/spec5.json';
 import spec6 from '../vega-specs/spec6.json';
+import { compare } from "fast-json-patch";
 
 function PatientDetailPage() {
 
@@ -44,20 +50,34 @@ function PatientDetailPage() {
 
 
   React.useEffect(() => {
+    setSelectedPatient(patients[0]);
   }, []);
+
+
+  function ComparePatients(a, b){
+    let comparison = 0;
+    if (a.PATIENT_ID > b.PATIENT_ID) {
+      comparison = 1;
+    } else if (a.PATIENT_ID < b.PATIENT_ID) {
+      comparison = -1;
+    }
+    return comparison;
+  }
 
 
   const [targetedDrugs, setTargetedDrugs] = useState([]);
   const [target, setTarget] = useState('');
   const [selectedPathways, setSelectedPathways] = useState(Pathways);
+  const [currentPathways, setCurrentPathways] = useState([]);
   const [drugResponses, setDrugResponses] = useState([]);
   const [selectedDrugs, setSelectedDrugs] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
   const [vegaSpec, setVegaSpec] = useState(spec5);
-  const [patients, setPatients] = useState(patient_list);
+  const [patients, setPatients] = useState(patient_list.sort(ComparePatients));
   const [patientResults, setPatientResults] = useState(patient_results);
   const [selectedDrugStats, setSelectedDrugStats] = useState([]);
   const [predictionRequests, setPredictionRequests] = useState([]);
+  const [pills, setPills] = useState("1");
 
   const TestChart = createClassFromSpec({spec: spec6});
   const [patientResistantPredictions, setPatientResistantPredictions] = useState([]);
@@ -99,6 +119,7 @@ function PatientDetailPage() {
       matrix_items = target_drug_matrix.filter(f => changedPathways.includes(f.TARGET_PATHWAY));
 
     handleDrugResponseSet(matrix_items);
+    setCurrentPathways(changedPathways);
   }
 
 
@@ -122,7 +143,7 @@ function PatientDetailPage() {
 
 
   function handleDrugResponseSet(filteredDrugs){
-      let filtered_drug_ids = filteredDrugs.map(x => x.DRUG_ID);
+      let filtered_drug_ids = Array.from(new Set(filteredDrugs.map(x => x.DRUG_ID)));
       setTargetedDrugs(filteredDrugs);
 
       let selected_drugs_stat = [];
@@ -150,7 +171,6 @@ function PatientDetailPage() {
                 setSelectedDrugStats(selected_drugs_stat);
                 setDrugResponses(response_matrix_items);
                 // setData1(  {myData: response_matrix_items});
-                console.log(response_matrix_items.length);
               }
           }
         )
@@ -163,8 +183,8 @@ function PatientDetailPage() {
       patient = patients.find(f => f.PATIENT_ID === patient);
 
       setSelectedPatient(patient);
-
-      console.log(patient);
+      setSelectedPathways(Pathways);
+      setSelectedDrugStats([]);
 
       setPatientResistantPredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'R'));
       setPatientSensitivePredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'S'));
@@ -216,11 +236,10 @@ function PatientDetailPage() {
                   <h3>Patients</h3>
                   <hr />
                   <Nav vertical>
-                      {patients.map((p) => <NavItem onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink> {p.PATIENT_ID} </NavLink> </NavItem>)}
+                      {patients.map((p) => <NavItem onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
                   </Nav>
                 </Col>
-                <Col className="section" md={{size:9}} >
-                  <div className="space-50"></div>
+                <Col className="section patient-container" md={{size:9}} >
                   { selectedPatient ? (
                     <div>
                         <Row>                              
@@ -257,38 +276,89 @@ function PatientDetailPage() {
                               </Row>
                           </Col>
                         </Row>
-                        <div className="space-100"></div>
-                         <Row>
-                            <Col md={{size:11, offset:1}}>
-                                <h3>Resistant</h3>
-                                <Row>
-                                    <Col>
-                                    <Table>
-                                      <thead>
-                                        <tr>
-                                          <th>Drug Name</th>
-                                          <th>Model</th>
-                                          <th>Model Type</th>
-                                          <th>IC 50</th>
-                                          <th>Threshold</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                          {patientResistantPredictions.map((preds) =>  
-                                          <tr key={preds.DRUG_ID}>
-                                            <td>{preds.DRUG_NAME}</td>
-                                            <td>{preds.MODEL}</td>
-                                            <td>{preds.MODEL_TYPE}</td>
-                                            <td>{preds.LN_IC50}</td>
-                                            <td>{preds.THRESHOLD}</td>
-                                            </tr>)}
-                                      </tbody>
-                                    </Table>
-                                    </Col>
-                                </Row>
-                                <div className="space-50"></div>
-                                <h3>Sensistive</h3>
-                                <Row>
+                        <div className="space-50"></div>
+                          <Row>
+                          <Col className="ml-auto mr-auto">
+              <Card>
+                <CardHeader>
+                  <Nav
+                    className="nav-tabs-neutral justify-content-center"
+                    data-background-color="black"
+                    role="tablist"
+                    tabs
+                  >
+                    <NavItem>
+                      <NavLink
+                        className={pills === "1" ? "active" : ""}
+                        href="#pablo"
+                        onClick={e => {
+                          e.preventDefault();
+                          setPills("1");
+                        }}
+                      >
+                        Resistant
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "2" ? "active" : ""}
+                        href="#pablo"
+                        onClick={e => {
+                          e.preventDefault();
+                          setPills("2");
+                        }}
+                      >
+                        Sensitive
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={pills === "3" ? "active" : ""}
+                        href="#pablo"
+                        onClick={e => {
+                          e.preventDefault();
+                          setPills("3");
+                        }}
+                      >
+                        Predict
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardHeader>
+                <CardBody>
+                  <TabContent
+                    className="text-center"
+                    activeTab={"pills" + pills}
+                  >
+                    <TabPane tabId="pills1">
+                    <Row>
+                        <Col>
+                        <Table>
+                          <thead>
+                            <tr>
+                              <th>Drug Name</th>
+                              <th>Model</th>
+                              <th>Model Type</th>
+                              <th>IC 50</th>
+                              <th>Threshold</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {patientResistantPredictions.map((preds) =>  
+                              <tr key={preds.DRUG_ID}>
+                                <td>{preds.DRUG_NAME}</td>
+                                <td>{preds.MODEL}</td>
+                                <td>{preds.MODEL_TYPE}</td>
+                                <td>{preds.LN_IC50}</td>
+                                <td>{preds.THRESHOLD}</td>
+                                </tr>)}
+                          </tbody>
+                        </Table>
+                        </Col>
+                    </Row>
+                    </TabPane>
+                    <TabPane tabId="pills2">
+                    <Row>
                                     <Col>
                                     <Table>
                                       <thead>
@@ -313,59 +383,42 @@ function PatientDetailPage() {
                                     </Table>
                                     </Col>
                                 </Row>
-
-                              </Col>
-                          </Row>
-                       </div>
-                      ) : ("")
-                      }
-                </Col>
-              </Row>
-
-
-              <Row>
-                  <div>
+                    </TabPane>
+                    <TabPane tabId="pills3">
                     <Row>
-                      <Col md="3">
+                      <Col md="4">
+                        <Row>
+                            <Col>
+                              <div>
+                                  <h4>Targets</h4>
+                                  <select onChange={e => handleTargetSelection(e)} multiple>
+                                      {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
+                                  </select>
+                              </div>            
+                          </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                              <div>
+                                <h4>Pathways</h4>
+                                <select className="pathway-select" onChange={e => handlePathwaySelection(e)} multiple>
+                                    {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
+                                </select>
+                            </div>            
+                          </Col>
+                        </Row>
                       </Col>
-                
-                    </Row>
-
-                  </div>
-              </Row>
-                <Row>
-                    <Col md="4">
+                      <Col md="8">
                         <div>
-                            <h2>Targets</h2>
-                            <select onChange={e => handleTargetSelection(e)} multiple>
-                                {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
-                            </select>
-                        </div>            
-                    </Col>
-                    <Col md="4">
-                        <div>
-                            <h2>Pathways</h2>
-                            <select onChange={e => handlePathwaySelection(e)} multiple>
-                                {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
-                            </select>
-                        </div>            
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col md="9">
-                        <div>
-                            <h2>Available Compounds</h2>
+                            <h4>Available Compounds</h4>
                             <Table>
                               <thead>
                                 <tr>
                                   <th></th>
-                                  <th>Drug Name</th>
+                                  <th>Drug</th>
                                   <th>Total</th>
-                                  <th>Total Sens</th>
-                                  <th>Total Res</th>
-                                  { selectedPatient ? (<th>{selectedPatient.TCGA_LABEL} Sens</th>) : ('')}
-                                  { selectedPatient ? (<th>{selectedPatient.TCGA_LABEL} Res</th>) : ('')}
+                                  <th>S :: R</th>
+                                  { selectedPatient ? (<th>{selectedPatient.TCGA_LABEL} S :: R</th>) : ('')}
                                 </tr>
                               </thead>
                               <tbody>
@@ -374,32 +427,47 @@ function PatientDetailPage() {
                                      <th scope="row"><Input onChange={e => handleDrugSelection(e, drug_resp.DRUG_ID)} type="checkbox"></Input></th>
                                      <td>{drug_resp.DRUG_NAME}</td>
                                      <td>{drug_resp.T_C}</td>
-                                     <td>{drug_resp.T_S_C}</td>
-                                     <td>{drug_resp.T_R_C}</td>
-                                     <td>{drug_resp.C_S_C}</td>
-                                     <td>{drug_resp.C_R_C}</td>
+                                     <td>{drug_resp.T_S_C} :: {drug_resp.T_R_C}</td>
+                                     <td>{drug_resp.C_S_C} :: {drug_resp.C_R_C}</td>
                                     </tr>)}
                               </tbody>
                             </Table>
                         </div>            
                     </Col>
-                    <Col md="2">
+                </Row>
+                <Row>
+                    <Col md={{size:8, offset:4}}>
                         <div>
-                          <h2>Prediction Requests</h2>
+                          <h4>Prediction Requests</h4>
                         </div>
+
                         <Row>
+                            <Col>{currentPathways}</Col>
                             <Col>
                               <ul>
                                 {predictionRequests.map((pred_reqs) => <li key={pred_reqs.DRUG_ID} ><span>{pred_reqs.DRUG_NAME}</span></li>)}
                               </ul>
                             </Col>
                         </Row>
-                        <Button className="btn-round" color="info" type="button">
-                          <i className="now-ui-icons ui-2_favourite-28"></i>
-                          Predict
+                        <Button className="btn-round" color="success" type="button">
+                          <i className="now-ui-icons"></i>
+                           Predict
                         </Button>
                     </Col>
                 </Row>
+                    </TabPane>
+                  </TabContent>
+                </CardBody>
+              </Card>
+            </Col>                          
+            </Row>
+                       </div>
+                      ) : ("")
+                      }
+                </Col>
+              </Row>
+
+
                 <TestChart data={data1} />
 
                 {/* <Demo ></Demo> */}

@@ -1,5 +1,5 @@
 [{
-    "PATIENT_ID": "TCGA-06-5411",
+    "PATIENT_ID": "BRC31",
     "DRUG_ID": "1377",
     "DRUG_NAME": "Afatinib",
     "MODEL": "GBM",
