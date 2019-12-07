@@ -1,4 +1,6 @@
 import React, { useState}  from "react";
+import fetch from "fetch-retry";
+
 import {
     Container,
     Row,
@@ -14,7 +16,8 @@ import {
     CardHeader,
     CardBody,
     TabPane,
-    TabContent
+    TabContent,
+    Spinner
   } from "reactstrap";
 
 // core components
@@ -49,9 +52,6 @@ function PatientDetailPage() {
   });
 
 
-  React.useEffect(() => {
-    setSelectedPatient(patients[0]);
-  }, []);
 
 
   function ComparePatients(a, b){
@@ -78,6 +78,7 @@ function PatientDetailPage() {
   const [selectedDrugStats, setSelectedDrugStats] = useState([]);
   const [predictionRequests, setPredictionRequests] = useState([]);
   const [pills, setPills] = useState("1");
+  const [keepPolling, setKeepPolling] = useState(false);
 
   const TestChart = createClassFromSpec({spec: spec6});
   const [patientResistantPredictions, setPatientResistantPredictions] = useState([]);
@@ -94,6 +95,59 @@ function PatientDetailPage() {
     console.log(args);
   }
 
+  function handleInitialPredictRequest() {
+
+    let newPatient = {...selectedPatient}
+    setKeepPolling(true);
+
+    fetch("http://localhost:5000/predict/" + newPatient.COSMIC_ID + "/condition/" + newPatient.TCGA_LABEL)
+    .then(() => {
+        selectedPatient.INIT_PRED_REQUESTED = true;
+        newPatient.INIT_PRED_REQUESTED = true;
+        setSelectedPatient(newPatient);
+        pollForResults(newPatient);
+      },
+      (error) => {
+        console.log(error);
+      }
+    )
+
+  }
+
+ function handleSpecificPredictRequest() {
+  fetch("http://localhost:5000/predict/" + selectedPatient.COSMIC_ID + "/condition/" + selectedPatient.TCGA_LABEL + /pathway/ + currentPathways[0])
+    .then(() => { 
+      setKeepPolling(true);
+      setTimeout(function(){ setKeepPolling(false)}, 5000);
+    })
+
+
+ } 
+
+
+  function pollForResults(patient) {
+    fetch("http://localhost:5000/patients/" + patient.COSMIC_ID + "/results", {
+      retries: 10,
+      retryDelay: 5000,
+      retryOn: [404]
+      })
+    .then(result => result.json(),
+    (error) => {
+        console.log(error);
+      }
+    ).then(data => {
+      if(data) {
+        setPatientResistantPredictions(data.filter((res) => res.BINARY_RESPONSE === 'R'));
+        setPatientSensitivePredictions(data.filter((res) => res.BINARY_RESPONSE === 'S'));  
+      }
+    })
+  }
+
+
+
+  React.useEffect(() => {
+    handlePatientSelection(patients[0].PATIENT_ID);
+  }, []);
 
   function handleTargetSelection(e) {
 
@@ -185,9 +239,27 @@ function PatientDetailPage() {
       setSelectedPatient(patient);
       setSelectedPathways(Pathways);
       setSelectedDrugStats([]);
+      setPatientResistantPredictions([]);
+      setPatientSensitivePredictions([]);
 
-      setPatientResistantPredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'R'));
-      setPatientSensitivePredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'S'));
+      getPatientResults(patient);
+
+  }
+
+  function getPatientResults(patient)
+  {
+    fetch("http://localhost:5000/patients/" + patient.COSMIC_ID + "/results")
+    .then(result => result.json(),
+    (error) => {
+        console.log(error);
+      }
+    ).then(data => {
+      if(data) {
+        setPatientResistantPredictions(data.filter((res) => res.BINARY_RESPONSE === 'R'));
+        setPatientSensitivePredictions(data.filter((res) => res.BINARY_RESPONSE === 'S'));  
+      }
+    })
+
   }
 
   function handleDrugSelection(e, drugId) {
@@ -233,10 +305,10 @@ function PatientDetailPage() {
               <Row>
                 <Col className="section-why-we-do-2 scrolly-boy" md={{size:3}} >
                   <div className="space-25"></div>
-                  <h3>Patients</h3>
+                  <h3>Samples</h3>
                   <hr />
                   <Nav vertical>
-                      {patients.map((p) => <NavItem onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
+                      {patients.map((p) => <NavItem key={p.COSMIC_ID} onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
                   </Nav>
                 </Col>
                 <Col className="section patient-container" md={{size:9}} >
@@ -246,8 +318,12 @@ function PatientDetailPage() {
                           <Col md={{size:6, offset:1}}>
                           <h3>Information</h3>
                             <Row>
-                                <Col md="4">Patient ID</Col>
+                                <Col md="4">Sample ID</Col>
                                 <Col md="4">{selectedPatient.PATIENT_ID}</Col>
+                            </Row>
+                            <Row>
+                                <Col md="4">Accession ID</Col>
+                                <Col md="4">{selectedPatient.COSMIC_ID}</Col>
                             </Row>
                             <Row>
                                 <Col md="4">Condition </Col>
@@ -278,202 +354,227 @@ function PatientDetailPage() {
                         </Row>
                         <div className="space-50"></div>
                           <Row>
+                          { patientResistantPredictions.length > 0 || patientSensitivePredictions.length > 0 ? (
                           <Col className="ml-auto mr-auto">
-              <Card>
-                <CardHeader>
-                  <Nav
-                    className="nav-tabs-neutral justify-content-center"
-                    data-background-color="black"
-                    role="tablist"
-                    tabs
-                  >
-                    <NavItem>
-                      <NavLink
-                        className={pills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("1");
-                        }}
-                      >
-                        Resistant
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("2");
-                        }}
-                      >
-                        Sensitive
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("3");
-                        }}
-                      >
-                        Predict
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </CardHeader>
-                <CardBody>
-                  <TabContent
-                    className="text-center"
-                    activeTab={"pills" + pills}
-                  >
-                    <TabPane tabId="pills1">
-                    <Row>
-                        <Col>
-                        <Table>
-                          <thead>
-                            <tr>
-                              <th>Drug Name</th>
-                              <th>Model</th>
-                              <th>Model Type</th>
-                              <th>IC 50</th>
-                              <th>Threshold</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                              {patientResistantPredictions.map((preds) =>  
-                              <tr key={preds.DRUG_ID}>
-                                <td>{preds.DRUG_NAME}</td>
-                                <td>{preds.MODEL}</td>
-                                <td>{preds.MODEL_TYPE}</td>
-                                <td>{preds.LN_IC50}</td>
-                                <td>{preds.THRESHOLD}</td>
-                                </tr>)}
-                          </tbody>
-                        </Table>
-                        </Col>
-                    </Row>
-                    </TabPane>
-                    <TabPane tabId="pills2">
-                    <Row>
-                                    <Col>
-                                    <Table>
-                                      <thead>
-                                        <tr>
-                                          <th>Drug Name</th>
-                                          <th>Model</th>
-                                          <th>Model Type</th>
-                                          <th>IC 50</th>
-                                          <th>Threshold</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                          {patientSensitivePredictions.map((preds) =>  
-                                          <tr key={preds.DRUG_ID}>
-                                            <td>{preds.DRUG_NAME}</td>
-                                            <td>{preds.MODEL}</td>
-                                            <td>{preds.MODEL_TYPE}</td>
-                                            <td>{preds.LN_IC50}</td>
-                                            <td>{preds.THRESHOLD}</td>
-                                            </tr>)}
-                                      </tbody>
-                                    </Table>
+                            <Card>
+                              <CardHeader>
+                                <Nav
+                                  className="nav-tabs-neutral justify-content-center"
+                                  data-background-color="black"
+                                  role="tablist"
+                                  tabs
+                                >
+                                  <NavItem>
+                                    <NavLink
+                                      className={pills === "1" ? "active" : ""}
+                                      href="#pablo"
+                                      onClick={e => {
+                                        e.preventDefault();
+                                        setPills("1");
+                                      }}
+                                    >
+                                      Resistant
+                                    </NavLink>
+                                  </NavItem>
+                                  <NavItem>
+                                    <NavLink
+                                      className={pills === "2" ? "active" : ""}
+                                      href="#pablo"
+                                      onClick={e => {
+                                        e.preventDefault();
+                                        setPills("2");
+                                      }}
+                                    >
+                                      Sensitive
+                                    </NavLink>
+                                  </NavItem>
+                                  <NavItem>
+                                    <NavLink
+                                      className={pills === "3" ? "active" : ""}
+                                      href="#pablo"
+                                      onClick={e => {
+                                        e.preventDefault();
+                                        setPills("3");
+                                      }}
+                                    >
+                                      Predict
+                                    </NavLink>
+                                  </NavItem>
+                                </Nav>
+                              </CardHeader>
+                              <CardBody>
+                                <TabContent
+                                  className="text-center"
+                                  activeTab={"pills" + pills}
+                                >
+                                  <TabPane tabId="pills1">
+                                  <Row>
+                                      {patientResistantPredictions.length == 0 ? (<Col md={{size:5, offset:3}}><h4>No Resistant Drugs Predicted</h4></Col>) :(
+                                      <Col>
+                                      <Table>
+                                        <thead>
+                                          <tr>
+                                            <th>Drug Name</th>
+                                            <th>Model Condition</th>
+                                            <th>Pathway</th>
+                                            <th>IC 50</th>
+                                            <th>Threshold</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            {patientResistantPredictions.map((preds) =>  
+                                            <tr key={preds.DRUG_ID}>
+                                              <td>{preds.DRUG_NAME}</td>
+                                              <td>{preds.MODEL}</td>
+                                              <td>{preds.PATHWAY}</td>
+                                              <td>{preds.LN_IC50}</td>
+                                              <td>{preds.THRESHOLD}</td>
+                                              </tr>)}
+                                        </tbody>
+                                      </Table>
+                                      </Col>)}
+                                  </Row>
+                                  </TabPane>
+                                  <TabPane tabId="pills2">
+                                  <Row>
+                                  {patientSensitivePredictions.length == 0 ? (<Col md={{size:5, offset:3}}><h4>No Sensitive Drugs Predicted</h4></Col>) :(
+
+                                      <Col>
+                                      <Table>
+                                        <thead>
+                                          <tr>
+                                            <th>Drug Name</th>
+                                            <th>Model Condition</th>
+                                            <th>Pathway</th>
+                                            <th>IC 50</th>
+                                            <th>Threshold</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            {patientSensitivePredictions.map((preds) =>  
+                                            <tr key={preds.DRUG_ID}>
+                                              <td>{preds.DRUG_NAME}</td>
+                                              <td>{preds.MODEL}</td>
+                                              <td>{preds.PATHWAY}</td>
+                                              <td>{preds.LN_IC50}</td>
+                                              <td>{preds.THRESHOLD}</td>
+                                              </tr>)}
+                                        </tbody>
+                                      </Table>
+                                      </Col>)}
+                                    </Row>
+                                  </TabPane>
+                                  <TabPane tabId="pills3">
+                                  <Row>
+                                    <Col md="4">
+                                      <Row>
+                                          <Col>
+                                            <div>
+                                                <h4>Targets</h4>
+                                                <select onChange={e => handleTargetSelection(e)} multiple>
+                                                    {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
+                                                </select>
+                                            </div>            
+                                        </Col>
+                                      </Row>
+                                      <Row>
+                                          <Col>
+                                            <div>
+                                              <h4>Pathways</h4>
+                                              <select className="pathway-select" onChange={e => handlePathwaySelection(e)} multiple>
+                                                  {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
+                                              </select>
+                                          </div>            
+                                        </Col>
+                                      </Row>
                                     </Col>
-                                </Row>
-                    </TabPane>
-                    <TabPane tabId="pills3">
-                    <Row>
-                      <Col md="4">
-                        <Row>
-                            <Col>
-                              <div>
-                                  <h4>Targets</h4>
-                                  <select onChange={e => handleTargetSelection(e)} multiple>
-                                      {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
-                                  </select>
-                              </div>            
-                          </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                              <div>
-                                <h4>Pathways</h4>
-                                <select className="pathway-select" onChange={e => handlePathwaySelection(e)} multiple>
-                                    {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
-                                </select>
-                            </div>            
-                          </Col>
-                        </Row>
-                      </Col>
-                      <Col md="8">
-                        <div>
-                            <h4>Available Compounds</h4>
-                            <Table>
-                              <thead>
-                                <tr>
-                                  <th></th>
-                                  <th>Drug</th>
-                                  <th>Total</th>
-                                  <th>S :: R</th>
-                                  { selectedPatient ? (<th>{selectedPatient.TCGA_LABEL} S :: R</th>) : ('')}
-                                </tr>
-                              </thead>
-                              <tbody>
-                                   {selectedDrugStats.map((drug_resp) =>  
-                                   <tr key={drug_resp.DRUG_ID}>
-                                     <th scope="row"><Input onChange={e => handleDrugSelection(e, drug_resp.DRUG_ID)} type="checkbox"></Input></th>
-                                     <td>{drug_resp.DRUG_NAME}</td>
-                                     <td>{drug_resp.T_C}</td>
-                                     <td>{drug_resp.T_S_C} :: {drug_resp.T_R_C}</td>
-                                     <td>{drug_resp.C_S_C} :: {drug_resp.C_R_C}</td>
-                                    </tr>)}
-                              </tbody>
-                            </Table>
-                        </div>            
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md={{size:8, offset:4}}>
-                        <div>
-                          <h4>Prediction Requests</h4>
-                        </div>
-
-                        <Row>
-                            <Col>{currentPathways}</Col>
-                            <Col>
-                              <ul>
-                                {predictionRequests.map((pred_reqs) => <li key={pred_reqs.DRUG_ID} ><span>{pred_reqs.DRUG_NAME}</span></li>)}
-                              </ul>
-                            </Col>
-                        </Row>
-                        <Button className="btn-round" color="success" type="button">
-                          <i className="now-ui-icons"></i>
-                           Predict
-                        </Button>
-                    </Col>
-                </Row>
-                    </TabPane>
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>                          
-            </Row>
-                       </div>
-                      ) : ("")
-                      }
-                </Col>
+                                    <Col md="8">
+                                      <div>
+                                          <h4>Available Compounds</h4>
+                                          <Table>
+                                            <thead>
+                                              <tr>
+                                                <th></th>
+                                                <th>Drug</th>
+                                                <th>Total</th>
+                                                <th>S :: R</th>
+                                                { selectedPatient ? (<th>{selectedPatient.TCGA_LABEL} S :: R</th>) : ('')}
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                {selectedDrugStats.map((drug_resp) =>  
+                                                <tr key={drug_resp.DRUG_ID}>
+                                                  <th scope="row"><Input onChange={e => handleDrugSelection(e, drug_resp.DRUG_ID)} type="checkbox"></Input></th>
+                                                  <td>{drug_resp.DRUG_NAME}</td>
+                                                  <td>{drug_resp.T_C}</td>
+                                                  <td>{drug_resp.T_S_C} :: {drug_resp.T_R_C}</td>
+                                                  <td>{drug_resp.C_S_C} :: {drug_resp.C_R_C}</td>
+                                                  </tr>)}
+                                            </tbody>
+                                          </Table>
+                                      </div>            
+                                  </Col>
+                              </Row>
+                              <Row>
+                                  <Col md={{size:8, offset:4}}>
+                                      <div>
+                                        <h4>Prediction Requests</h4>
+                                      </div>
+                                      {keepPolling ?(<Spinner style={{ width: '3rem', height: '3rem' }} color="warning" />) :
+                                      (
+                                      <Row>
+                                          <Col>{currentPathways}</Col>
+                                          <Col>
+                                            <ul>
+                                              {predictionRequests.map((pred_reqs) => <li key={pred_reqs.DRUG_ID} ><span>{pred_reqs.DRUG_NAME}</span></li>)}
+                                            </ul>
+                                          </Col>
+                                          <Button className="btn-round" onClick={handleSpecificPredictRequest} color="success" type="button">
+                                        <i className="now-ui-icons"></i>
+                                        Predict
+                                      </Button>
+                                      </Row>
+                                      )}
+                                  </Col>
+                              </Row>
+                                  </TabPane>
+                                </TabContent>
+                              </CardBody>
+                            </Card>
+                          </Col>) :                          
+               (
+                        <Col>
+                          <Row>
+                            { selectedPatient.INIT_PRED_REQUESTED == null ?
+                            (                            
+                              <Col md={{size:6, offset:3 }}>
+                                <h3>No existing predictions</h3>
+                                    <Button className="btn-round" color="success" type="button" onClick={handleInitialPredictRequest}>
+                                    <i className="now-ui-icons"></i>
+                                    Predict
+                                  </Button>
+                                </Col>) :
+                            
+                            (<Col md={{size:4, offset:3 }}>
+                                <h3>Processing Request</h3>
+                                <Spinner style={{ width: '3rem', height: '3rem' }} color="warning" type="grow" />
+                              </Col>)}
+                          
+                          </Row>
+                        </Col>
+             )}
               </Row>
-
-
-                <TestChart data={data1} />
-
-                {/* <Demo ></Demo> */}
-                {/* <LiteDemo></LiteDemo> */}
-            </Container>
           </div>
+        ) : ("")
+        }
+    </Col>
+  </Row>
+          {/* <TestChart data={data1} /> */}
+
+          {/* <Demo ></Demo> */}
+          {/* <LiteDemo></LiteDemo> */}
+      </Container>
+    </div>
     </>
   );
 }

@@ -1,94 +1,112 @@
 [{
-    "PATIENT_ID": "BRC31",
+    "PATIENT_ID": "1240204",
     "DRUG_ID": "1377",
     "DRUG_NAME": "Afatinib",
-    "MODEL": "GBM",
-    "MODEL_TYPE": "CONDITION",
-    "LN_IC50": "0.246391",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
+    "LN_IC50": "1.9875",
     "BINARY_RESPONSE": "R",
-    "THRESHOLD" : "0.07"
-}, {
-    "PATIENT_ID": "TCGA-A3-3358",
-    "DRUG_ID": "1377",
-    "DRUG_NAME": "Afatinib",
-    "MODEL": "KIRC",
-    "MODEL_TYPE": "CONDITION",
-    "LN_IC50": "1.246391",
-    "BINARY_RESPONSE": "S",
-    "THRESHOLD" : "1.957"
-}, {
-    "PATIENT_ID": "TCGA-AA-3663",
-    "DRUG_ID": "1378",
-    "DRUG_NAME": "Bleomycin (50 uM)",
-    "MODEL": "DNA replication",
-    "MODEL_TYPE": "PATHWAY",
-    "LN_IC50": "0.446391",
-    "BINARY_RESPONSE": "R",
-    "THRESHOLD" : "0.252"
-}, {
-    "PATIENT_ID": "TCGA-AZ-4315",
+    "THRESHOLD" : "0.887"
+}, 
+{
+    "PATIENT_ID": "1240204",
     "DRUG_ID": "1494",
     "DRUG_NAME": "SN-38",
-    "MODEL": "DNA replication",
-    "MODEL_TYPE": "PATHWAY",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
+    "LN_IC50": "3.246391",
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "1.67"
+},{
+    "PATIENT_ID": "1240204",
+    "DRUG_ID": "1494",
+    "DRUG_NAME": "Olaparib",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
+    "LN_IC50": "0.646391",
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.57"
+}, {
+    "PATIENT_ID": "688001",
+    "DRUG_ID": "1494",
+    "DRUG_NAME": "SN-38",
+    "MODEL": "SCLC",
+    "CONDITION": "SCLC",
+    "PATHWAY": "RTA_SIGNL",
     "LN_IC50": "0.246391",
     "BINARY_RESPONSE": "R",
     "THRESHOLD" : "0.157"
 }, {
-    "PATIENT_ID": "TCGA-CA-6717",
+    "PATIENT_ID": "1240182",
     "DRUG_ID": "1494",
     "DRUG_NAME": "Olaparib",
-    "MODEL": "Genome integrity",
-    "MODEL_TYPE": "PATHWAY",
+    "MODEL": "SCLC",
+    "PATHWAY": "RTA_SIGNL",
+    "CONDITION": "SCLC",
     "LN_IC50": "1.146391",
     "BINARY_RESPONSE": "R",
     "THRESHOLD" : "0.85"
 }, {
-    "PATIENT_ID": "TCGA-CM-6162",
+    "PATIENT_ID": "1298529",
     "DRUG_ID": "1529",
     "DRUG_NAME": "Pevonedistat",
-    "MODEL": "Other",
-    "MODEL_TYPE": "PATHWAY",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
     "LN_IC50": "0.286791",
-    "BINARY_RESPONSE": "S"
+    "BINARY_RESPONSE": "S",
+    "THRESHOLD" : "0.85"
 }, {
-    "PATIENT_ID": "TCGA-CN-5356",
+    "PATIENT_ID": "906817",
     "DRUG_ID": "1378",
     "DRUG_NAME": "Bleomycin (50 uM)",
-    "MODEL": "HNSC",
-    "MODEL_TYPE": "CONDITION",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "ESCA",
     "LN_IC50": "0.946391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.85"
 }, {
-    "PATIENT_ID": "TCGA-CN-5360",
+    "PATIENT_ID": "753531",
     "DRUG_ID": "1530",
     "DRUG_NAME": "PFI-3",
-    "MODEL": "HNSC",
-    "MODEL_TYPE": "CONDITION",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
     "LN_IC50": "0.4367391",
-    "BINARY_RESPONSE": "S"
+    "BINARY_RESPONSE": "S",
+    "THRESHOLD" : "0.75"
 }, {
-    "PATIENT_ID": "TCGA-CR-7365",
+    "PATIENT_ID": "1298529",
     "DRUG_ID": "59",
     "DRUG_NAME": "WZ-1-84",
-    "MODEL": "Other, kinases",
-    "MODEL_TYPE": "PATHWAY",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
     "LN_IC50": "1.446391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.885"
 }, {
-    "PATIENT_ID": "TCGA-CV-7091",
+    "PATIENT_ID": "1240205",
     "DRUG_ID": "235",
     "DRUG_NAME": "QL-XII-47",
-    "MODEL": "HNSC",
-    "MODEL_TYPE": "CONDITION",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
     "LN_IC50": "2.246391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "R",
+    "THRESHOLD" : "0.865"
 }, {
-    "PATIENT_ID": "TCGA-E9-A1NH",
+    "PATIENT_ID": "1240205",
     "DRUG_ID": "59",
     "DRUG_NAME": "WZ-1-84",
-    "MODEL": "Other, kinases",
-    "MODEL_TYPE": "PATHWAY",
+    "MODEL": "AERO_DIGESTIVE_TRACT",
+    "PATHWAY": "DNA_REPL",
+    "CONDITION": "HNSC",
     "LN_IC50": "0.246391",
-    "BINARY_RESPONSE": "R"
+    "BINARY_RESPONSE": "S",
+    "THRESHOLD" : "0.745"
 }]
