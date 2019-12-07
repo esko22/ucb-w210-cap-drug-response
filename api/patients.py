@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, current_app
+from flask import Blueprint, jsonify, current_app, abort
 
 import json
 import os
@@ -30,6 +30,9 @@ def get_patient_results(id):
     ## then do your query based on id that is passed in
 
     #we can change this to pull files or something when the pipeline is complete
-    results = filter(lambda p: p['PATIENT_ID'] == id,patient_results)
+    results = list(filter(lambda p: p['PATIENT_ID'] == id,patient_results))
 
-    return jsonify(list(results))
+    if len(results) == 0:
+        return jsonify([]), 404
+
+    return jsonify(results)
