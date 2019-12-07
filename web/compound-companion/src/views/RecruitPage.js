@@ -3,13 +3,9 @@ import {
     Container,
     Row,
     Col,
-    Card,
-    CardBody,
-    CardHeader,
     Input,
-    Label,
-    Button,
     Table,
+    Button
   } from "reactstrap";
 
 // core components
@@ -22,16 +18,7 @@ import patient_results from "../data/patient_results.json";
 
 import Targets from "../data/targets.js";
 import Pathways from "../data/pathways.js";
-
-import Demo from "./product-sections/vega-demo.js";
-import LiteDemo from "./product-sections/vega-lite-demo.js";
-
-
-import { Vega, createClassFromSpec } from 'react-vega';
-import spec3 from '../vega-specs/spec3';
-import spec4 from '../vega-specs/spec4';
-import spec5 from '../vega-specs/spec5.json';
-import spec6 from '../vega-specs/spec6.json';
+import Conditions from "../data/conditions.js";
 
 function RecruitPage() {
 
@@ -45,37 +32,15 @@ function RecruitPage() {
 
 
   React.useEffect(() => {
-    console.log('blahh');
   }, []);
 
 
-  const [targetedDrugs, setTargetedDrugs] = useState([]);
   const [target, setTarget] = useState('');
   const [selectedPathways, setSelectedPathways] = useState(Pathways);
-  const [drugResponses, setDrugResponses] = useState([]);
-  const [selectedDrugs, setSelectedDrugs] = useState([]);
-  const [selectedPatient, setSelectedPatient] = useState(null);
-  const [vegaSpec, setVegaSpec] = useState(spec5);
-  const [patients, setPatients] = useState(patient_list);
   const [patientResults, setPatientResults] = useState(patient_results);
-  const [selectedDrugStats, setSelectedDrugStats] = useState([]);
-  const [predictionRequests, setPredictionRequests] = useState([]);
-
-  const TestChart = createClassFromSpec({spec: spec6});
-  const [patientResistantPredictions, setPatientResistantPredictions] = useState([]);
-  const [patientSensitivePredictions, setPatientSensitivePredictions] = useState([]);
-
-  const [data1, setData1] = useState({
-    myData: drugResponses,
-  });
-
-  const [handlers, setHandlers] = useState({ click: handleDrugClick });
-
-
-  function handleDrugClick(...args){
-    console.log(args);
-  }
-
+  const [patients, setPatients] = useState(patient_list);
+  const [filteredPatients, setFilteredPatients] = useState(patient_results);
+  const [selectedPatients, setSelectedPatients] = useState([]);
 
   function handleTargetSelection(e) {
 
@@ -87,7 +52,6 @@ function RecruitPage() {
       setSelectedPathways(changedPathways);
       setTarget(changedTargets);
       
-      handleDrugResponseSet(td_matrix_items);
   }
 
   function handlePathwaySelection(e){
@@ -100,79 +64,37 @@ function RecruitPage() {
     else
       matrix_items = target_drug_matrix.filter(f => changedPathways.includes(f.TARGET_PATHWAY));
 
-    handleDrugResponseSet(matrix_items);
+    let patientList = patientResults.filter(f => changedPathways.includes(f.PATHWAY));
+    setFilteredPatients(patientList);
   }
 
+  function handleConditionSelection(e){
+    var changedConditions = [].filter.call(e.target.options, o => o.selected).map(o => o.value);
 
-  // function getDrugStats(drugId){
+    let patientList = patientResults.filter(f => changedConditions.includes(f.CONDITION));
+    setFilteredPatients(patientList);
 
-  //   var response_matrix_items = drug_response_matrix.filter(dr => dr.DRUG_ID === drugId);
-  //   var total_drug_response_count = response_matrix_items.length;
-  //   var total_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R').length; 
-  //   var total_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S').length; 
-
-  //   if (selectedPatient)
-  //   {
-  //     var cond_resistant_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'R' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
-  //     var cond_sensitive_count = response_matrix_items.filter((resp) => resp.BINARY_RESPONSE === 'S' && resp.TCGA_LABEL === selectedPatient.TCGA_LABEL).length; 
-  //   }
-  //   var drug_name = target_drug_matrix.find(f => f.DRUG_ID === drugId).DRUG_NAME;
-
-
-  //   return { 'DRUG_ID': drugId,'DRUG_NAME': drug_name,'T_C': total_drug_response_count, 'T_R_C': total_resistant_count, 'T_S_C': total_sensitive_count, 'C_R_C': cond_resistant_count, 'C_S_C': cond_sensitive_count };
-  // }
-
-
-
-  function handleDrugResponseSet(filteredDrugs){
-      let filtered_drug_ids = filteredDrugs.map(x => x.DRUG_ID);
-      let selected_drugs_stat = [];
-
-      // filtered_drug_ids.forEach(drug => selected_drugs_stat.push(getDrugStats(drug)));
-
-      console.log(selected_drugs_stat);
-      //setDrugResponses(response_matrix_items);
-      //setData1(  {myData: response_matrix_items});
-      setTargetedDrugs(filteredDrugs);
-      setSelectedDrugStats(selected_drugs_stat);
   }
 
-  function handlePatientSelection(patient)
-  {
-      patient = patients.find(f => f.PATIENT_ID === patient.target.value);
-
-      setSelectedPatient(patient);
-
-      console.log(patient);
-
-      setPatientResistantPredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'R'));
-      setPatientSensitivePredictions(patientResults.filter((res) => res.PATIENT_ID === patient.PATIENT_ID && res.BINARY_RESPONSE === 'S'));
-  }
-
-  function handleDrugSelection(e, drugId) {
+  function handleAddPatient(e, patient){
 
     var requests = [];
-    predictionRequests.forEach(f => requests.push(f));
-
+    selectedPatients.forEach(f => requests.push(f));
 
     if (e.currentTarget.checked)
     {
-      requests.push(target_drug_matrix.find(dr => dr.DRUG_ID === drugId));
+      if(!requests.find((i) => i.PATIENT_ID == patient.PATIENT_ID))
+        requests.push(patient);
     }
     else
     {
-      var target_item = predictionRequests.find(f => f.DRUG_ID === drugId);
-      requests.splice(predictionRequests.indexOf(target_item), 1);
+      var target_item = selectedPatients.find(f => f.PATIENT_ID === patient.PATIENT_ID);
+      requests.splice(selectedPatients.indexOf(target_item), 1);
     }
 
-    setPredictionRequests(requests);
-    console.log(requests);
-  
+    setSelectedPatients(requests);
+
   }
-
-
-
-
 
 
 
@@ -180,48 +102,90 @@ function RecruitPage() {
   return (
     <>
       <ApplicationNavbar />
-      <div className="wrapper">
-        <div className="section">
+      <div className="section section-tabs">
             <Container>
               <Row>
-              <Card>
-                <CardHeader>
-                <h2>Recruit</h2>
-                </CardHeader>
-                <CardBody>
-                    <div>
-                    <Row>
-                    <Col md="4">
+                <Col className="section-why-we-do-2" md={{size:3}} >
+                  <div className="space-25"></div>
+                  <h3>Recruitment</h3>
+                  <hr />
+                  <Row>
+                    <Col>
                         <div>
-                            <h2>Targets</h2>
+                            <h4>Targets</h4>
                             <select onChange={e => handleTargetSelection(e)} multiple>
                                 {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
                             </select>
                         </div>            
                     </Col>
-                    <Col md="4">
+                  </Row>
+                  <Row>
+                    <Col>
                         <div>
-                            <h2>Pathways</h2>
-                            <select onChange={e => handlePathwaySelection(e)} multiple>
+                            <h4>Pathways</h4>
+                            <select className="pathway-select" onChange={e => handlePathwaySelection(e)} multiple>
                                 {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
                             </select>
                         </div>            
                     </Col>
-                    <Col md="4">
+                  </Row>
+                  <Row>
+                  <Col>
                         <div>
-                            <h2>Conditions</h2>
-                        </div>
+                            <h4>Conditions</h4>
+                            <select className="pathway-select" onChange={e => handleConditionSelection(e)} multiple>
+                                {Conditions.sort().map((condition) => <option key={condition} value={condition}>{condition}</option>)}
+                            </select>
+                        </div>            
                     </Col>
-                </Row>
-                        
-                    </div>
-                </CardBody>
-              </Card>
+
+                  </Row>
+                  <div className="space-100"></div>
+                </Col>
+                <Col className="section patient-container" md={{size:9}} >
+                <Table>
+                    <thead>
+                      <tr>
+                        <th>Patient</th>
+                        <th>Model</th>
+                        <th>Drug</th>
+                        <th>Response</th>
+                        <th>Threshold Delta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {filteredPatients.sort().map((result, index) =>  
+                        <tr key={index}>
+                          <td><Input type="checkbox" onChange={(e) => handleAddPatient(e, result)}></Input>{result.PATIENT_ID}</td>
+                          <td>{result.MODEL + '--' + result.PATHWAY}</td>
+                          <td>{result.DRUG_NAME}</td>
+                          <td>{result.BINARY_RESPONSE}</td>
+                          <td>{Math.round(Math.abs(result.LN_IC50 - result.THRESHOLD) * 100) / 100}</td>
+                          </tr>)}
+                    </tbody>
+                  </Table>
+                  <Row>
+              {selectedPatients.length > 0 ? (
+              <Col>
+                <h5>Selected Patients</h5>
+                <ul>
+                      {selectedPatients.map((patient) => <li key={patient.PATIENT_ID} ><span>{patient.PATIENT_ID}</span></li>)}
+                </ul>
+                <Button className="btn-round" color="info" type="button" >
+                  Contact For Trial
+                </Button>
+                <Button className="btn-round" color="success" type="button" >
+                  Predict New Drug
+                </Button>
+              </Col>
+              ) : ('')}
+              </Row>
+
+                </Col>
               </Row>
 
             </Container>
         </div>
-      </div>
     </>
   );
 }
