@@ -14,7 +14,7 @@ import {
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import HowItWorksPageHeader from "components/Headers/HowItWorksPageHeader.js";
+import AboutUsPageHeader from "components/Headers/AboutUsPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function AboutUsPage() {
@@ -33,10 +33,10 @@ function AboutUsPage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        <HowItWorksPageHeader />
+        <AboutUsPageHeader />
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <div className="space-50"></div>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -44,76 +44,17 @@ function AboutUsPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
+                      src={require("assets/img/kb.jpeg")}
                     ></img>
-                    <h4 className="title">Romina Hadid</h4>
-                    <p className="category text-info">Model</p>
+                    <h4 className="title">Kirby Bloom</h4>
+                    <p className="category text-info">Architect</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                      As Chief Architect for <a href="https://lunadna.com">LunaDNA</a>, Kirby is helping bridge the gap between research scientists and large scale data analytics by building the tools needed to produce better insights for health discovery
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook-square"></i>
-                    </Button>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
-                    ></img>
-                    <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-info">Designer</p>
-                    <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
-                    </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      href="https://www.linkedin.com/in/kenneth-kirby-bloom-7701872/"
                     >
                       <i className="fab fa-linkedin"></i>
                     </Button>
@@ -124,42 +65,40 @@ function AboutUsPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
+                      src={require("assets/img/dm.jpeg")}
                     ></img>
-                    <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-info">Fashion</p>
+                    <h4 className="title">Debasish Mukhopadhyay</h4>
+                    <p className="category text-info">Data Scientist</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        links
-                      </a>{" "}
-                      for people to be able to follow them outside the site.
+                     Currently working at Microsoft, Debashish is a seasoned product engineer and a general management strategist with more than 25 years of Product Development, and Architecture experience.                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="https://www.linkedin.com/in/debasish/"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </Button>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/sv.jpeg")}
+                    ></img>
+                    <h4 className="title">Subha Vadakkumkkor</h4>
+                    <p className="category text-info">Data Scientist</p>
+                    <p className="description">
+                    Experienced data scientist working at Farmers Insurance with demonstrated ability of providing data driven and actionable insights to stakeholders. Skilled in Machine Learning, Statistical Modeling, Predictive Analytics, SAS, R, Python.
                     </p>
+
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      href="https://www.linkedin.com/in/subha-vadakkumkoor-0801b05/"
                     >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-linkedin"></i>
                     </Button>
                   </div>
                 </Col>

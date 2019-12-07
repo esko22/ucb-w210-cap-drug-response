@@ -26,7 +26,6 @@ import "assets/demo/demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
 import Index from "views/Index.js";
-import ProfilePage from "views/examples/ProfilePage.js";
 import AboutUsPage from "views/AboutUsPage.js";
 import HowItWorksPage from "views/HowItWorksPage.js";
 import PredictionSubmissionPage from "views/PatientDetailPage.js";
@@ -45,10 +44,6 @@ ReactDOM.render(
         <Route
           path="/about"
           render={props => <AboutUsPage {...props} />}
-        />
-        <Route
-          path="/profile-page"
-          render={props => <ProfilePage {...props} />}
         />
         <Route
           path="/patient"
