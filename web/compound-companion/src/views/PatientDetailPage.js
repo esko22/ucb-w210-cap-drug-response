@@ -182,9 +182,6 @@ function PatientDetailPage() {
 
          fetch(Settings.PredictionApiPath +  "/drugs/" + drug + "/responses")
         .then(result => result.json(),
-          // Note: it's important to handle errors here
-          // instead of a catch() block so that we don't swallow
-          // exceptions from actual bugs in components.
           (error) => {
             console.log(error);
           }
@@ -198,7 +195,6 @@ function PatientDetailPage() {
               if (counter == filtered_drug_ids.length) {
                 setSelectedDrugStats(selected_drugs_stat);
                 setDrugResponses(response_matrix_items);
-                // setData1(  {myData: response_matrix_items});
               }
           }
         )
