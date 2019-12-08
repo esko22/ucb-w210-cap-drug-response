@@ -162,7 +162,7 @@ function PortfolioPage() {
               <Row>
                 <Col className="section-why-we-do-2 scrolly-boy" md={{size:3}} >
                   <div className="space-25"></div>
-                  <h3>Coverage Stats</h3>
+                  <h3><strong>Coverage Stats</strong></h3>
                   <hr />
                   <Row>
                     <Col md={{size:4}}>
@@ -210,7 +210,7 @@ function PortfolioPage() {
                   <Row>
                     <Col>
                         <div>
-                            <h4>Targets</h4>
+                            <h4><strong>Targets</strong></h4>
                             <select onChange={e => handleTargetSelection(e)} multiple>
                                 {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
                             </select>

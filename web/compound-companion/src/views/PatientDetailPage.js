@@ -292,7 +292,7 @@ function PatientDetailPage() {
               <Row>
                 <Col className="section-why-we-do-2 scrolly-boy" md={{size:3}} >
                   <div className="space-25"></div>
-                  <h3>Samples</h3>
+                  <h3><strong>Samples</strong></h3>
                   <hr />
                   <Nav vertical>
                       {patients.map((p) => <NavItem key={p.COSMIC_ID} onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
@@ -457,7 +457,7 @@ function PatientDetailPage() {
                                       <Row>
                                           <Col>
                                             <div>
-                                                <h4>Targets</h4>
+                                                <h4><strong>Targets</strong></h4>
                                                 <select onChange={e => handleTargetSelection(e)} multiple>
                                                     {Targets.sort().map((target) => <option key={target} value={target}>{target}</option>)}
                                                 </select>
@@ -467,7 +467,7 @@ function PatientDetailPage() {
                                       <Row>
                                           <Col>
                                             <div>
-                                              <h4>Pathways</h4>
+                                              <h4><strong>Pathways</strong></h4>
                                               <select className="pathway-select" onChange={e => handlePathwaySelection(e)} multiple>
                                                   {selectedPathways.sort().map((pathway) => <option key={pathway} value={pathway}>{pathway}</option>)}
                                               </select>
@@ -477,7 +477,7 @@ function PatientDetailPage() {
                                     </Col>
                                     <Col md="8">
                                       <div>
-                                          <h4>Available Compounds</h4>
+                                          <h4><strong>Available Compounds</strong></h4>
                                           <Table>
                                             <thead>
                                               <tr>
@@ -505,7 +505,7 @@ function PatientDetailPage() {
                               <Row>
                                   <Col md={{size:8, offset:4}}>
                                       <div>
-                                        <h4>Prediction Requests</h4>
+                                        <h4><strong>Prediction Requests</strong></h4>
                                       </div>
                                       {keepPolling ?(<Spinner style={{ width: '3rem', height: '3rem' }} color="warning" />) :
                                       (
