@@ -2,32 +2,23 @@ import React, { useState}  from "react";
 import {
     Container,
     Row,
-    Col,
-    Table
+    Col
   } from "reactstrap";
 
 // core components
 import ApplicationNavbar from "components/Navbars/ApplicationNavbar.js";
 
 import target_drug_matrix from "../data/target_drug_matrix.json";
-import patient_list from "../data/patients.json";
-import patient_results from "../data/patient_results.json";
-
 import Targets from "../data/targets.js";
 import Pathways from "../data/pathways.js";
-
-import Demo from "./product-sections/vega-demo.js";
-
+import Settings from "../data/settings.js";
 
 import { Vega, createClassFromSpec } from 'react-vega';
-import testSpec from '../vega-specs/testSpec';
+// import Demo from "./product-sections/vega-demo.js";
+// const TestChart = createClassFromSpec({spec: spec6});
+
 import pathwayHisto from '../vega-specs/pathwayHisto.json';
 import stackedHisto from '../vega-specs/stackedHisto.json';
-
-
-
-import spec5 from '../vega-specs/spec5.json';
-import spec6 from '../vega-specs/spec6.json';
 
 function PortfolioPage() {
 
@@ -52,23 +43,10 @@ function PortfolioPage() {
   const [drugs, setDrugs] = useState(target_drug_matrix);
   const [vegaSpec, setVegaSpec] = useState(pathwayHisto);
   const [vegaSpec2, setVegaSpec2] = useState(stackedHisto);
-
-  const [patientResults, setPatientResults] = useState(patient_results);
   const [selectedDrugStats, setSelectedDrugStats] = useState([]);
-  const [predictionRequests, setPredictionRequests] = useState([]);
-
-  const TestChart = createClassFromSpec({spec: spec6});
-
-  const [data1, setData1] = useState({
-    myData: drugs,
-  });
-
-  const [data2, setData2] = useState({
-    myData2: [],
-  });
-
+  const [data1, setData1] = useState({myData: drugs});
+  const [data2, setData2] = useState({myData2: []});
   const [handlers, setHandlers] = useState({ click: handlePathwaySelection });
-
 
   function handleTargetSelection(e) {
 
@@ -126,11 +104,8 @@ function PortfolioPage() {
 
       filtered_drug_ids.forEach(drug => {
 
-         fetch("http://localhost:5000/drugs/" + drug + "/responses")
+         fetch(Settings.PredictionApiPath + "/drugs/" + drug + "/responses")
         .then(result => result.json(),
-          // Note: it's important to handle errors here
-          // instead of a catch() block so that we don't swallow
-          // exceptions from actual bugs in components.
           (error) => {
             console.log(error);
           }
@@ -243,33 +218,12 @@ function PortfolioPage() {
 
                   </div>
                   ) : ('')}
-                  {/* <Row>
-                    <Col>
-                    <Table>
-                      <thead>
-                        <tr>
-                          <th>Drug Name</th>
-                          <th>Total</th>
-                          <th>S :: R</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                          {selectedDrugStats.map((stats, index) =>  
-                          <tr key={index}>
-                            <td>{stats.DRUG_NAME}</td>
-                            <td>{stats.T_C}</td>
-                            <td>{stats.R_TYPE}</td>
-                            </tr>)}
-                      </tbody>
-                    </Table>
-
-                    </Col>
-                  </Row> */}
                 </Col>
               </Row>
             </Container>
         </div>
-    </>
+      {/* <TestChart data={data1} /> */}
+      </>
   );
 }
 

@@ -25,19 +25,10 @@ import ApplicationNavbar from "components/Navbars/ApplicationNavbar.js";
 
 import target_drug_matrix from "../data/target_drug_matrix.json";
 import patient_list from "../data/patients.json";
-import patient_results from "../data/patient_results.json";
 
 import Targets from "../data/targets.js";
 import Pathways from "../data/pathways.js";
-
-import Demo from "./product-sections/vega-demo.js";
-
-
-import { Vega, createClassFromSpec } from 'react-vega';
-import spec3 from '../vega-specs/spec3';
-import spec5 from '../vega-specs/spec5.json';
-import spec6 from '../vega-specs/spec6.json';
-import { compare } from "fast-json-patch";
+import Settings from "../data/settings.js";
 
 function PatientDetailPage() {
 
@@ -68,37 +59,22 @@ function PatientDetailPage() {
   const [selectedPathways, setSelectedPathways] = useState(Pathways);
   const [currentPathways, setCurrentPathways] = useState([]);
   const [drugResponses, setDrugResponses] = useState([]);
-  const [selectedDrugs, setSelectedDrugs] = useState([]);
   const [selectedPatient, setSelectedPatient] = useState(null);
-  const [vegaSpec, setVegaSpec] = useState(spec5);
   const [patients, setPatients] = useState(patient_list.sort(ComparePatients));
-  const [patientResults, setPatientResults] = useState(patient_results);
   const [selectedDrugStats, setSelectedDrugStats] = useState([]);
   const [predictionRequests, setPredictionRequests] = useState([]);
   const [pills, setPills] = useState("1");
   const [keepPolling, setKeepPolling] = useState(false);
 
-  const TestChart = createClassFromSpec({spec: spec6});
   const [patientResistantPredictions, setPatientResistantPredictions] = useState([]);
   const [patientSensitivePredictions, setPatientSensitivePredictions] = useState([]);
-
-  const [data1, setData1] = useState({
-    myData: drugResponses,
-  });
-
-  const [handlers, setHandlers] = useState({ click: handleDrugClick });
-
-
-  function handleDrugClick(...args){
-    console.log(args);
-  }
 
   function handleInitialPredictRequest() {
 
     let newPatient = {...selectedPatient}
     setKeepPolling(true);
 
-    fetch("http://localhost:5000/predict/" + newPatient.COSMIC_ID + "/condition/" + newPatient.TCGA_LABEL)
+    fetch(Settings.PredictionApiPath + "/predict/" + newPatient.COSMIC_ID + "/condition/" + newPatient.TCGA_LABEL)
     .then(() => {
         selectedPatient.INIT_PRED_REQUESTED = true;
         newPatient.INIT_PRED_REQUESTED = true;
@@ -113,7 +89,7 @@ function PatientDetailPage() {
   }
 
  function handleSpecificPredictRequest() {
-  fetch("http://localhost:5000/predict/" + selectedPatient.COSMIC_ID + "/condition/" + selectedPatient.TCGA_LABEL + /pathway/ + currentPathways[0])
+  fetch(Settings.PredictionApiPath + "/predict/" + selectedPatient.COSMIC_ID + "/condition/" + selectedPatient.TCGA_LABEL + /pathway/ + currentPathways[0])
     .then(() => { 
       setKeepPolling(true);
       setTimeout(function(){ setKeepPolling(false)}, 5000);
@@ -124,7 +100,7 @@ function PatientDetailPage() {
 
 
   function pollForResults(patient) {
-    fetch("http://localhost:5000/patients/" + patient.COSMIC_ID + "/results", {
+    fetch(Settings.PredictionApiPath +  "/patients/" + patient.COSMIC_ID + "/results", {
       retries: 10,
       retryDelay: 5000,
       retryOn: [404]
@@ -204,7 +180,7 @@ function PatientDetailPage() {
 
       filtered_drug_ids.forEach(drug => {
 
-         fetch("http://localhost:5000/drugs/" + drug + "/responses")
+         fetch(Settings.PredictionApiPath +  "/drugs/" + drug + "/responses")
         .then(result => result.json(),
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -246,7 +222,7 @@ function PatientDetailPage() {
 
   function getPatientResults(patient)
   {
-    fetch("http://localhost:5000/patients/" + patient.COSMIC_ID + "/results")
+    fetch(Settings.PredictionApiPath + "/patients/" + patient.COSMIC_ID + "/results")
     .then(result => result.json(),
     (error) => {
         console.log(error);
@@ -278,9 +254,6 @@ function PatientDetailPage() {
 
     setPredictionRequests(requests);
   }
-
-
-
 
 
 
@@ -556,8 +529,6 @@ function PatientDetailPage() {
         }
     </Col>
   </Row>
-          {/* <TestChart data={data1} /> */}
-
       </Container>
     </div>
     </>

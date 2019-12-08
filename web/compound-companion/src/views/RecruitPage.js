@@ -12,7 +12,6 @@ import {
 import ApplicationNavbar from "components/Navbars/ApplicationNavbar.js";
 
 import target_drug_matrix from "../data/target_drug_matrix.json";
-// import drug_response_matrix from "../data/drug_response.json";
 import patient_list from "../data/patients.json";
 import patient_results from "../data/patient_results.json";
 
@@ -38,7 +37,6 @@ function RecruitPage() {
   const [target, setTarget] = useState('');
   const [selectedPathways, setSelectedPathways] = useState(Pathways);
   const [patientResults, setPatientResults] = useState(patient_results);
-  const [patients, setPatients] = useState(patient_list);
   const [filteredPatients, setFilteredPatients] = useState(patient_results);
   const [selectedPatients, setSelectedPatients] = useState([]);
 
@@ -46,8 +44,6 @@ function RecruitPage() {
 
       var changedTargets = [].filter.call(e.target.options, o => o.selected).map(o => o.value);
       var changedPathways = Array.from(new Set(target_drug_matrix.filter(f => changedTargets.includes(f.TARGET)).map(m => m.TARGET_PATHWAY)));
-
-      var td_matrix_items = target_drug_matrix.filter(tdm => changedTargets.includes(tdm.TARGET) && changedPathways.includes(tdm.TARGET_PATHWAY));
 
       setSelectedPathways(changedPathways);
       setTarget(changedTargets);
