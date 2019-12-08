@@ -1,16 +1,16 @@
 /* eslint-disable no-magic-numbers */
 import React from 'react';
-import { Vega, VegaLite, createClassFromSpec } from 'react-vega';
+import { Vega, createClassFromSpec } from 'react-vega';
 import data1 from '../../data/data1.json';
 import spec1 from '../../vega-specs/spec1';
 import spec2 from '../../vega-specs/spec2';
 
 const BarChart = createClassFromSpec({ spec: spec1 });
 
-const code1 = `<Vega data={this.state.data} spec={this.state.spec} onSignalHover={this.handleHover} />`;
+// const code1 = `<Vega data={this.state.data} spec={this.state.spec} onSignalHover={this.handleHover} />`;
 
-const code2 = `const BarChart = ReactVega.createClassFromSpec(barSpec);
-<BarChart data={this.state.data} onSignalHover={this.handleHover} />`;
+// const code2 = `const BarChart = ReactVega.createClassFromSpec(barSpec);
+// <BarChart data={this.state.data} onSignalHover={this.handleHover} />`;
 
 export default class Demo extends React.Component {
   constructor(props) {
@@ -73,13 +73,13 @@ export default class Demo extends React.Component {
           <code>&lt;Vega&gt;</code> React Component
         </h3>
         Will recompile when spec changes and update when data changes.
-        <pre>{code1}</pre>
-        <VegaLite data={data} spec={spec} signalListeners={this.handlers} />
+        {/* <pre>{code1}</pre> */}
+        <Vega data={data} spec={spec} signalListeners={this.handlers} />
         <h3>
           <code>ReactVega.createClassFromSpec()</code>
         </h3>
         Use the given spec to create a reusable component.
-        <pre>{code2}</pre>
+        {/* <pre>{code2}</pre> */}
         <BarChart data={data} signalListeners={this.handlers} />
         <div>
           Hover info: <code>{info}</code>

@@ -92,10 +92,6 @@ function ApplicationNavbar() {
                   <p>Application</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/portfolio" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    Portfolio
-                  </DropdownItem>
                   <DropdownItem to="/patient" tag={Link}>
                     <i className="now-ui-icons users_single-02 mr-1"></i>
                     Predict
@@ -103,6 +99,10 @@ function ApplicationNavbar() {
                   <DropdownItem to="/recruit" tag={Link}>
                     <i className="now-ui-icons location_world mr-1"></i>
                     Recruit
+                  </DropdownItem>
+                  <DropdownItem to="/portfolio" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                    Portfolio
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

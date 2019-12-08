@@ -31,12 +31,10 @@ import Targets from "../data/targets.js";
 import Pathways from "../data/pathways.js";
 
 import Demo from "./product-sections/vega-demo.js";
-import LiteDemo from "./product-sections/vega-lite-demo.js";
 
 
 import { Vega, createClassFromSpec } from 'react-vega';
 import spec3 from '../vega-specs/spec3';
-import spec4 from '../vega-specs/spec4';
 import spec5 from '../vega-specs/spec5.json';
 import spec6 from '../vega-specs/spec6.json';
 import { compare } from "fast-json-patch";
@@ -279,17 +277,6 @@ function PatientDetailPage() {
     }
 
     setPredictionRequests(requests);
-    console.log(requests);
-    //var drugsSelected =  [].filter.call(e.target.options, o => o.selected).map(o => o.value);
-
-    // for (let index = 0; index < drugsSelected.length; index++) {
-    //   const element = drugsSelected[index];
-    //   console.log(element.DRUG_ID);
-      
-    // }
-
-    //setSelectedDrugs(drugsSelected);
-    //console.log(drug_selection_matrix.filter(dsm => dsm.DRUG_ID == 1526));
   }
 
 
@@ -316,7 +303,7 @@ function PatientDetailPage() {
                     <div>
                         <Row>                              
                           <Col md={{size:6, offset:1}}>
-                          <h3>Information</h3>
+                          <h3><strong>Information</strong></h3>
                             <Row>
                                 <Col md="4">Sample ID</Col>
                                 <Col md="4">{selectedPatient.PATIENT_ID}</Col>
@@ -331,7 +318,7 @@ function PatientDetailPage() {
                             </Row>
                           </Col>
                           <Col md={{size:5}}>
-                          <h3>Datasets</h3>
+                          <h3><strong>Datasets</strong></h3>
                               <Row>
                               <Label check>
                                     <Input disabled checked={selectedPatient.WES == "Y"} type="checkbox"></Input>
@@ -571,8 +558,6 @@ function PatientDetailPage() {
   </Row>
           {/* <TestChart data={data1} /> */}
 
-          {/* <Demo ></Demo> */}
-          {/* <LiteDemo></LiteDemo> */}
       </Container>
     </div>
     </>
