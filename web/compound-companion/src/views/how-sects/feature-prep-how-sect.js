@@ -13,7 +13,8 @@ function FeaturePrepHowSection() {
         <Row>
             <Col md={{size:6, offset:2}}>
                <h3><strong>Modular Feature Preparation</strong></h3>
-               <p>No condition or cancer is the same. Why build a model based on features that may have little or no impact on the condition at hand. CompoundCompanion allows you to build composable data pipelines based on pre-existing or internally developed data extraction models to convert patient data or training data to support various models.</p>
+               <p>No condition or cancer is the same. Why build a model based on features that may have little or no impact on the condition at hand?</p>
+               <p>CompoundCompanion allows you to build composable data pipelines based on pre-existing or internally developed scoring models to convert individual multi-omic modalities to support various models.</p>
             </Col>
             <Col md={{size:2, offset:1}}>
               <div>
