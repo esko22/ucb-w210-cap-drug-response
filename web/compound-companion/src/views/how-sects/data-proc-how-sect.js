@@ -10,45 +10,21 @@ function DataProcHowSection() {
     <>
       <div className="section section-tabs">
         <Container>
-        <Button
-              className="btn-icon btn-round"
-              color="default"
-        >1</Button>
-
         <Row>
-            <Col md="2"></Col>
-            <Col md="4">
+            <Col md={{size:6, offset:2}}>
+               <h3><strong>Multi-omic data storage</strong></h3>
+               <p>CompoundCompanion runs on data. In order to train our models and allow you to perform predictions, obtaining various multi-omic data sets is essential. This can be done through uploading or integrating with our preferred sequencing labs. HIPAA compliance is top of mind for us. We ensure patient and sample information is encrypted, de-identified and stored securely.</p>
+            </Col>
+            <Col md={{size:2, offset:1}}>
               <div>
                 <img
                   alt="..."
-                  src={require("assets/img/recruit.png")}
-                ></img>
-              </div>
-            </Col>
-            <Col md="6">
-              <div>
-                <h2>Match Patients </h2>
-              </div>
-            </Col>
-          </Row>
-          <div className="space-100"></div>
-          <Row>
-            <Col md="2"></Col>
-            <Col md="6">
-              <div>
-                <h2>Recruit Participants </h2>
-              </div>
-            </Col>
-            <Col md="4">
-              <div>
-                <img
-                  alt="..."
-                  src={require("assets/img/recruit2.png")}
+                  src={require("assets/img/sec_cloud.png")}
                 ></img>
               </div>
             </Col>
           </Row>
-
+          <div className="space-50"></div>
         </Container>
       </div>
     </>

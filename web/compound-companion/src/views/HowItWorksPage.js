@@ -19,12 +19,9 @@ import DefaultFooter from "components/Footers/DefaultFooter.js";
 import DataProcHowSection from "./how-sects/data-proc-how-sect.js"
 import UserDataHowSection from "./how-sects/user-data-how-sect.js"
 import MLHowSection from "./how-sects/ml-how-sect.js"
+import FeaturePrepHowSection from "./how-sects/feature-prep-how-sect.js"
 
 function HowItWorksPage() {
-  const [firstFocus, setFirstFocus] = useState(false);
-  const [lastFocus, setLastFocus] = useState(false);
-
-
 
   useEffect(() => {
 
@@ -45,93 +42,28 @@ function HowItWorksPage() {
         <HowItWorksPageHeader />
         <div className="section section-about-us">
           <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Molecular profile matching... </h2>
-                <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
-                </h5>
-              </Col>
-            </Row>
-            <div className="separator separator-primary"></div>
-            {/* <div className="section-story-overview">
-              <Row>
-                <Col md="6">
-                  <div
-                    className="image-container image-left"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
-                    }}
-                  >
-                    <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
-                      <br></br>
-                      <small>-NOAA</small>
-                    </p>
+          <Row>
+                <Col md={{size:4}}>
+                <div>
+                    <img
+                      alt="..."
+                      src={require("assets/img/molecular.png")}
+                    ></img>
                   </div>
-                  <div
-                    className="image-container"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")"
-                    }}
-                  ></div>
                 </Col>
-                <Col md="5">
-                  <div
-                    className="image-container image-right"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")"
-                    }}
-                  ></div>
-                  <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
-                  </h3>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
-                  <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
-                  </p>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
+                <Col md={{size:7, offset:1}}>
+                  <div>
+                  <h2 className="title"><strong>Molecular level match making</strong></h2>
+                  <p>Systematic study of genomic alterations and drug sensitivies have shown great promise in predicting response of a specific cell line to a specific drug. With extensive genomic sequencing data available for almost all types of cancers, valuable insights can be generated about the relationship between genomic alterations and drug responses.</p> 
+                  <p>CompoudCompanion is a tool designed to explore, quantify and predict drug responses with available molecular level data.</p>
+                  </div>
                 </Col>
               </Row>
-            </div> */}
           </Container>
         </div>
         <DataProcHowSection />
         <UserDataHowSection />
+        <FeaturePrepHowSection />
         <MLHowSection />
         <DefaultFooter />
       </div>

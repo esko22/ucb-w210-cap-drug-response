@@ -8,47 +8,23 @@ import { Container, Row, Col, Button } from "reactstrap";
 function MLHowSection() {
   return (
     <>
-      <div className="section section-why-we-do-2">
-        <Container>
-        <Button
-              className="btn-icon btn-round"
-              color="default"
-        >3</Button>
-
+     <div className="section section-why-we-do-2">
+      <Container>
         <Row>
-            <Col md="2"></Col>
-            <Col md="4">
+            <Col md={{size:2, offset:2}}>
               <div>
                 <img
                   alt="..."
-                  src={require("assets/img/recruit.png")}
+                  src={require("assets/img/stack_layers.png")}
                 ></img>
               </div>
             </Col>
-            <Col md="6">
-              <div>
-                <h2>Match Patients </h2>
-              </div>
+            <Col md={{size:6, offset:1}}>
+               <h3><strong>Layered learning approach</strong></h3>
+               <p>Using layers of advanced machine learning techniques, we can now select the most responsive list of drugs estimated to show positive response to a drug or set of drugs. Using Copy Number Alterations, Mutations and drug target information, we can now predict the log of IC50 (molecular concentration for 50% cell inhibition) for a selected pathway, cancer type and set of drugs.</p>
             </Col>
           </Row>
-          <div className="space-100"></div>
-          <Row>
-            <Col md="2"></Col>
-            <Col md="6">
-              <div>
-                <h2>Recruit Participants </h2>
-              </div>
-            </Col>
-            <Col md="4">
-              <div>
-                <img
-                  alt="..."
-                  src={require("assets/img/recruit2.png")}
-                ></img>
-              </div>
-            </Col>
-          </Row>
-
+          <div className="space-50"></div>
         </Container>
       </div>
     </>

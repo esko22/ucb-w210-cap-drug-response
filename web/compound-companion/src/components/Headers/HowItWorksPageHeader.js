@@ -27,7 +27,7 @@ function HowItWorksPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/hpm-pill.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/hpm-pill.png") + ")"
           }}
           ref={pageHeader}
         ></div>
