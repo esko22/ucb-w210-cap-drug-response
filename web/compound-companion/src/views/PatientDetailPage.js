@@ -100,7 +100,7 @@ function PatientDetailPage() {
 
 
   function pollForResults(patient) {
-    fetch(Settings.PredictionApiPath +  "/patients/" + patient.COSMIC_ID + "/results", {
+    fetch(Settings.PredictionApiPath +  "/patients/" + patient.COSMIC_ID +  "/condition/" + patient.TCGA_LABEL + "/results", {
       retries: 10,
       retryDelay: 5000,
       retryOn: [404]
@@ -115,6 +115,16 @@ function PatientDetailPage() {
         setPatientSensitivePredictions(data.filter((res) => res.BINARY_RESPONSE === 'S'));  
       }
     })
+  }
+
+  function sortDelta(a, b){
+    var a_delta = Math.round(Math.abs(a.LN_IC50 - a.THRESHOLD));
+    var b_delta = Math.round(Math.abs(b.LN_IC50 - b.THRESHOLD))
+
+    if (a_delta > b_delta)
+      return 1
+    
+    return -1;
   }
 
 
@@ -218,7 +228,7 @@ function PatientDetailPage() {
 
   function getPatientResults(patient)
   {
-    fetch(Settings.PredictionApiPath + "/patients/" + patient.COSMIC_ID + "/results")
+    fetch(Settings.PredictionApiPath +  "/patients/" + patient.COSMIC_ID +  "/condition/" + patient.TCGA_LABEL + "/results")
     .then(result => result.json(),
     (error) => {
         console.log(error);
@@ -264,7 +274,7 @@ function PatientDetailPage() {
                   <h3><strong>Samples</strong></h3>
                   <hr />
                   <Nav vertical>
-                      {patients.map((p) => <NavItem key={p.COSMIC_ID} onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
+                      {patients.map((p, index) => <NavItem key={index} onClick={() => handlePatientSelection(p.PATIENT_ID)}><NavLink className="patient-labels"> {p.PATIENT_ID} </NavLink> </NavItem>)}
                   </Nav>
                 </Col>
                 <Col className="section patient-container" md={{size:9}} >
@@ -374,17 +384,17 @@ function PatientDetailPage() {
                                             <th>Model Condition</th>
                                             <th>Pathway</th>
                                             <th>IC 50</th>
-                                            <th>Threshold</th>
+                                            <th>Distance</th>
                                           </tr>
                                         </thead>
                                         <tbody>
-                                            {patientResistantPredictions.map((preds) =>  
+                                            {patientResistantPredictions.sort(sortDelta).map((preds) =>  
                                             <tr key={preds.DRUG_ID}>
                                               <td>{preds.DRUG_NAME}</td>
                                               <td>{preds.MODEL}</td>
                                               <td>{preds.PATHWAY}</td>
                                               <td>{preds.LN_IC50}</td>
-                                              <td>{preds.THRESHOLD}</td>
+                                              <td>{Math.round(Math.abs(preds.LN_IC50 - preds.THRESHOLD) * 100) / 100}</td>
                                               </tr>)}
                                         </tbody>
                                       </Table>
@@ -403,17 +413,17 @@ function PatientDetailPage() {
                                             <th>Model Condition</th>
                                             <th>Pathway</th>
                                             <th>IC 50</th>
-                                            <th>Threshold</th>
+                                            <th>Distance</th>
                                           </tr>
                                         </thead>
                                         <tbody>
-                                            {patientSensitivePredictions.map((preds) =>  
+                                            {patientSensitivePredictions.sort(sortDelta).map((preds) =>  
                                             <tr key={preds.DRUG_ID}>
                                               <td>{preds.DRUG_NAME}</td>
                                               <td>{preds.MODEL}</td>
                                               <td>{preds.PATHWAY}</td>
                                               <td>{preds.LN_IC50}</td>
-                                              <td>{preds.THRESHOLD}</td>
+                                              <td>{Math.round(Math.abs(preds.LN_IC50 - preds.THRESHOLD) * 100) / 100}</td>
                                               </tr>)}
                                         </tbody>
                                       </Table>

@@ -146,7 +146,7 @@ function RecruitPage() {
                         <th>Model</th>
                         <th>Drug</th>
                         <th>Response</th>
-                        <th>Threshold Delta</th>
+                        <th>IC50 Distance</th>
                       </tr>
                     </thead>
                     <tbody>

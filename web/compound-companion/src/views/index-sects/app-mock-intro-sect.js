@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 
 // core components
 
@@ -48,6 +48,10 @@ function AppMockIntroSection() {
                     <h3>Review patient predictions</h3>
                     <p>Once you have an individual's multi-omic profile on the platform, you can perform an analysis on the prediction results for the compounds loaded in your system. Our visualization tools will guide you in making the best decision possible for your patient.</p> 
                     <p>The system allows you to then record real world evidence for the individual and use it to improve the prediction algorithms moving forward.</p>
+                    <Button color="info"  href="/patient">
+                      Patient Demo
+                    </Button>
+
                   </div>
                 </Col>
               </Row>
@@ -58,6 +62,9 @@ function AppMockIntroSection() {
                   <div>
                     <h3>Recruit participants </h3>
                     <p>If you are recruiting for clinical trials for a new drug with no pre-exisitng data, you can use our search tools to find individuals on the platform that have responded well to drugs either related to a condition, genomic target or cellular pathway.</p>
+                    <Button color="info"  href="/recruit">
+                      Recruit Demo
+                    </Button>
                   </div>
                 </Col>
                 <Col md="4">
@@ -84,6 +91,9 @@ function AppMockIntroSection() {
                   <div>
                     <h3>Drug Performance</h3>
                     <p>Understanding how well drugs perform across your cohort is crucial. Our dashboard will allow you to see top level performance statistics based on prediction results and real world evidence.</p>
+                    <Button color="info"  href="/portfolio">
+                      Portfolio Demo
+                    </Button>
                   </div>
                 </Col>
               </Row>
