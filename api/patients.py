@@ -23,8 +23,8 @@ def index():
 
 
 
-@bp.route("/patients/<string:id>/results")
-def get_patient_results(id):
+@bp.route("/patients/<string:id>/condition/<string:condition>/results")
+def get_patient_results(id, condition):
 
     ## we should look into using this https://github.com/dropbox/PyHive
     ## then do your query based on id that is passed in

@@ -1,33 +1,33 @@
 [{
-    "PATIENT_ID": "1240204",
+    "PATIENT_ID": "1240182",
     "DRUG_ID": "1377",
     "DRUG_NAME": "Afatinib",
     "MODEL": "AERO_DIGESTIVE_TRACT",
     "PATHWAY": "DNA_REPL",
     "CONDITION": "HNSC",
     "LN_IC50": "1.9875",
-    "BINARY_RESPONSE": "R",
+    "BINARY_RESPONSE": "S",
     "THRESHOLD" : "0.887"
 }, 
 {
-    "PATIENT_ID": "1240204",
+    "PATIENT_ID": "1240182",
     "DRUG_ID": "1494",
     "DRUG_NAME": "SN-38",
     "MODEL": "AERO_DIGESTIVE_TRACT",
     "PATHWAY": "DNA_REPL",
     "CONDITION": "HNSC",
     "LN_IC50": "3.246391",
-    "BINARY_RESPONSE": "R",
+    "BINARY_RESPONSE": "S",
     "THRESHOLD" : "1.67"
 },{
-    "PATIENT_ID": "1240204",
+    "PATIENT_ID": "1240182",
     "DRUG_ID": "149",
     "DRUG_NAME": "Olaparib",
     "MODEL": "AERO_DIGESTIVE_TRACT",
     "PATHWAY": "DNA_REPL",
     "CONDITION": "HNSC",
     "LN_IC50": "0.646391",
-    "BINARY_RESPONSE": "R",
+    "BINARY_RESPONSE": "S",
     "THRESHOLD" : "0.57"
 }, {
     "PATIENT_ID": "688001",

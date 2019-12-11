@@ -122,9 +122,9 @@ function PatientDetailPage() {
     var b_delta = Math.round(Math.abs(b.LN_IC50 - b.THRESHOLD))
 
     if (a_delta > b_delta)
-      return 1
+      return -1
     
-    return -1;
+    return 1;
   }
 
 
